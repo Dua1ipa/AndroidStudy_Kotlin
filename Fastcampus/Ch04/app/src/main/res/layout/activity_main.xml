@@ -9,6 +9,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/goInputActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/nameTextView"
         style="@style/Title"
@@ -49,6 +61,66 @@
         app:layout_constraintBaseline_toBaselineOf="@id/birthTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/bloodTextView"
+        style="@style/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="혈액형"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthTextView" />
+
+    <TextView
+        android:id="@+id/bloodValueTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:gravity="end"
+        style="@style/Value"
+        app:layout_constraintBaseline_toBaselineOf="@id/bloodTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"/>
+
+    <TextView
+        android:id="@+id/contactTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비상 연락처"
+        style="@style/Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bloodTextView"/>
+
+    <TextView
+        android:id="@+id/contactValueTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="000-0000-0000"
+        android:gravity="end"
+        style="@style/Value"
+        app:layout_constraintBaseline_toBaselineOf="@id/contactTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"/>
+
+    <TextView
+        android:id="@+id/cautionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주의사항"
+        style="@style/Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactTextView"/>
+
+    <TextView
+        android:id="@+id/cautionValueTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="주의사항"
+        android:gravity="end"
+        style="@style/Value"
+        app:layout_constraintBaseline_toBaselineOf="@id/cautionTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
