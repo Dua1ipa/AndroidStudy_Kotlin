@@ -9,25 +9,13 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/goEditActivityButton"
+        android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
         android:clickable="true"
-        android:src="@android:drawable/ic_input_add"
+        android:src="@drawable/baseline_arrow_circle_down_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/deleteButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:clickable="true"
-        android:src="@drawable/baseline_auto_delete_24"
-        app:layout_constraintBottom_toTopOf="@id/goEditActivityButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintStart_toStartOf="parent" />
@@ -41,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <EditText
         android:id="@+id/nameValueEditText"
         style="@style/Value"
         android:layout_width="0dp"
@@ -64,14 +52,24 @@
         app:layout_constraintTop_toBottomOf="@id/nameTextView" />
 
     <TextView
-        android:id="@+id/birthValueTextView"
+        android:id="@id/birthEditText"
         style="@style/Value"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="end"
+        android:text="0000-00-00"
         app:layout_constraintBaseline_toBaselineOf="@id/birthTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <ImageView
+        android:id="@+id/birthImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_assignment_24"
+        app:layout_constraintBottom_toBottomOf="@id/birthTextView"
+        app:layout_constraintStart_toEndOf="@+id/birthEditText"
+        app:layout_constraintTop_toTopOf="@+id/birthTextView" />
 
     <TextView
         android:id="@+id/bloodTextView"
@@ -82,15 +80,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/birthTextView" />
 
-    <TextView
-        android:id="@+id/bloodValueEditText"
+    <RadioGroup
+        android:id="@+id/bloodRadioGroup"
+        style="@style/Value"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/bloodTextView"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="@id/bloodTextView">
+
+        <RadioButton
+            android:id="@+id/bloodTypePlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rh+" />
+
+        <RadioButton
+            android:id="@+id/bloodTypeMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rh-" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/bloodSpinner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        style="@style/Value"
-        android:gravity="end"
-        app:layout_constraintBaseline_toBaselineOf="@id/bloodTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"/>
+        app:layout_constraintBottom_toBottomOf="@id/bloodTextView"
+        app:layout_constraintStart_toEndOf="@+id/bloodRadioGroup"
+        app:layout_constraintTop_toTopOf="@id/bloodTextView" />
 
     <CheckBox
         android:id="@+id/cautionCheckBox"
@@ -113,11 +132,12 @@
         app:layout_constraintTop_toBottomOf="@+id/bloodTextView" />
 
     <TextView
-        android:id="@+id/contactValueTextView"
+        android:id="@+id/contactValueEditText"
         style="@style/Value"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="end"
+        android:hint="000-0000-0000"
         app:layout_constraintBaseline_toBaselineOf="@id/contactTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline" />
@@ -132,8 +152,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contactTextView" />
 
-    <TextView
-        android:id="@+id/cautionValueTextView"
+    <EditText
+        android:id="@+id/cautionEditText"
         style="@style/Value"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -149,5 +169,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/birthLayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="birthEditText, birthImageView"
+        tools:ignore="MissingConstraints,UnknownId" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
