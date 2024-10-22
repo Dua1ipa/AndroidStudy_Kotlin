@@ -10,19 +10,20 @@
 
     <ProgressBar
         android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/timeTextView"
         android:layout_marginBottom="38dp"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        app:layout_constraintBottom_toTopOf="@+id/timeTextView"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:id="@+id/countNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
         android:text="카운트다운"
         android:textSize="30sp"
-        android:layout_marginEnd="24dp"
         app:layout_constraintBaseline_toBaselineOf="@id/countTextView"
         app:layout_constraintBottom_toTopOf="@+id/progressBar"
         app:layout_constraintEnd_toStartOf="@+id/countTextView"
@@ -39,21 +40,21 @@
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/progressBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"/>
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:id="@+id/secondTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="96dp"
         android:text="초"
         android:textSize="30sp"
-        android:layout_marginStart="24dp"
         app:layout_constraintBaseline_toBaselineOf="@id/countTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/countTextView"
-        app:layout_constraintStart_toEndtOf="@+id/countTextView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -66,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35"/>
+        app:layout_constraintVertical_bias="0.35" />
 
     <TextView
         android:id="@+id/tickTexkView"
@@ -83,6 +84,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.6"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="439dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -121,19 +123,40 @@
         app:layout_constraintTop_toBottomOf="@+id/baselineLayout"
         app:srcCompat="@drawable/stop" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/lapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baselineLayout"
+        app:srcCompat="@drawable/lap" />
+
     <ScrollView
         android:id="@+id/scrollView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="407dp"
+        android:layout_height="236dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playButton">
+
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
     </ScrollView>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/countdownGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="countTextView,progressBar, secondTextView, countNameTextView"
+        tools:ignore="UnknownId" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
