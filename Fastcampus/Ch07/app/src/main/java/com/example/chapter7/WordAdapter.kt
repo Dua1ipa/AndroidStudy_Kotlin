@@ -5,13 +5,26 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.chapter7.databinding.ItemWordBinding
 
-class WordAdapter(private val list: MutableList<Word>) : RecyclerView.Adapter<WordAdapter.WordViewHolder>() {
+class WordAdapter(
+    private val list: MutableList<Word>,
+    private val itemClickListener: ItemClickListener? = null) : RecyclerView.Adapter<WordAdapter.WordViewHolder>() {
 
-    class WordViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {}
+    class WordViewHolder(private val binding: ItemWordBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(word: Word) {
+            binding.apply {
+                textTextView.text = word.text
+                meanTextView.text = word.mean
+                typeChip.text = word.type
+            }
+        }
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WordViewHolder {
         val inflater = parent.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        val binding = ItemWordBinding.inflate(inflater, parent, false)
+        return WordViewHolder(binding)
     }
 
     override fun getItemCount(): Int {
@@ -19,6 +32,13 @@ class WordAdapter(private val list: MutableList<Word>) : RecyclerView.Adapter<Wo
     }
 
     override fun onBindViewHolder(holder: WordViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        val word = list[position]
+        holder.bind(word)
+        holder.itemView.setOnClickListener { itemClickListener?.onClick(word) }
     }
+
+    interface ItemClickListener {
+        fun onClick(word: Word)
+    }
+
 }
