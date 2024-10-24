@@ -1,16 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("kotlin-parcelize")
-    id ("kotlin-kapt")
 }
 
 android {
-    namespace = "com.example.chapter7"
+    namespace = "com.example.login"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.chapter7"
+        applicationId = "com.example.login"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -50,9 +48,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    val room_version = "2.6.1"
-
-    implementation("androidx.room:room-runtime:$room_version")
-    kapt("androidx.room:room-compiler:$room_version")
 }

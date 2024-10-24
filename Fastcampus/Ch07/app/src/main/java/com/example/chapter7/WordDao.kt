@@ -8,10 +8,10 @@ import androidx.room.Update
 
 @Dao
 interface WordDao {
-    @Query("Select * From word Order By id Desc")
+    @Query("SELECT * from word ORDER BY id DESC")
     fun getAll(): List<Word>
 
-    @Query("Select * From word Order By id Desc LIMIT 1")
+    @Query("SELECT * from word ORDER BY id DESC LIMIT 1")
     fun getLatestWord(): Word
 
     @Insert

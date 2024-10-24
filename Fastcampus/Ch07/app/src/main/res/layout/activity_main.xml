@@ -16,7 +16,7 @@
         android:layout_margin="24dp"
         android:text="단어 입니다"
         android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@+id/deleteButton"
+        app:layout_constraintEnd_toStartOf="@+id/deleteImageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textTextView" />
 
     <ImageView
-        android:id="@+id/deleteButton"
+        android:id="@+id/deleteImageView"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:src="@drawable/delete"
@@ -47,7 +47,7 @@
         android:layout_height="30dp"
         android:src="@drawable/edit"
         app:layout_constraintStart_toStartOf="@+id/barrier"
-        app:layout_constraintTop_toBottomOf="@id/deleteButton"
+        app:layout_constraintTop_toBottomOf="@id/deleteImageView"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"/>
@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="start"
-        app:constraint_referenced_ids="editImageView, deleteButton" />
+        app:constraint_referenced_ids="editImageView, deleteImageView" />
 
     <View
         android:id="@+id/line"
