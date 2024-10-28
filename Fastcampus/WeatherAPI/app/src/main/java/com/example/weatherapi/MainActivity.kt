@@ -1,12 +1,15 @@
 package com.example.weatherapi
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.weatherapi.databinding.ActivityMainBinding
+import retrofit2.Call
 import retrofit2.Callback
+import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -20,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0")
+            .baseUrl("http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -31,7 +34,25 @@ class MainActivity : AppCompatActivity() {
             baseTime = "1700",
             nx = 5,
             ny = 127
-        ).enqueue(object: Callback<WeatherEntity>
+        ).enqueue(object: Callback<WeatherEntity>{
+            override fun onResponse(call: Call<WeatherEntity>, response: Response<WeatherEntity>) {
+                val forecastDateTimeMap = mutableMapOf<String, ForecastEntity>()
+
+                val forecastList = response.body()?.response?.body?.items?.forcastEntities.orEmpty()
+                for (forecast in forecastList){
+                    Log.e("Forecast", forecast.toString())
+                    if (forecastDateTimeMap["${forecast.forecastDate}/${forecast.forecastTime}"] == null){
+                        
+                    }
+                    "${forecast.forecastDate}/${forecast.forecastTime}"
+                }
+            }
+
+            override fun onFailure(call: Call<WeatherEntity>, t: Throwable) {
+                t.printStackTrace()
+            }
+
+        })
 
     }
 }
