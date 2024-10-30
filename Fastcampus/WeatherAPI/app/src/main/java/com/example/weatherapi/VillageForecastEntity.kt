@@ -33,11 +33,11 @@ data class ForecastEntityList(
 
 data class ForecastEntity(
     @SerializedName("baseDate")
-    val baseDate:String,
+    val baseDate: String,
     @SerializedName("baseTime")
     val baseTime: String,
     @SerializedName("category")
-    val category: String,
+    val category: Category?,
     @SerializedName("forecastDate")
     val forecastDate: String,
     @SerializedName("forecastTime")

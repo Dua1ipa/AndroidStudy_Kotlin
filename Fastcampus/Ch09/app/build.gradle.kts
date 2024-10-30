@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.weatherapi"
+    namespace = "com.example.chapter9"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.weatherapi"
+        applicationId = "com.example.chapter9"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -39,11 +39,6 @@ android {
 }
 
 dependencies {
-
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
-
-    implementation ("com.google.android.gms:play-services-location:21.3.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
