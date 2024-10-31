@@ -1,5 +1,6 @@
 package com.example.chapter9
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -24,23 +25,30 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun mediaPlay(){
-        if(mediaPlayer == null){
-            mediaPlayer = MediaPlayer.create(this, R.raw.sound).apply {
-
-            }
-            mediaPlayer?.start()
+    private fun mediaPlay() {
+        val intent = Intent(this, MediaPlayerService::class.java).apply {
+            action = MEDIA_PLAYER_PLAY
         }
+        startService(intent)
     }
 
-    private fun mediaPause(){
-        mediaPlayer?.pause()
+    private fun mediaPause() {
+        val intent = Intent(this, MediaPlayerService::class.java).apply {
+            action = MEDIA_PLAYER_PAUSE
+        }
+        startService(intent)
     }
 
-    private fun mediaStop(){
-        mediaPlayer?.stop()
-        mediaPlayer?.release()
-        mediaPlayer = null
+    private fun mediaStop() {
+        val intent = Intent(this, MediaPlayerService::class.java).apply {
+            action = MEDIA_PLAYER_STOP
+        }
+        startService(intent)
+    }
+
+    override fun onDestroy() {
+        stopService(Intent(this, MediaPlayerService::class.java))
+        super.onDestroy()
     }
 
 }
