@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    kotlin("kapt") version "2.0.21"
 }
 
 android {
@@ -41,9 +42,9 @@ android {
     }
 }
 
-
-
 dependencies {
+
+    implementation ("androidx.activity:activity-ktx:1.7.2")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

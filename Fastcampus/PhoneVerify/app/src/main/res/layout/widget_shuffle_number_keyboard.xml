@@ -5,6 +5,13 @@
 
     <data>
 
+        <variable
+            name="view"
+            type="com.example.phoneverify.widget.ShuffleNumberKeyboard" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
     </data>
 
     <GridLayout
@@ -18,70 +25,82 @@
         <androidx.appcompat.widget.AppCompatTextView xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/keypadNum1"
             style="@style/ButtonKeyPad"
+            android:onClick="@{clickListener}"
             android:tag="num"
             android:text="1" />
 
         <androidx.appcompat.widget.AppCompatTextView xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/keypadNum2"
             style="@style/ButtonKeyPad"
+            android:onClick="@{clickListener}"
             android:tag="num"
             android:text="2" />
 
         <androidx.appcompat.widget.AppCompatTextView xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/keypadNum3"
             style="@style/ButtonKeyPad"
+            android:onClick="@{clickListener}"
             android:tag="num"
             android:text="3" />
 
         <androidx.appcompat.widget.AppCompatTextView xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/keypadNum4"
             style="@style/ButtonKeyPad"
+            android:onClick="@{clickListener}"
             android:tag="num"
             android:text="4" />
 
         <androidx.appcompat.widget.AppCompatTextView xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/keypadNum5"
             style="@style/ButtonKeyPad"
+            android:onClick="@{clickListener}"
             android:tag="num"
             android:text="5" />
 
         <androidx.appcompat.widget.AppCompatTextView xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/keypadNum6"
             style="@style/ButtonKeyPad"
+            android:onClick="@{clickListener}"
             android:tag="num"
             android:text="6" />
 
         <androidx.appcompat.widget.AppCompatTextView xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/keypadNum7"
             style="@style/ButtonKeyPad"
+            android:onClick="@{clickListener}"
             android:tag="num"
             android:text="7" />
 
         <androidx.appcompat.widget.AppCompatTextView xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/keypadNum8"
             style="@style/ButtonKeyPad"
+            android:onClick="@{clickListener}"
             android:tag="num"
             android:text="8" />
 
         <androidx.appcompat.widget.AppCompatTextView xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/keypadNum9"
             style="@style/ButtonKeyPad"
+            android:onClick="@{clickListener}"
             android:tag="num"
             android:text="9" />
 
         <androidx.appcompat.widget.AppCompatImageView
             style="@style/ButtonKeyPad"
+            android:onClick="@{()->view.onClickDelete()}"
             android:padding="50dp"
             android:src="@drawable/back" />
 
         <androidx.appcompat.widget.AppCompatTextView xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/keypadNum0"
             style="@style/ButtonKeyPad"
+            android:onClick="@{clickListener}"
             android:tag="num"
             android:text="0" />
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/ButtonKeyPad"
+            android:onClick="@{()->view.onClickDone()}"
             android:text="입력완료" />
     </GridLayout>
 </layout>

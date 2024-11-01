@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openShuffle(){
-
+        
     }
 
     fun openVerifyOTP(){
