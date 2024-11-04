@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">WebView</string>
+    <string name="app_name">웹툰앱</string>
+    <string name="back_to_last">마지막 시점 돌아가기</string>
+    <string name="change_tab_name">탭 이름 바꾸기</string>
 </resources>

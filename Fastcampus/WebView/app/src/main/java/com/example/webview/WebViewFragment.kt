@@ -23,10 +23,19 @@ class WebViewFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.webView.webViewClient = WebViewClient()
+        binding.webView.webViewClient = WebtoonWebViewClient(binding.progressBar)
         binding.webView.settings.domStorageEnabled = true
         binding.webView.settings.javaScriptEnabled = true
 
-        binding.webView.loadUrl("https://google.com/")
+        binding.webView.loadUrl("https://comic.naver.com/")
     }
+
+    fun canGoBack(): Boolean {
+        return binding.webView.canGoBack()  //(내장함수) 이전 페이지 기록이 있는지 확인
+    }
+
+    fun goBack(){
+        binding.webView.goBack()  //(내장함수) 한 단계 뒤로 이동
+    }
+
 }
