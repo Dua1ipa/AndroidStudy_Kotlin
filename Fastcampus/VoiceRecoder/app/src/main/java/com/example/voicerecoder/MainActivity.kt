@@ -1,7 +1,10 @@
 package com.example.voicerecoder
 
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
+import android.provider.Settings
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -73,6 +76,26 @@ class MainActivity : AppCompatActivity() {
             }.show()
     }
 
+    // 권한 세팅 다이얼로그 함수 //
+    private fun showPermissionSettingDialog() {
+        AlertDialog.Builder(this)
+            .setTitle("녹음 권한")
+            .setPositiveButton("권한 변경하러 가기") { _, _ ->
+                navigateToAppSetting()
+            }
+            .setNegativeButton("권한 취소하기") { dialogInterface, _ ->
+                dialogInterface.cancel()
+            }.show()
+    }
+
+    // 인텐드를 사용해서 세팅 창으로 보내기 함수 //
+    private fun navigateToAppSetting() {
+        val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+            data = Uri.fromParts("package", packageName, null)
+        }
+        startActivity(intent)
+    }
+
     // 권한 받은 결과 함수 // 
     override fun onRequestPermissionsResult(
         requestCode: Int,
@@ -81,6 +104,20 @@ class MainActivity : AppCompatActivity() {
         deviceId: Int
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults, deviceId)
+        
+        //받아온 권한을 확인 하기
+        val audioRecordPermissionGranted = requestCode == REQUEST_RECORD_AUDIO_CODE
+                && grantResults.firstOrNull() == PackageManager.PERMISSION_GRANTED
+        if (audioRecordPermissionGranted) {  //권한을 허용했다면
+            // 녹음 작업 시작
+        } else {  //권한을 허용하지 않았다면
+            // 사용자에게 권한 요청 설명이 필요한가?
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this, android.Manifest.permission.RECORD_AUDIO)) {
+                showPermissionRationalDialog()
+            }else{
+                showPermissionSettingDialog() 
+            }
+        }
     }
 
 }
