@@ -4,13 +4,13 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.socketserver.databinding.ActivityMainBinding
-import java.io.BufferedReader
-import java.io.InputStreamReader
-import java.io.PrintWriter
-import java.net.ServerSocket
+import okhttp3.Call
+import okhttp3.Callback
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.Response
+import okio.IOException
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -21,38 +21,47 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // 스레드 //
-        Thread {
-            val port = 8080
-            val server = ServerSocket(port)
+        val client = OkHttpClient()
+        val request: Request = Request.Builder()
+            .url("http://10.0.2.2:8080")
+            .build()
 
-            val socket = server.accept()
-
-            val reader = BufferedReader(InputStreamReader(socket.getInputStream()))  // 클라이언트부분 <- 서버
-            val printer = PrintWriter(socket.getOutputStream()) // 서버부분 -> 클라이언트
-
-            // 클라이언트 부분 //
-            var input: String? = "_"
-            while (input != null && input != "") {
-                input = reader.readLine()
+        val callback = object : Callback {
+            override fun onFailure(call: Call, e: IOException) {
+                Log.e("Client", e.toString())
             }
-            Log.d("Server", "Read Data: $input")
 
-            // 서버 부분 //
-            printer.println("HTTP/1.1 200 OK")
-            printer.println("Content-Type: text/html\r\n")
+            override fun onResponse(call: Call, response: Response) {
+                if(response.isSuccessful)
+                    Log.d("Client", "${response.body?.string()}")
+            }
 
-            printer.println("<html><body><h1>Hello World</h1></body></html>")
-            printer.println("\r\n")
-            printer.flush()
-            printer.close()
+        }
+        client.newCall(request).enqueue(callback)
 
-            // 클라이언트 닫기 //
-            reader.close()
-
-            // 소켓 닫기 //
-            socket.close()
-        }.start()
+//        Thread() {
+//            try {
+//                val socket = Socket("10.0.2.2", 8080)
+//                val printer = PrintWriter(socket.getOutputStream())
+//                val reader = BufferedReader(InputStreamReader(socket.getInputStream()))
+//
+//                printer.println("Get / HTTP/1.1")
+//                printer.println("Host: 127.0.0.1:8080")
+//                printer.println("User-Agent: android")
+//                printer.println("\r\n")
+//                printer.flush()
+//
+//                var input: String? = "_"
+//                while (input != null) {
+//                    input = reader.readLine()
+//                }
+//                reader.close()
+//                printer.close()
+//                socket.close()
+//            }catch (e:Exception){
+//                Log.e("Client", e.toString())
+//            }
+//        }.start()
 
     }
 
