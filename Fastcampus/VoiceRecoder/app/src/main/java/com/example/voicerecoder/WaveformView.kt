@@ -12,7 +12,7 @@ class WaveformView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
 
-    val rectF = RectF(20f, 30f, 20f+30f, 30f+60f)
+    val rectF = RectF(20f, 30f, 20f + 30f, 30f + 60f)
     val redPaint = Paint().apply {
         color = Color.RED
     }
@@ -20,5 +20,13 @@ class WaveformView @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         canvas.drawRect(rectF, redPaint)
+    }
+
+    fun addAmplitude(maxAmplitude: Float) {
+        rectF.top = 0f
+        rectF.bottom = maxAmplitude
+        rectF.left = 0f
+        rectF.right = rectF.left + 20f
+        invalidate()
     }
 }

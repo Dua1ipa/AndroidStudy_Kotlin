@@ -19,7 +19,7 @@ import com.example.voicerecoder.databinding.ActivityMainBinding
 import kotlinx.coroutines.CoroutineStart
 import java.io.IOException
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), onTimerTickListener {
     companion object {
         private const val REQUEST_RECORD_AUDIO_CODE = 200
     }
@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
     private enum class State {
         RELEASE, RECORDING, PLAYING
     }
+
+    private lateinit var timer: Timer
 
     private var state: State = State.RELEASE
     private lateinit var binding: ActivityMainBinding
@@ -41,6 +43,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         fileName = "${externalCacheDir?.absolutePath}/audiorecordtest.3gp"
+
+        timer = Timer(this)
 
         binding.playButton.setOnClickListener {  //재생 버튼 눌렀을 때
             when (state) {
@@ -132,6 +136,9 @@ class MainActivity : AppCompatActivity() {
                 }
                 start()
             }
+
+        timer.start()
+
         binding.recordButton.setImageDrawable(
             ContextCompat.getDrawable(this, R.drawable.pause)
         )
@@ -147,6 +154,7 @@ class MainActivity : AppCompatActivity() {
             release()
         }
         recorder = null
+        timer.stop()
         state = State.RELEASE
 
         binding.recordButton.setImageDrawable(
@@ -252,4 +260,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onTick(duration: Long) {
+        binding.waveformView.addAmplitude(recorder?.maxAmplitude?.toFloat() ?: 0f)
+    }
 }
