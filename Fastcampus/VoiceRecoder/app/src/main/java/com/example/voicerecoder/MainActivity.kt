@@ -16,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.voicerecoder.databinding.ActivityMainBinding
-import kotlinx.coroutines.CoroutineStart
 import java.io.IOException
 
 class MainActivity : AppCompatActivity(), onTimerTickListener {
@@ -29,7 +28,6 @@ class MainActivity : AppCompatActivity(), onTimerTickListener {
     }
 
     private lateinit var timer: Timer
-
     private var state: State = State.RELEASE
     private lateinit var binding: ActivityMainBinding
     private var recorder: MediaRecorder? = null
@@ -136,7 +134,7 @@ class MainActivity : AppCompatActivity(), onTimerTickListener {
                 }
                 start()
             }
-
+        binding.waveformView.clearWave()
         timer.start()
 
         binding.recordButton.setImageDrawable(
@@ -180,6 +178,8 @@ class MainActivity : AppCompatActivity(), onTimerTickListener {
             }
             start()
         }
+        binding.waveformView.clearWave()
+        timer.start()
         player?.setOnCompletionListener {
             stopPlaying()
         }
@@ -191,6 +191,8 @@ class MainActivity : AppCompatActivity(), onTimerTickListener {
         state = State.RELEASE
         player?.release()
         player = null
+
+        timer.stop()
 
         binding.recordButton.isEnabled = true
         binding.recordButton.alpha = 1.0f
@@ -261,6 +263,17 @@ class MainActivity : AppCompatActivity(), onTimerTickListener {
     }
 
     override fun onTick(duration: Long) {
-        binding.waveformView.addAmplitude(recorder?.maxAmplitude?.toFloat() ?: 0f)
+        val millisecond = duration % 1000
+        val second = (duration / 1000) % 60
+        val minute = (duration / 1000 / 60)
+
+        binding.timerTextView.text =
+            String.format("%02d:%02d.%02d", minute, second, millisecond / 10)
+        if (state == State.PLAYING) {
+            binding.waveformView.replayAmplitude(duration.toInt())
+        } else {
+            binding.waveformView.addAmplitude(recorder?.maxAmplitude?.toFloat() ?: 0f)
+        }
     }
+
 }

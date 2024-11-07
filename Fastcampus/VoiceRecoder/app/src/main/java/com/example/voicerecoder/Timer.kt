@@ -8,14 +8,14 @@ class Timer(listener: onTimerTickListener) {
     private val handler = Handler(Looper.getMainLooper())
     private val runnable: Runnable = object : Runnable {
         override fun run() {
-            duration += 100L
-            handler.postDelayed(this, 100L)
+            duration += 50L
+            handler.postDelayed(this, 50L)
             listener.onTick(duration)
         }
     }
 
     fun start() {
-        handler.postDelayed(runnable, 100L)
+        handler.postDelayed(runnable, 50L)
     }
 
     fun stop() {
