@@ -47,6 +47,11 @@ dependencies {
     kapt ("com.tickaroo.tikxml:processor:0.8.13")
     implementation ("com.tickaroo.tikxml:retrofit-converter:0.8.13")
 
+    implementation ("org.jsoup:jsoup:1.18.1")
+
+    implementation ("com.github.bumptech.glide:glide:4.14.2")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.14.2")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.newslist.databinding.ActivityMainBinding
 import com.tickaroo.tikxml.TikXml
 import com.tickaroo.tikxml.retrofit.TikXmlConverterFactory
+import org.jsoup.Jsoup
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -48,6 +49,21 @@ class MainActivity : AppCompatActivity() {
         newsService.mainFeed().enqueue(object : Callback<RSSNews> {
             override fun onResponse(call: Call<RSSNews>, response: Response<RSSNews>) {
                 Log.d(TAG, "${response.body()?.rssChannel?.items}")
+
+                val list = response.body()?.rssChannel?.items.orEmpty().transform()
+                newsAdapter.submitList(list)
+                list.forEach {
+                    Thread {
+                        val item = list.first()
+
+                        val jsoup = Jsoup.connect(item.link).get()
+                        val elements = jsoup.select("meta[property^=og:]")
+                        val ogImageNode = elements.find { node->
+                            node.attr("property") == "og:image"
+                        }
+                        it.imageURL = ogImageNode?.attr("content")
+                    }.start()
+                }
             }
 
             override fun onFailure(call: Call<RSSNews>, t: Throwable) {
