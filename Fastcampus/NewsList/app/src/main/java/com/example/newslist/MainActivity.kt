@@ -1,11 +1,13 @@
 package com.example.newslist
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import androidx.activity.enableEdgeToEdge
+import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.newslist.databinding.ActivityMainBinding
 import com.tickaroo.tikxml.TikXml
@@ -43,7 +45,13 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
-        newsAdapter = NewsAdapter()
+        newsAdapter = NewsAdapter { url ->
+            startActivity(
+                Intent(this, WebViewActivity::class.java).apply {
+                    putExtra("URL", url)
+                }
+            )
+        }
         binding.newsRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = newsAdapter
@@ -94,6 +102,20 @@ class MainActivity : AppCompatActivity() {
 
             newsService.sportsNews().submitList()
         }
+
+        binding.textInputEditText.setOnEditorActionListener { v, actionId, event ->
+            if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+                binding.chipGroup.clearCheck()
+
+                binding.textInputEditText.clearFocus()
+                val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.hideSoftInputFromWindow(v.windowToken, 0)
+
+                newsService.search(binding.textInputEditText.text.toString()).submitList()
+                return@setOnEditorActionListener true
+            }
+            return@setOnEditorActionListener false
+        }
     }
 
     private fun Call<RSSNews>.submitList() {
@@ -103,6 +125,9 @@ class MainActivity : AppCompatActivity() {
 
                 val list = response.body()?.rssChannel?.items.orEmpty().transform()
                 newsAdapter.submitList(list)
+
+                binding.animationView.isVisible = list.isEmpty()
+
                 list.forEachIndexed { index, news ->
                     Thread {
                         try {

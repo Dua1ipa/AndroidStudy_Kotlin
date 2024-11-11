@@ -41,6 +41,10 @@ android {
 
 dependencies {
 
+    implementation ("com.airbnb.android:lottie:6.6.0")
+
+    implementation("androidx.webkit:webkit:1.12.1")
+
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.tickaroo.tikxml:core:0.8.13")
     implementation ("com.tickaroo.tikxml:annotation:0.8.13")

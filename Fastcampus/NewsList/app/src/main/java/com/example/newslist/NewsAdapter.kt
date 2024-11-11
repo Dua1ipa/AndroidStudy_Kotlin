@@ -1,5 +1,6 @@
 package com.example.newslist
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -8,10 +9,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.newslist.databinding.ItemNewsBinding
 
-class NewsAdapter : ListAdapter<NewsModel, NewsAdapter.ViewHolder> (diffUtil){
-    inner class ViewHolder(val binding : ItemNewsBinding): RecyclerView.ViewHolder(binding.root){
-        fun bind(item : NewsModel){
+class NewsAdapter(private val onClick: (String) -> Unit) : ListAdapter<NewsModel, NewsAdapter.ViewHolder>(diffUtil) {
+    inner class ViewHolder(private val binding: ItemNewsBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(item: NewsModel) {
             binding.titleTextView.text = item.title
+
+            binding.root.setOnClickListener {
+                onClick(item.link)
+                Log.d("link", item.link)
+            }
 
             Glide.with(binding.thumbnailImageView)
                 .load(item.imageURL)
@@ -33,8 +39,8 @@ class NewsAdapter : ListAdapter<NewsModel, NewsAdapter.ViewHolder> (diffUtil){
         holder.bind(currentList[position])
     }
 
-    companion object{
-        val diffUtil = object: DiffUtil.ItemCallback<NewsModel>(){
+    companion object {
+        val diffUtil = object : DiffUtil.ItemCallback<NewsModel>() {
             override fun areItemsTheSame(oldItem: NewsModel, newItem: NewsModel): Boolean {
                 return oldItem === newItem
             }
