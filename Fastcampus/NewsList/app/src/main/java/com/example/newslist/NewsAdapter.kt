@@ -5,12 +5,17 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.newslist.databinding.ItemNewsBinding
 
 class NewsAdapter : ListAdapter<NewsModel, NewsAdapter.ViewHolder> (diffUtil){
     inner class ViewHolder(val binding : ItemNewsBinding): RecyclerView.ViewHolder(binding.root){
         fun bind(item : NewsModel){
             binding.titleTextView.text = item.title
+
+            Glide.with(binding.thumbnailImageView)
+                .load(item.imageURL)
+                .into(binding.thumbnailImageView)
         }
     }
 

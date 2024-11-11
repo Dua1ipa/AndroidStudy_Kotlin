@@ -15,6 +15,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
+import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
     companion object {
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    private lateinit var newsAdapter : NewsAdapter
+    private lateinit var newsAdapter: NewsAdapter
 
     private val retrofit = Retrofit.Builder()
         .baseUrl("https://news.google.com/")
@@ -37,31 +38,87 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
+
         newsAdapter = NewsAdapter()
         binding.newsRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = newsAdapter
         }
+
         val newsService = retrofit.create(NewsService::class.java)
-        newsService.mainFeed().enqueue(object : Callback<RSSNews> {
+        newsService.mainFeed().submitList()
+
+        binding.feedChip.setOnClickListener {
+            binding.chipGroup.clearCheck()
+            binding.feedChip.isChecked = true
+
+            // Api 호출, 리스트 변경
+            newsService.mainFeed().submitList()
+        }
+
+        binding.politicsChip.setOnClickListener {
+            binding.chipGroup.clearCheck()
+            binding.politicsChip.isChecked = true
+
+            newsService.politicsNews().submitList()
+        }
+
+        binding.economicsChip.setOnClickListener {
+            binding.chipGroup.clearCheck()
+            binding.economicsChip.isChecked = true
+
+            newsService.economicsNews().submitList()
+        }
+
+        binding.societyChip.setOnClickListener {
+            binding.chipGroup.clearCheck()
+            binding.societyChip.isChecked = true
+
+            newsService.societyNews().submitList()
+        }
+
+        binding.itChip.setOnClickListener {
+            binding.chipGroup.clearCheck()
+            binding.itChip.isChecked = true
+
+            newsService.itNews().submitList()
+        }
+
+        binding.sportsChip.setOnClickListener {
+            binding.chipGroup.clearCheck()
+            binding.sportsChip.isChecked = true
+
+            newsService.sportsNews().submitList()
+        }
+    }
+
+    private fun Call<RSSNews>.submitList() {
+        enqueue(object : Callback<RSSNews> {
             override fun onResponse(call: Call<RSSNews>, response: Response<RSSNews>) {
                 Log.d(TAG, "${response.body()?.rssChannel?.items}")
 
                 val list = response.body()?.rssChannel?.items.orEmpty().transform()
                 newsAdapter.submitList(list)
-                list.forEach {
+                list.forEachIndexed { index, news ->
                     Thread {
-                        val item = list.first()
-
-                        val jsoup = Jsoup.connect(item.link).get()
-                        val elements = jsoup.select("meta[property^=og:]")
-                        val ogImageNode = elements.find { node->
-                            node.attr("property") == "og:image"
+                        try {
+                            val jsoup = Jsoup.connect(news.link).get()
+                            val elements = jsoup.select("meta[property^=og:]")
+                            val ogImageNode = elements.find { node ->
+                                node.attr("property") == "og:image"
+                            }
+                            news.imageURL = ogImageNode?.attr("content")
+                            Log.d(TAG, "ImageURL : ${news.imageURL}")
+                        } catch (e: IOException) {
+                            e.printStackTrace()
                         }
-                        it.imageURL = ogImageNode?.attr("content")
+                        runOnUiThread {
+                            newsAdapter.notifyItemChanged(index)
+                        }
                     }.start()
                 }
             }
