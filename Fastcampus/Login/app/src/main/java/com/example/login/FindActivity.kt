@@ -3,15 +3,15 @@ package com.example.login
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.login.databinding.ActivityRegisterBinding
+import com.example.login.databinding.ActivityFindBinding
 
-class RegisterActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityRegisterBinding
+class FindActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityFindBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityRegisterBinding.inflate(layoutInflater)
+        binding = ActivityFindBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 }

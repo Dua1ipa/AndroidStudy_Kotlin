@@ -2,6 +2,7 @@ package com.example.login
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
@@ -20,13 +21,16 @@ class LoginActivity : AppCompatActivity() {
             loginCheck()
         }
         binding.registerButton.setOnClickListener {
-            Intent(this, RegisterActivity::class.java).let {
-            }
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
         }
         binding.findButton.setOnClickListener {
+            val intent = Intent(this, FindActivity::class.java)
+            startActivity(intent)
         }
     }
 
+    // 유효성 검사 함수 //
     private fun loginCheck() {
         val id = binding.idTextInputEditText.text.toString()
         val pw = binding.pwTextInputEditText.text.toString()
@@ -51,6 +55,14 @@ class LoginActivity : AppCompatActivity() {
                         else -> null
                     }
             }
+        }
+
+        if (id.equals("00000000") && pw.equals("00000000")) {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            Toast.makeText(this, "로그인 성공", Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(this, "아이디와 비밀번호를 확인해주세요.", Toast.LENGTH_SHORT).show()
         }
     }
 }
