@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/userList"
+        android:icon="@drawable/users"
+        android:title="유저리스트" />
+    <item
+        android:id="@+id/chatroomList"
+        android:icon="@drawable/chatlist"
+        android:title="채팅리스트" />
+    <item
+        android:id="@+id/myPage"
+        android:icon="@drawable/mypage"
+        android:title="마이페이지" />
+</menu>
