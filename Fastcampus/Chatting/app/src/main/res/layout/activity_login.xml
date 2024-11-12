@@ -39,6 +39,10 @@
             android:id="@+id/idTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:maxLength="15"
+            android:maxLines="1"
             android:hint="아이디"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -51,6 +55,7 @@
         app:counterMaxLength="8"
         app:errorEnabled="true"
         app:counterEnabled="true"
+        app:endIconMode="password_toggle"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,6 +64,10 @@
             android:id="@+id/pwTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
             android:hint="비밀번호"/>
     </com.google.android.material.textfield.TextInputLayout>
 
