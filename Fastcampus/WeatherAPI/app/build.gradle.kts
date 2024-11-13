@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.weatherapi"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.weatherapi"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -33,17 +33,12 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    viewBinding{
-        enable = true
+    buildFeatures {
+        viewBinding = true
     }
 }
 
 dependencies {
-
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
-
-    implementation ("com.google.android.gms:play-services-location:21.3.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

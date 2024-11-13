@@ -100,4 +100,15 @@
         app:layout_constraintStart_toEndOf="@+id/registerButton"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
+    <CheckBox
+        android:id="@+id/loginCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자동 로그인"
+        android:layout_marginStart="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/findButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/findButton"
+        app:layout_constraintTop_toTopOf="@+id/findButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

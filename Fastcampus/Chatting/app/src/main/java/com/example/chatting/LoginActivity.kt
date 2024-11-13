@@ -2,6 +2,7 @@ package com.example.chatting
 
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.view.inputmethod.EditorInfo
@@ -32,6 +33,15 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         auth = Firebase.auth
+
+        val sharedPreferences : SharedPreferences = getSharedPreferences("AutoLogin", MODE_PRIVATE)
+
+        // 자동 로그인 정보 확인 //
+        if(sharedPreferences.getBoolean("isLoggedIn", false)){  //자동 로그인 체크 되있었다면
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+            Toast.makeText(this, "로그인에 성공했습니다.", Toast.LENGTH_SHORT).show()
+        }
 
         // 아이디 입력란에서 Enter 키를 누르면 비밀번호 입력란으로 이동
         binding.idTextInputEditText.setOnEditorActionListener { _, actionId, _ ->
@@ -68,7 +78,7 @@ class LoginActivity : AppCompatActivity() {
         binding.findButton.setOnClickListener { }
     }
 
-    private fun checkLogin(){
+    private fun checkLogin() {
         hideKeyboard()  //소프트 키보드를 숨기고 로그인 처리 로직을 실행
         val email = binding.idTextInputEditText.text.toString()
         val password = binding.pwTextInputEditText.text.toString()
@@ -91,8 +101,21 @@ class LoginActivity : AppCompatActivity() {
                     user["userID"] = currentUser.uid
                     user["userName"] = email
 
-                    Firebase.database(DB_URL).reference.child(DB_USERS).child(currentUser.uid).updateChildren(user)
-                    startActivity(Intent(this,MainActivity::class.java))
+                    Firebase.database(DB_URL).reference.child(DB_USERS).child(currentUser.uid)
+                        .updateChildren(user)
+
+                    // 자동 로그인 체크 확인 //
+                    val editor = sharedPreferences.edit()
+                    if (binding.loginCheckBox.isChecked){
+                        // 로그인 상태 저장하기
+                        editor.putString("userID", currentUser.uid)
+                        editor.putString("userName", email)
+
+                        editor.apply()
+                    }else{
+                        editor.putBoolean("isLoggedIn", false)
+                    }
+                    startActivity(Intent(this, MainActivity::class.java))
                     finish()
                     Toast.makeText(this, "로그인에 성공했습니다.", Toast.LENGTH_SHORT).show()
                 } else {  //로그인 실패하면
