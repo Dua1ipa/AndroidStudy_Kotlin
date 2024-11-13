@@ -9,10 +9,13 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.example.chatting.Key.Companion.DB_URL
+import com.example.chatting.Key.Companion.DB_USERS
 import com.example.chatting.databinding.ActivityLoginBinding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
+import com.google.firebase.database.database
 
 class LoginActivity : AppCompatActivity() {
     companion object {  //자바 static 키워드와 같음
@@ -80,12 +83,19 @@ class LoginActivity : AppCompatActivity() {
         }
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
-                    val intent = Intent(this, MainActivity::class.java)
-                    startActivity(intent)
+                val currentUser = auth.currentUser
+                if (task.isSuccessful && currentUser != null) {  //로그인 성공하면
+
+                    // 로그인 할때 로그인 정보 업데이트 //
+                    val user = mutableMapOf<String, Any>()
+                    user["userID"] = currentUser.uid
+                    user["userName"] = email
+
+                    Firebase.database(DB_URL).reference.child(DB_USERS).child(currentUser.uid).updateChildren(user)
+                    startActivity(Intent(this,MainActivity::class.java))
                     finish()
                     Toast.makeText(this, "로그인에 성공했습니다.", Toast.LENGTH_SHORT).show()
-                } else {
+                } else {  //로그인 실패하면
                     Log.w(TAG, "signInWithEmail:failure", task.exception)
                     Toast.makeText(this, "로그인에 실패했습니다.", Toast.LENGTH_SHORT).show()
                     binding.idTextInputEditText.setText("")   //빈칸으로 만들기

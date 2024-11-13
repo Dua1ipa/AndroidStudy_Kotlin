@@ -19,8 +19,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/idTextView"
+    <EditText
+        android:id="@+id/userNameEditText"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100sp"
@@ -30,15 +30,15 @@
         app:layout_constraintTop_toBottomOf="@+id/myPageTextView"
         tools:text="아이디" />
 
-    <TextView
-        android:id="@+id/descriptionTextView"
+    <EditText
+        android:id="@+id/descriptionEditText"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idTextView"
+        app:layout_constraintTop_toBottomOf="@+id/userNameEditText"
         tools:text="상태메시지" />
 
     <Button
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:text="적용하기"
         app:layout_constraintBottom_toBottomOf="@+id/logoutButton"
-        app:layout_constraintStart_toStartOf="@+id/descriptionTextView" />
+        app:layout_constraintStart_toStartOf="@+id/descriptionEditText" />
 
     <Button
         android:id="@+id/logoutButton"
@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50sp"
         android:text="로그아웃"
-        app:layout_constraintEnd_toEndOf="@+id/descriptionTextView"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
+        app:layout_constraintEnd_toEndOf="@+id/descriptionEditText"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionEditText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
