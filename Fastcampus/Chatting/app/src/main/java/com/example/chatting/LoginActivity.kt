@@ -25,6 +25,7 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
     private lateinit var auth: FirebaseAuth
+    private lateinit var sharedPreferences : SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,7 +35,7 @@ class LoginActivity : AppCompatActivity() {
 
         auth = Firebase.auth
 
-        val sharedPreferences : SharedPreferences = getSharedPreferences("AutoLogin", MODE_PRIVATE)
+        sharedPreferences = getSharedPreferences("AutoLogin", MODE_PRIVATE)
 
         // 자동 로그인 정보 확인 //
         if(sharedPreferences.getBoolean("isLoggedIn", false)){  //자동 로그인 체크 되있었다면
@@ -48,25 +49,21 @@ class LoginActivity : AppCompatActivity() {
             if (actionId == EditorInfo.IME_ACTION_NEXT) {
                 binding.pwTextInputEditText.requestFocus()  //비밀번호 필드로 포커스 이동
                 true
-            } else {
-                false
-            }
+            } else { false }
         }
 
         // 비밀번호 입력란에서 Enter 키를 누르면 로그인 처리를 실행
         binding.pwTextInputEditText.setOnEditorActionListener { _, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_DONE) {
-                checkLogin()
+                // InputMethodManager를 통해 키보드를 닫음
+                val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.hideSoftInputFromWindow(binding.pwTextInputEditText.windowToken, 0)
                 true
-            } else {
-                false
-            }
+            } else { false }
         }
 
         // 로그인 버튼 //
-        binding.loginButton.setOnClickListener {
-            checkLogin()
-        }
+        binding.loginButton.setOnClickListener { checkLogin() }
 
         // 회원가입 이동 버튼 //
         binding.registerButton.setOnClickListener {
@@ -78,6 +75,7 @@ class LoginActivity : AppCompatActivity() {
         binding.findButton.setOnClickListener { }
     }
 
+    // 로그인 유효성 검사 //
     private fun checkLogin() {
         hideKeyboard()  //소프트 키보드를 숨기고 로그인 처리 로직을 실행
         val email = binding.idTextInputEditText.text.toString()

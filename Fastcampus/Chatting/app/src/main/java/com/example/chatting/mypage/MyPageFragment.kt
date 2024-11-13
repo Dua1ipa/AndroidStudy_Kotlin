@@ -18,7 +18,6 @@ import com.google.firebase.database.database
 
 class MyPageFragment : Fragment(R.layout.fragment_mypage) {
     private lateinit var binding: FragmentMypageBinding
-    private val sharedPreferences = context?.getSharedPreferences("AutoLogin", MODE_PRIVATE)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -51,15 +50,6 @@ class MyPageFragment : Fragment(R.layout.fragment_mypage) {
 
         // 로그아웃 버튼 //
         binding.logoutButton.setOnClickListener {
-            if(sharedPreferences?.getBoolean("isLoggedIn", false) == true){
-                // 로그인 상태 불러오기
-                val editor = sharedPreferences?.edit()
-                // 로그인 정보 삭제
-                editor?.remove("userID")
-                editor?.remove("userName")
-                editor?.putBoolean("isLoggedIn", false)
-                editor?.apply()
-            }
             Firebase.auth.signOut()
             startActivity(Intent(context, LoginActivity::class.java))
             activity?.finish()
