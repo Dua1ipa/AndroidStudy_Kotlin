@@ -27,10 +27,13 @@
             android:id="@+id/messageEditText"
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:hint="메시지를 입력하세요"
             android:layout_height="wrap_content" />
         <Button
             android:id="@+id/sendButton"
             android:text="전송"
+            android:backgroundTint="@color/button_color"
+            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

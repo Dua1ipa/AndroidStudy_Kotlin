@@ -1,5 +1,6 @@
 package com.example.chatting.mypage
 
+import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -50,9 +51,15 @@ class MyPageFragment : Fragment(R.layout.fragment_mypage) {
 
         // 로그아웃 버튼 //
         binding.logoutButton.setOnClickListener {
-            Firebase.auth.signOut()
-            startActivity(Intent(context, LoginActivity::class.java))
-            activity?.finish()
+            //SharedPreferences에서 로그인 상태를 false로 변경
+            val sharedPreferences = requireActivity().getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
+            sharedPreferences.edit().putBoolean("isLoggedIn", false).apply()
+            
+
+            Firebase.auth.signOut()  //파이어베이스 로그아웃
+            startActivity(Intent(context, LoginActivity::class.java))  //LoginActivity로 이동
+            Toast.makeText(requireContext(), "로그아웃 되었습니다.", Toast.LENGTH_SHORT).show()
+            activity?.finish()  // Activity 종료
         }
 
     }

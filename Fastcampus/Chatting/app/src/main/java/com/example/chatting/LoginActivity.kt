@@ -25,7 +25,6 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
     private lateinit var auth: FirebaseAuth
-    private lateinit var sharedPreferences : SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,10 +34,12 @@ class LoginActivity : AppCompatActivity() {
 
         auth = Firebase.auth
 
-        sharedPreferences = getSharedPreferences("AutoLogin", MODE_PRIVATE)
+        // 자동 로그인 확인
+        val sharedPreferences = getSharedPreferences("AutoLogin", MODE_PRIVATE)
+        val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
 
         // 자동 로그인 정보 확인 //
-        if(sharedPreferences.getBoolean("isLoggedIn", false)){  //자동 로그인 체크 되있었다면
+        if(isLoggedIn){  //자동 로그인 체크 되있었다면
             startActivity(Intent(this, MainActivity::class.java))
             finish()
             Toast.makeText(this, "로그인에 성공했습니다.", Toast.LENGTH_SHORT).show()
@@ -63,7 +64,52 @@ class LoginActivity : AppCompatActivity() {
         }
 
         // 로그인 버튼 //
-        binding.loginButton.setOnClickListener { checkLogin() }
+        binding.loginButton.setOnClickListener {
+            hideKeyboard()  //소프트 키보드를 숨기고 로그인 처리 로직을 실행
+            val email = binding.idTextInputEditText.text.toString()
+            val password = binding.pwTextInputEditText.text.toString()
+            if (email.isEmpty()) {
+                binding.idTextInputEditText.error = "이메일을 입력해주세요."
+                binding.idTextInputEditText.requestFocus()
+                return@setOnClickListener  //이벤트 핸들러 종료 (setOnClickListener 블록에서 즉시 빠져나오게 된다)
+            } else if (password.isEmpty()) {
+                binding.pwTextInputEditText.error = "비밀번호를 입력해주세요."
+                binding.pwTextInputEditText.requestFocus()
+                return@setOnClickListener   //이벤트 핸들러 종료 (setOnClickListener 블록에서 즉시 빠져나오게 된다)
+            }
+            auth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this) { task ->
+                    val currentUser = auth.currentUser
+                    if (task.isSuccessful && currentUser != null) {  //로그인 성공하면
+
+                        // 로그인 할때 로그인 정보 업데이트 //
+                        val user = mutableMapOf<String, Any>()
+                        user["userID"] = currentUser.uid
+                        user["userName"] = email
+
+                        Firebase.database(DB_URL).reference.child(DB_USERS).child(currentUser.uid)
+                            .updateChildren(user)
+
+                        // 자동 로그인 체크 확인 //
+                        if (binding.loginCheckBox.isChecked){
+                            // 로그인 상태 저장하기
+                            sharedPreferences.edit().putBoolean("isLoggedIn", true).apply()
+                            sharedPreferences.edit().apply()
+                        }
+
+                        startActivity(Intent(this, MainActivity::class.java))
+                        finish()
+                        Toast.makeText(this, "로그인에 성공했습니다.", Toast.LENGTH_SHORT).show()
+                    } else {  //로그인 실패하면
+                        Log.w(TAG, "signInWithEmail:failure", task.exception)
+                        Toast.makeText(this, "로그인에 실패했습니다.", Toast.LENGTH_SHORT).show()
+                        binding.idTextInputEditText.setText("")   //빈칸으로 만들기
+                        binding.idTextInputEditText.clearFocus()  //포커스 해제
+                        binding.pwTextInputEditText.setText("")
+                        binding.pwTextInputEditText.clearFocus()
+                    }
+                }
+        }
 
         // 회원가입 이동 버튼 //
         binding.registerButton.setOnClickListener {
@@ -73,58 +119,6 @@ class LoginActivity : AppCompatActivity() {
 
         // 아이디&비번 찾기 이동 버튼 //
         binding.findButton.setOnClickListener { }
-    }
-
-    // 로그인 유효성 검사 //
-    private fun checkLogin() {
-        hideKeyboard()  //소프트 키보드를 숨기고 로그인 처리 로직을 실행
-        val email = binding.idTextInputEditText.text.toString()
-        val password = binding.pwTextInputEditText.text.toString()
-        if (email.isEmpty()) {
-            binding.idTextInputEditText.error = "이메일을 입력해주세요."
-            binding.idTextInputEditText.requestFocus()
-            return  //이벤트 핸들러 종료 (setOnClickListener 블록에서 즉시 빠져나오게 된다)
-        } else if (password.isEmpty()) {
-            binding.pwTextInputEditText.error = "비밀번호를 입력해주세요."
-            binding.pwTextInputEditText.requestFocus()
-            return  //이벤트 핸들러 종료 (setOnClickListener 블록에서 즉시 빠져나오게 된다)
-        }
-        auth.signInWithEmailAndPassword(email, password)
-            .addOnCompleteListener(this) { task ->
-                val currentUser = auth.currentUser
-                if (task.isSuccessful && currentUser != null) {  //로그인 성공하면
-
-                    // 로그인 할때 로그인 정보 업데이트 //
-                    val user = mutableMapOf<String, Any>()
-                    user["userID"] = currentUser.uid
-                    user["userName"] = email
-
-                    Firebase.database(DB_URL).reference.child(DB_USERS).child(currentUser.uid)
-                        .updateChildren(user)
-
-                    // 자동 로그인 체크 확인 //
-                    val editor = sharedPreferences.edit()
-                    if (binding.loginCheckBox.isChecked){
-                        // 로그인 상태 저장하기
-                        editor.putString("userID", currentUser.uid)
-                        editor.putString("userName", email)
-
-                        editor.apply()
-                    }else{
-                        editor.putBoolean("isLoggedIn", false)
-                    }
-                    startActivity(Intent(this, MainActivity::class.java))
-                    finish()
-                    Toast.makeText(this, "로그인에 성공했습니다.", Toast.LENGTH_SHORT).show()
-                } else {  //로그인 실패하면
-                    Log.w(TAG, "signInWithEmail:failure", task.exception)
-                    Toast.makeText(this, "로그인에 실패했습니다.", Toast.LENGTH_SHORT).show()
-                    binding.idTextInputEditText.setText("")   //빈칸으로 만들기
-                    binding.idTextInputEditText.clearFocus()  //포커스 해제
-                    binding.pwTextInputEditText.setText("")
-                    binding.pwTextInputEditText.clearFocus()
-                }
-            }
     }
 
     // 키보드를 숨기는 함수 //

@@ -15,12 +15,16 @@ import com.example.chatting.databinding.ItemUserBinding
  */
 
 
-class UserAdapter : ListAdapter<UserItem, UserAdapter.ViewHolder>(differ) {
+class UserAdapter(private val onClick: (UserItem) -> Unit) : ListAdapter<UserItem, UserAdapter.ViewHolder>(differ) {
     // ItemUserBinding: 이 뷰 바인딩 객체는 item_user 레이아웃 XML 파일을 연결
     inner class ViewHolder(private val binding: ItemUserBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: UserItem) {  //bind 메서드: UserItem 객체의 데이터를 텍스트 뷰에 할당하는 역할
             binding.nicknameTextView.text = item.userName
             binding.descriptionTextView.text = item.description
+
+            binding.root.setOnClickListener {
+                onClick(item)
+            }
         }
     }
 
