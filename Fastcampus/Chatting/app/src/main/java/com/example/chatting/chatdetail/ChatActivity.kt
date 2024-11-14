@@ -8,7 +8,9 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.chatting.Key
 import com.example.chatting.Key.Companion.DB_CHATS
+import com.example.chatting.Key.Companion.DB_CHAT_ROOMS
 import com.example.chatting.Key.Companion.DB_USERS
 import com.example.chatting.databinding.ActivityChatdetailBinding
 import com.example.chatting.userlist.UserItem
@@ -31,6 +33,7 @@ class ChatActivity : AppCompatActivity() {
     private var chatRoomID: String = ""
     private var otherUserID: String = ""
     private var myUserID: String = ""
+    private var myUserName: String = ""
 
     private val chatItemList = mutableListOf<ChatItem>()
 
@@ -96,7 +99,7 @@ class ChatActivity : AppCompatActivity() {
         Firebase.database.reference.child(DB_USERS).child(myUserID).get()
             .addOnSuccessListener {
                 val myUserItem = it.getValue(UserItem::class.java)
-                val myUserName = myUserItem?.userName
+                myUserName = myUserItem?.userName ?: ""
             }
         Firebase.database.reference.child(DB_USERS).child(otherUserID).get().addOnSuccessListener {
             val otherUserItem = it.getValue(UserItem::class.java)
@@ -110,7 +113,7 @@ class ChatActivity : AppCompatActivity() {
                     chatItem ?: return
 
                     chatItemList.add(chatItem)
-                    chatAdapter.submitList(chatItemList)
+                    chatAdapter.submitList(chatItemList.toMutableList())  //리스트 복사 (갱신)
                 }
 
                 override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {}
@@ -132,7 +135,7 @@ class ChatActivity : AppCompatActivity() {
         binding.sendButton.isEnabled = false
 
         // EditText에 TextWatcher 추가
-        binding.messageEditText.addTextChangedListener(object :TextWatcher{
+        binding.messageEditText.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
@@ -156,6 +159,18 @@ class ChatActivity : AppCompatActivity() {
                 newChatItem.chatID = key
                 setValue(newChatItem)
             }
+
+            val updates: MutableMap<String, Any> = hashMapOf (
+                "$DB_CHAT_ROOMS/$myUserID/$otherUserID/lastMessage" to message,
+                "$DB_CHAT_ROOMS/$otherUserID/$myUserID/lastMessage" to message,
+                "$DB_CHAT_ROOMS/$otherUserID/$myUserID/chatRoomID" to chatRoomID,
+                "$DB_CHAT_ROOMS/$otherUserID/$myUserID/otherUserID" to otherUserID,
+                "$DB_CHAT_ROOMS/$otherUserID/$myUserID/otherUserName" to myUserName,
+            )
+
+            Firebase.database.reference.updateChildren(updates)
+
+            binding.messageEditText.text.clear()
         }
     }
 
