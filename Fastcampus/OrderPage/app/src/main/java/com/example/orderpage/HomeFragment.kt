@@ -13,5 +13,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentHomeBinding.bind(view)
 
+        val homeData = context?.readData() ?: return
+
+        // %s님, 오늘도 커피 한잔 어떠세요?
+        binding.appBarTextView.text = getString(R.string.appbar_title_text, homeData.user.nickName)  //%s를 닉네임으로 채워줌
     }
 }
