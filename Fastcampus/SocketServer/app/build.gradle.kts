@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.socketserver"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.socketserver"
-        minSdk = 35
-        targetSdk = 35
+        minSdk = 24
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -39,8 +39,6 @@ android {
 }
 
 dependencies {
-
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

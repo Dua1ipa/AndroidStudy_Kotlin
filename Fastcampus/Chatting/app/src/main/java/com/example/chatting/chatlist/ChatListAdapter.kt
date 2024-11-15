@@ -11,16 +11,14 @@ import com.example.chatting.userlist.UserItem
 
 class ChatListAdapter(private val onClick: (ChatRoomItem) -> Unit) :
     ListAdapter<ChatRoomItem, ChatListAdapter.ViewHolder>(differ) {
-    // ItemUserBinding: 이 뷰 바인딩 객체는 item_user 레이아웃 XML 파일을 연결
+
     inner class ViewHolder(private val binding: ItemChatroomBinding) :
-        RecyclerView.ViewHolder(binding.root) {
+        RecyclerView.ViewHolder(binding.root) {  //ItemUserBinding: 이 뷰 바인딩 객체는 item_user 레이아웃 XML 파일을 연결
         fun bind(item: ChatRoomItem) {  //bind 메서드: UserItem 객체의 데이터를 텍스트 뷰에 할당하는 역할
             binding.nicknameTextView.text = item.otherUserName
             binding.lastMessageTextView.text = item.lastMessage
 
-            binding.root.setOnClickListener {
-                onClick(item)
-            }
+            binding.root.setOnClickListener { onClick(item) }
         }
     }
 

@@ -19,51 +19,6 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.database
 import java.util.UUID
 
-/*
-    User : {
-        유저A ID : {
-            유저ID
-            유저 이름
-            설명
-        }
-        유저B ID : {
-            유저ID
-            유저 이름
-            설명
-        }
-    }
-
-    ChatRoom : {
-        유저A ID : {
-            유저B ID : {
-                채팅방ID
-                마지막 메시지
-                유저B ID
-                유저B 이름
-            }
-        }
-        유저B : {
-            유저A :{
-                채팅방ID
-                마지막 메시지
-                유저A ID
-                유저A 이름
-            }
-        }
-   }
-
-    Chat : {
-        채팅방ID : {
-            메세지ID : {
-                채팅ID
-                메시지
-                유저A
-                유저B
-            }
-        }
-    }
- */
-
 class UserFragment : Fragment(R.layout.fragment_userlist) {
     private lateinit var binding: FragmentUserlistBinding
 
@@ -72,9 +27,9 @@ class UserFragment : Fragment(R.layout.fragment_userlist) {
         binding = FragmentUserlistBinding.bind(view)
 
         val userListAdapter = UserAdapter { otherUser ->
-            val myUserID = Firebase.auth.currentUser?.uid ?: ""
+            val myUserID = Firebase.auth.currentUser?.uid ?: ""  //내 uid
             val chatRoomDB = Firebase.database.reference.child(DB_CHAT_ROOMS).child(myUserID)
-                .child(otherUser.userID ?: "")
+                .child(otherUser.userID ?: "")  //
             // 다른 사람과 채팅방이 존재하는지 확인
             var chatRoomID = ""
             chatRoomDB.get().addOnSuccessListener {  //한번만 가져오기
@@ -85,7 +40,7 @@ class UserFragment : Fragment(R.layout.fragment_userlist) {
                     chatRoomID = UUID.randomUUID().toString()  //랜덤으로 uid 생성
                     //채팅방 데이터 생성
                     val newChatRoom = ChatRoomItem(
-                        chatRoomID,
+                        chatRoomID = chatRoomID,
                         otherUserName =  otherUser.userName,
                         otherUserID = otherUser.userID
                     )
@@ -97,9 +52,6 @@ class UserFragment : Fragment(R.layout.fragment_userlist) {
                 intent.putExtra(ChatActivity.EXTRA_OTHER_USER_ID, otherUser.userID)
                 startActivity(intent)
             }
-
-            "otherUserID"
-            "chatRoomID"
         }
         binding.userRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)

@@ -24,7 +24,7 @@ class ChatListFragment : Fragment(R.layout.fragment_chatlist) {
         binding = FragmentChatlistBinding.bind(view)
 
         // 채팅으로 이동 //
-        val chatListAdapter = ChatListAdapter{chatRoomItem ->
+        val chatListAdapter = ChatListAdapter { chatRoomItem ->
             val intent = Intent(context, ChatActivity::class.java)
             intent.putExtra(ChatActivity.EXTRA_CHAT_ROOM_ID, chatRoomItem.chatRoomID)
             intent.putExtra(ChatActivity.EXTRA_OTHER_USER_ID, chatRoomItem.otherUserID)
@@ -39,7 +39,7 @@ class ChatListFragment : Fragment(R.layout.fragment_chatlist) {
         val currentUser = Firebase.auth.currentUser ?: return
         val chatRoomsDB = Firebase.database.reference.child(DB_CHAT_ROOMS).child(currentUser.uid)
 
-        chatRoomsDB.addValueEventListener(object :ValueEventListener{
+        chatRoomsDB.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val chatRoomList = snapshot.children.map {
                     it.getValue(ChatRoomItem::class.java)

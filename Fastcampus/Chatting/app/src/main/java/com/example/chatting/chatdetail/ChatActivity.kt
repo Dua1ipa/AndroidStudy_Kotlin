@@ -37,55 +37,6 @@ class ChatActivity : AppCompatActivity() {
 
     private val chatItemList = mutableListOf<ChatItem>()
 
-    /*
-        User : {
-            유저A ID : {
-                유저ID
-                유저 이름
-                설명
-            }
-            유저B ID : {
-                유저ID
-                유저 이름
-                설명
-            }
-        }
-
-        ChatRoom : {
-            유저A : {
-                유저B : {
-                    채팅방ID
-                    마지막 메시지
-                    유저B ID
-                    유저B 이름
-                }
-            }
-            유저B : {
-                유저A :{
-                    채팅방ID
-                    마지막 메시지
-                    유저A ID
-                    유저A 이름
-                }
-            }
-       }
-
-        Chat : {
-            채팅방ID : {
-                메세지ID : {
-                    채팅ID
-                    메시지 "A가 보냄"
-                    유저A ID
-                }
-               메세지ID : {
-                    채팅ID
-                    메시지 : "B가 보냄"
-                    유저B ID
-                }
-            }
-        }
-     */
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityChatdetailBinding.inflate(layoutInflater)
@@ -106,23 +57,23 @@ class ChatActivity : AppCompatActivity() {
             chatAdapter.otherUserItem = otherUserItem
         }
 
+        // 채팅(Chats) 가져오기 //
         Firebase.database.reference.child(DB_CHATS).child(chatRoomID)
             .addChildEventListener(object : ChildEventListener {
                 override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
                     val chatItem = snapshot.getValue(ChatItem::class.java)
                     chatItem ?: return
 
-                    chatItemList.add(chatItem)
+                    chatItemList.add(chatItem)  //채팅 리스트
                     chatAdapter.submitList(chatItemList.toMutableList())  //리스트 복사 (갱신)
                 }
+                override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {}  //채팅 변경
 
-                override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {}
-
-                override fun onChildRemoved(snapshot: DataSnapshot) {}
+                override fun onChildRemoved(snapshot: DataSnapshot) {}  //채팅 삭제
 
                 override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) {}
 
-                override fun onCancelled(error: DatabaseError) {}
+                override fun onCancelled(error: DatabaseError) {}  //채팅 취소
             })
 
         // 채팅 목록 RecyclerView 설정 //
@@ -148,11 +99,9 @@ class ChatActivity : AppCompatActivity() {
 
         // 채팅 메시지 전송 버튼 //
         binding.sendButton.setOnClickListener {
-            Log.d(TAG, "전송 버튼 눌림")
             val message = binding.messageEditText.text.toString()
-            // 채팅 데이터 생성 //
-            val newChatItem = ChatItem(
-                message = message.toString(),
+            val newChatItem = ChatItem(  //채팅 데이터 생성
+                message = message,
                 userID = myUserID
             )
             Firebase.database.reference.child(DB_CHATS).child(chatRoomID).push().apply {
@@ -164,7 +113,7 @@ class ChatActivity : AppCompatActivity() {
                 "$DB_CHAT_ROOMS/$myUserID/$otherUserID/lastMessage" to message,
                 "$DB_CHAT_ROOMS/$otherUserID/$myUserID/lastMessage" to message,
                 "$DB_CHAT_ROOMS/$otherUserID/$myUserID/chatRoomID" to chatRoomID,
-                "$DB_CHAT_ROOMS/$otherUserID/$myUserID/otherUserID" to otherUserID,
+                "$DB_CHAT_ROOMS/$otherUserID/$myUserID/otherUserID" to myUserID,
                 "$DB_CHAT_ROOMS/$otherUserID/$myUserID/otherUserName" to myUserName,
             )
 
