@@ -1,15 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.example.chatting"
+    namespace = "com.example.githubapi"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.chatting"
+        applicationId = "com.example.githubapi"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -34,17 +33,12 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
 }
 
 dependencies {
-
-    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
-    implementation("com.google.firebase:firebase-auth")
-    implementation("com.google.firebase:firebase-database")
-    implementation("com.google.firebase:firebase-messaging")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

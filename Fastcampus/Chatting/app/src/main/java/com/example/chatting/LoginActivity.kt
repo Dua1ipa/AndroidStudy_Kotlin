@@ -17,6 +17,7 @@ import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.google.firebase.database.database
+import com.google.firebase.messaging.messaging
 
 class LoginActivity : AppCompatActivity() {
     companion object {  //자바 static 키워드와 같음
@@ -30,11 +31,8 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding = ActivityLoginBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
         auth = Firebase.auth
 
-        // 자동 로그인 확인
         val sharedPreferences = getSharedPreferences("AutoLogin", MODE_PRIVATE)
         val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
 
@@ -43,6 +41,8 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
             Toast.makeText(this, "로그인에 성공했습니다.", Toast.LENGTH_SHORT).show()
+        }else{
+            setContentView(binding.root)
         }
 
         // 아이디 입력란에서 Enter 키를 누르면 비밀번호 입력란으로 이동
@@ -81,25 +81,33 @@ class LoginActivity : AppCompatActivity() {
                 .addOnCompleteListener(this) { task ->
                     val currentUser = auth.currentUser
                     if (task.isSuccessful && currentUser != null) {  //로그인 성공하면
+                        
+                        // 파이어베이스 토큰 설정 //
+                        Firebase.messaging.token.addOnCompleteListener{
+                            val token = it.result
+                            // 로그인 할때 로그인 정보 업데이트 //
+                            val user = mutableMapOf<String, Any>()
+                            user["userID"] = currentUser.uid
+                            user["userName"] = email
+                            user["fcmToken"] = token
 
-                        // 로그인 할때 로그인 정보 업데이트 //
-                        val user = mutableMapOf<String, Any>()
-                        user["userID"] = currentUser.uid
-                        user["userName"] = email
+                            Firebase.database(DB_URL).reference.child(DB_USERS).child(currentUser.uid)
+                                .updateChildren(user)
 
-                        Firebase.database(DB_URL).reference.child(DB_USERS).child(currentUser.uid)
-                            .updateChildren(user)
+                            // 자동 로그인 체크 확인 //
+                            if (binding.loginCheckBox.isChecked){
+                                // 로그인 상태 저장하기
+                                sharedPreferences.edit().putBoolean("isLoggedIn", true).apply()
+                                sharedPreferences.edit().apply()
+                            }
 
-                        // 자동 로그인 체크 확인 //
-                        if (binding.loginCheckBox.isChecked){
-                            // 로그인 상태 저장하기
-                            sharedPreferences.edit().putBoolean("isLoggedIn", true).apply()
-                            sharedPreferences.edit().apply()
+                            startActivity(Intent(this, MainActivity::class.java))
+                            finish()
+                            Toast.makeText(this, "로그인에 성공했습니다.", Toast.LENGTH_SHORT).show()
+
+                        }.addOnFailureListener{
+                            Toast.makeText(this, "토큰 발급에 실패 했습니다.", Toast.LENGTH_SHORT).show()
                         }
-
-                        startActivity(Intent(this, MainActivity::class.java))
-                        finish()
-                        Toast.makeText(this, "로그인에 성공했습니다.", Toast.LENGTH_SHORT).show()
                     } else {  //로그인 실패하면
                         Log.w(TAG, "signInWithEmail:failure", task.exception)
                         Toast.makeText(this, "로그인에 실패했습니다.", Toast.LENGTH_SHORT).show()

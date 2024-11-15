@@ -126,9 +126,9 @@ class ChatActivity : AppCompatActivity() {
             })
 
         // 채팅 목록 RecyclerView 설정 //
-        binding.chatRecyclerView.apply {
+        binding.chatDetailRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
-            adapter = ChatAdapter()
+            adapter = chatAdapter
         }
 
         // 초기에는 버튼을 비활성화
