@@ -1,14 +1,12 @@
 package com.example.chatting.chatdetail
 
-import android.content.Intent
+import android.R
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.chatting.Key
+import androidx.recyclerview.widget.RecyclerView
 import com.example.chatting.Key.Companion.DB_CHATS
 import com.example.chatting.Key.Companion.DB_CHAT_ROOMS
 import com.example.chatting.Key.Companion.DB_USERS
@@ -20,6 +18,8 @@ import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.database
+import okhttp3.OkHttpClient
+import org.json.JSONObject
 
 class ChatActivity : AppCompatActivity() {
     companion object {
@@ -29,11 +29,15 @@ class ChatActivity : AppCompatActivity() {
     }
 
     private lateinit var binding: ActivityChatdetailBinding
+    private lateinit var chatAdapter: ChatAdapter
+    private lateinit var linearLayoutManager: LinearLayoutManager
 
     private var chatRoomID: String = ""
     private var otherUserID: String = ""
+    private var otherUserFcmToken : String = ""
     private var myUserID: String = ""
     private var myUserName: String = ""
+    private var isInit = false
 
     private val chatItemList = mutableListOf<ChatItem>()
 
@@ -45,7 +49,8 @@ class ChatActivity : AppCompatActivity() {
         chatRoomID = intent.getStringExtra(EXTRA_CHAT_ROOM_ID) ?: return
         otherUserID = intent.getStringExtra(EXTRA_OTHER_USER_ID) ?: return
         myUserID = Firebase.auth.currentUser?.uid ?: ""
-        val chatAdapter = ChatAdapter()
+        chatAdapter = ChatAdapter()
+        linearLayoutManager = LinearLayoutManager(applicationContext)
 
         Firebase.database.reference.child(DB_USERS).child(myUserID).get()
             .addOnSuccessListener {
@@ -78,9 +83,18 @@ class ChatActivity : AppCompatActivity() {
 
         // 채팅 목록 RecyclerView 설정 //
         binding.chatDetailRecyclerView.apply {
-            layoutManager = LinearLayoutManager(context)
+            layoutManager = linearLayoutManager
             adapter = chatAdapter
         }
+
+        // 채팅 마지막 위치로 이동 (맨 마지막) //
+        chatAdapter.registerAdapterDataObserver(object : RecyclerView.AdapterDataObserver() {
+            override fun onItemRangeChanged(positionStart: Int, itemCount: Int) {
+                super.onItemRangeChanged(positionStart, itemCount)
+
+                linearLayoutManager.smoothScrollToPosition(binding.chatDetailRecyclerView, null, chatAdapter.itemCount)
+            }
+        })
 
         // 초기에는 버튼을 비활성화
         binding.sendButton.isEnabled = false
@@ -118,6 +132,13 @@ class ChatActivity : AppCompatActivity() {
             )
 
             Firebase.database.reference.updateChildren(updates)
+
+            val client = OkHttpClient()
+
+            val root = JSONObject()
+            val notification = JSONObject()
+            notification.put("title", getString(R.string.ok))
+            notification.put("body", notification)
 
             binding.messageEditText.text.clear()
         }

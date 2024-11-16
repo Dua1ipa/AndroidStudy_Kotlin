@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="FCM_SERVER_KEY">서버키</string>"
+</resources>

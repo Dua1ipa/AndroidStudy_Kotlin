@@ -41,7 +41,7 @@ class UserFragment : Fragment(R.layout.fragment_userlist) {
                     //채팅방 데이터 생성
                     val newChatRoom = ChatRoomItem(
                         chatRoomID = chatRoomID,
-                        otherUserName =  otherUser.userName,
+                        otherUserName = otherUser.userName,
                         otherUserID = otherUser.userID
                     )
                     chatRoomDB.setValue(newChatRoom)  //새로운 채팅방 삽입
@@ -57,7 +57,7 @@ class UserFragment : Fragment(R.layout.fragment_userlist) {
             layoutManager = LinearLayoutManager(context)
             adapter = userListAdapter
         }
-        val currentUser = Firebase.auth.currentUser
+        val currentUserID = Firebase.auth.currentUser?.uid ?: ""
         // 데이터 조회 //
         Firebase.database.reference.child(DB_USERS)
             .addListenerForSingleValueEvent(object : ValueEventListener {
@@ -66,15 +66,14 @@ class UserFragment : Fragment(R.layout.fragment_userlist) {
                     snapshot.children.forEach {
                         val user = it.getValue(UserItem::class.java)
                         user ?: return
-                        if (user?.userID != currentUser?.uid) {
+                        if (user.userID != currentUserID) {  //나를 제외한 다른 사람의 ID 출력
                             userItemList.add(user)
                         }
                     }
                     userListAdapter.submitList(userItemList)
                 }
 
-                override fun onCancelled(error: DatabaseError) {
-                }
+                override fun onCancelled(error: DatabaseError) {}
             })
     }
 

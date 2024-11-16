@@ -36,8 +36,8 @@ class ChatListFragment : Fragment(R.layout.fragment_chatlist) {
         }
 
         // 데이터 조회 //
-        val currentUser = Firebase.auth.currentUser ?: return
-        val chatRoomsDB = Firebase.database.reference.child(DB_CHAT_ROOMS).child(currentUser.uid)
+        val currentUserID = Firebase.auth.currentUser?.uid ?: return
+        val chatRoomsDB = Firebase.database.reference.child(DB_CHAT_ROOMS).child(currentUserID)
 
         chatRoomsDB.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -47,8 +47,7 @@ class ChatListFragment : Fragment(R.layout.fragment_chatlist) {
                 chatListAdapter.submitList(chatRoomList)
             }
 
-            override fun onCancelled(error: DatabaseError) {
-            }
+            override fun onCancelled(error: DatabaseError) {}
         })
     }
 
