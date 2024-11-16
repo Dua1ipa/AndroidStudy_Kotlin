@@ -7,10 +7,7 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.chatting.chatlist.ChatRoomItem
 import com.example.chatting.databinding.ItemChatBinding
-import com.example.chatting.databinding.ItemChatroomBinding
-import com.example.chatting.databinding.ItemUserBinding
 import com.example.chatting.userlist.UserItem
 
 class ChatAdapter : ListAdapter<ChatItem, ChatAdapter.ViewHolder>(differ) {
@@ -27,7 +24,7 @@ class ChatAdapter : ListAdapter<ChatItem, ChatAdapter.ViewHolder>(differ) {
                 binding.messageTextView.text = item.message
                 binding.messageTextView.gravity = Gravity.START
             } else {  //내가 보낸
-                binding.userNameTextView.isVisible = false
+                binding.userNameTextView.isVisible = true
                 binding.messageTextView.text = item.message
                 binding.messageTextView.gravity = Gravity.END
             }

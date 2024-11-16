@@ -4,7 +4,6 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
@@ -13,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.chatting.chatlist.ChatListFragment
-import com.example.chatting.chatlist.ChatRoomItem
 import com.example.chatting.databinding.ActivityMainBinding
 import com.example.chatting.mypage.MyPageFragment
 import com.example.chatting.userlist.UserFragment
@@ -37,32 +35,35 @@ class MainActivity : AppCompatActivity() {
         if (currentUser == null) {  //해당 사용자가 없으면 로그인 화면으로 이동
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
-        } else {
-            askNotificationPermission()
-            binding.bottomNavigationView.setOnItemSelectedListener {
-                when (it.itemId) {
-                    R.id.userList -> {
-                        replaceFragment(userFragment)
-                        return@setOnItemSelectedListener true
-                    }
+        }
+        askNotificationPermission()
+        binding.bottomNavigationView.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.userList -> {
+                    replaceFragment(userFragment)
+                    supportActionBar?.title = "친구목록"
+                    return@setOnItemSelectedListener true
+                }
 
-                    R.id.chatroomList -> {
-                        replaceFragment(chatListFragment)
-                        return@setOnItemSelectedListener true
-                    }
+                R.id.chatroomList -> {
+                    replaceFragment(chatListFragment)
+                    supportActionBar?.title = "채팅"
+                    return@setOnItemSelectedListener true
+                }
 
-                    R.id.myPage -> {
-                        replaceFragment(myPageFragment)
-                        return@setOnItemSelectedListener true
-                    }
+                R.id.myPage -> {
+                    replaceFragment(myPageFragment)
+                    supportActionBar?.title = "마이페이지"
+                    return@setOnItemSelectedListener true
+                }
 
-                    else -> {
-                        return@setOnItemSelectedListener false
-                    }
+                else -> {
+                    return@setOnItemSelectedListener false
                 }
             }
-            replaceFragment(userFragment)
         }
+        replaceFragment(userFragment)
+        supportActionBar?.title = "친구목록"
     }
 
     private fun replaceFragment(fragment: Fragment) {
