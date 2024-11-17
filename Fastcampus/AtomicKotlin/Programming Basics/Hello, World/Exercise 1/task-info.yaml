@@ -4,20 +4,23 @@ files:
     visible: true
     placeholders:
       - offset: 52
-        length: 7
+        length: 43
         placeholder_text: // TODO
         initial_state:
           length: 7
           offset: 52
         initialized_from_dependency: false
         encrypted_possible_answer: APwPHmksQgbex2LHpEKuIqrIVVsWFVBRPA3qSmqLVRASPCtWSS5H5Ka07JiZPGLl
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: test/Tests.kt
     visible: false
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+Hello%2C+World%21+%2F+Exercise1
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 17 Nov 2024 14:07:11 UTC"
 record: -1

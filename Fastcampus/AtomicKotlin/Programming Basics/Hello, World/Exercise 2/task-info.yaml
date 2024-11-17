@@ -11,7 +11,7 @@ files:
           offset: 67
         initialized_from_dependency: false
         encrypted_possible_answer: 2XU/S818KU6OvQhsBkMPfk9WzquYbsWe0kvEmVKe0+58JmjWVIAvafT61YJPKFSi
-        selected: false
+        selected: true
         status: Unchecked
     learner_created: false
   - name: test/output.txt
