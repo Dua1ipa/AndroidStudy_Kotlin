@@ -1,0 +1,41 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 70
+        length: 3
+        placeholder_text: '''?'''
+        initial_state:
+          length: 3
+          offset: 70
+        initialized_from_dependency: false
+        encrypted_possible_answer: faIBYX0OPOGnY2h9anmrXQ==
+        selected: false
+        status: Unchecked
+      - offset: 96
+        length: 3
+        placeholder_text: '''?'''
+        initial_state:
+          length: 3
+          offset: 96
+        initialized_from_dependency: false
+        encrypted_possible_answer: foQQYk2p5XfZuGgioBfZMQ==
+        selected: false
+        status: Unchecked
+      - offset: 121
+        length: 3
+        placeholder_text: '''?'''
+        initial_state:
+          length: 3
+          offset: 121
+        initialized_from_dependency: false
+        encrypted_possible_answer: LRwh929Bq+/SD0JxINT7eA==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

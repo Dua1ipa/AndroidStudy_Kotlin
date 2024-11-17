@@ -1,0 +1,46 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 111
+        length: 26
+        placeholder_text: "// TODO: add property here"
+        initial_state:
+          length: 26
+          offset: 111
+        initialized_from_dependency: false
+        encrypted_possible_answer: Ge8DEHtzDDGBHz+mMVwjqecw3ESJ+zcWxzkC3ZDLw/4=
+        selected: false
+        status: Unchecked
+      - offset: 198
+        length: 32
+        placeholder_text: |-
+          val (name, age) = person
+          // TODO
+        initial_state:
+          length: 32
+          offset: 198
+        initialized_from_dependency: false
+        encrypted_possible_answer: 8U61rZiXHa/CcAp2FsJO7RZoQjXL9Qn0K0sRN/xfC83ij+K3o1DewGMk30DYm2JGwmBEHirCXpZpE1U5Q2PShPNqqVHFYvDQcY4Avgyl4iE=
+        selected: false
+        status: Unchecked
+      - offset: 247
+        length: 109
+        placeholder_text: |-
+          val person = Person("Alice",  30)
+          //  val person = Person("Alice", "Johnson", 30)
+            displayPersonInfo(person)
+        initial_state:
+          length: 109
+          offset: 247
+        initialized_from_dependency: false
+        encrypted_possible_answer: 9mbXkcLVnIhdjqynj+vusYaRCv34cc8Sb+ulC1jrwDIjSI1Wc482U+qMk4kdMLESD9YMBw8M9T3z6DFXjJQYXATUu6C77dEPQoz1wGqbFmMMe/QuCGtr99J0esrfHtMP9N7bKpHEYvNzgP22MP6uYPiSaGsCxAN7Chz0G3sRMXA=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

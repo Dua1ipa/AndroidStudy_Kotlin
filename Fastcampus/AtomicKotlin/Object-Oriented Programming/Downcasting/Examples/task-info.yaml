@@ -1,0 +1,29 @@
+type: theory
+files:
+  - name: src/NarrowingUpcast.kt
+    visible: true
+    learner_created: false
+  - name: src/IsKeyword.kt
+    visible: true
+    learner_created: false
+  - name: src/Creature.kt
+    visible: true
+    learner_created: false
+  - name: src/MutableSmartCast.kt
+    visible: true
+    learner_created: false
+  - name: src/Unsafe.kt
+    visible: true
+    learner_created: false
+  - name: src/Safe.kt
+    visible: true
+    learner_created: false
+  - name: src/FindType.kt
+    visible: true
+    learner_created: false
+  - name: src/FilterIsInstance.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

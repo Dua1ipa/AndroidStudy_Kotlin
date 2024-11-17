@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 628
+        length: 24
+        placeholder_text: /* Implement toString */
+        initial_state:
+          length: 24
+          offset: 628
+        initialized_from_dependency: false
+        encrypted_possible_answer: 5E6cTw+7TqxJw9xS3JRR60e8Nd1Zlx4CC6YxE7JTwKTWZxG/EdlCDw4IBOq5OVhU
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Constructors+%2F+Exercise2
+status: Unchecked
+record: -1

@@ -1,0 +1,44 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 126
+        length: 11
+        placeholder_text: class Cloud
+        initial_state:
+          length: 11
+          offset: 126
+        initialized_from_dependency: false
+        encrypted_possible_answer: kzXumz2uFQhaMsj7w9ksj2AnXtRm2Zfoicze8ZKW948ctLjcv2bY6gL5fud+rxei6oHfz7uN+YEbMf9u2WJO610InmCLOOmfZ1O/XUF60ZsusN0p8TxjGzV9U94+N2hqTQb40OHb4iU/ffrbrEEw0d03MCbKAP6RlGJw2R9Zs1QInj8cTnVQUeP0vQKSXa/BtsEtecDX0lY6SZZmeXtumYl5AIq8mXNj723yA8LAdBY=
+        selected: false
+        status: Unchecked
+      - offset: 139
+        length: 44
+        placeholder_text: |-
+          data class Node(
+            private val result: Int
+          )
+        initial_state:
+          length: 44
+          offset: 139
+        initialized_from_dependency: false
+        encrypted_possible_answer: HvxRvYF/k+Xub9s75MbJSqffqtCF8k0RDgevdGLpdMmqb7egFgs9awe0cgqKerwUJNKPhP67kzPAZIGSsJ8Be696PGJKjrm+n8v5rz37cbzeSd/v/r/NXBF47tg619awizgTRYZpZdttxkWAls7B0Q==
+        selected: false
+        status: Unchecked
+      - offset: 200
+        length: 36
+        placeholder_text: // Cloud(10).calculateAnswer() eq 45
+        initial_state:
+          length: 36
+          offset: 200
+        initialized_from_dependency: false
+        encrypted_possible_answer: Qf1RsaX0th6xIvz9OLjjEPjwsq2JJxGXqJ3XQHYqQnRJn5olVef92THs476NoaV4
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

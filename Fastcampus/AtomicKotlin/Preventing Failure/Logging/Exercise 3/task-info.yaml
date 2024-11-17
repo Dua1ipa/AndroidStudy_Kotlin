@@ -1,0 +1,93 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 161
+        length: 19
+        placeholder_text: "// TODO: add values"
+        initial_state:
+          length: 19
+          offset: 161
+        initialized_from_dependency: false
+        encrypted_possible_answer: oXCO0BCFa/rDyKSwSShZ+iUql1VLBZu8iHvJrQLsBh8=
+        selected: false
+        status: Unchecked
+      - offset: 208
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 208
+        initialized_from_dependency: false
+        encrypted_possible_answer: 0nfT6MnHy/BvJ0fIruxg8w==
+        selected: false
+        status: Unchecked
+      - offset: 294
+        length: 84
+        placeholder_text: |-
+          private fun log(type: String, msg: String) =
+              logFile.appendText("$type: $msg\n")
+        initial_state:
+          length: 84
+          offset: 294
+        initialized_from_dependency: false
+        encrypted_possible_answer: tyaRvGK6+SbSEIDq4fy5ZovwNZt31SLp+ee2AcrZl3P5tAS6ksS3WSD+CfaQoxrX/gv/iV9HxDUUHVkK9CUZQ5vC5WdJb0fKVxhEsu02dJu8iuySshIED7XM65pF24jy4gm+f01aKlMrEXQaS1vohcoMjAg3nn6BDPEchJlOGjB/To1qiP0m3zI/XSaIxq7D
+        selected: false
+        status: Unchecked
+      - offset: 406
+        length: 17
+        placeholder_text: "log(\"Trace\", msg)"
+        initial_state:
+          length: 17
+          offset: 406
+        initialized_from_dependency: false
+        encrypted_possible_answer: 3yEpFLpTsCMMUwvn1HLhBQ==
+        selected: false
+        status: Unchecked
+      - offset: 451
+        length: 17
+        placeholder_text: "log(\"Debug\", msg)"
+        initial_state:
+          length: 17
+          offset: 451
+        initialized_from_dependency: false
+        encrypted_possible_answer: UvFH3OAt3DRLjBobJJOx8w==
+        selected: false
+        status: Unchecked
+      - offset: 495
+        length: 16
+        placeholder_text: "log(\"Info\", msg)"
+        initial_state:
+          length: 16
+          offset: 495
+        initialized_from_dependency: false
+        encrypted_possible_answer: iNxd0TS1c49xsoNdVTv16g==
+        selected: false
+        status: Unchecked
+      - offset: 538
+        length: 16
+        placeholder_text: "log(\"Warn\", msg)"
+        initial_state:
+          length: 16
+          offset: 538
+        initialized_from_dependency: false
+        encrypted_possible_answer: TjRhuZpX1sAd1SuoC7OIpQ==
+        selected: false
+        status: Unchecked
+      - offset: 582
+        length: 17
+        placeholder_text: "log(\"Error\", msg)"
+        initial_state:
+          length: 17
+          offset: 582
+        initialized_from_dependency: false
+        encrypted_possible_answer: 0V0KVFKrBMCnzeQal9+UJA==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

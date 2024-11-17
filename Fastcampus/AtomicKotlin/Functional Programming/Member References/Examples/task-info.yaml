@@ -1,0 +1,23 @@
+type: theory
+files:
+  - name: src/PropertyReference.kt
+    visible: true
+    learner_created: false
+  - name: src/SortWith.kt
+    visible: true
+    learner_created: false
+  - name: src/FunctionReference.kt
+    visible: true
+    learner_created: false
+  - name: src/TopLevelFunctionRef.kt
+    visible: true
+    learner_created: false
+  - name: src/ConstructorReference.kt
+    visible: true
+    learner_created: false
+  - name: src/ExtensionReference.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

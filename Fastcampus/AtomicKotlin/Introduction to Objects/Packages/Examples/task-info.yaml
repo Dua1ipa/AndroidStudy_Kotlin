@@ -1,0 +1,23 @@
+type: theory
+files:
+  - name: src/ImportClass.kt
+    visible: true
+    learner_created: false
+  - name: src/ImportNameChange.kt
+    visible: true
+    learner_created: false
+  - name: src/FullyQualify.kt
+    visible: true
+    learner_created: false
+  - name: src/ImportEverything.kt
+    visible: true
+    learner_created: false
+  - name: src/PythagoreanTheorem.kt
+    visible: true
+    learner_created: false
+  - name: src/ImportPythagorean.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,61 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 116
+        length: 17
+        placeholder_text: class GrannySmith
+        initial_state:
+          length: 17
+          offset: 116
+        initialized_from_dependency: false
+        encrypted_possible_answer: 91Xhm4Q4bXxU5WjR/HDFhRB6Bu9I2G78En5PDyTMCbZEmMOBH5Ma+gS9f67x+XgbUOqnphfVTBHEMBBHjAw3lpGlKh33OWHd4rR0ueIgAPE=
+        selected: false
+        status: Unchecked
+      - offset: 135
+        length: 10
+        placeholder_text: class Gala
+        initial_state:
+          length: 10
+          offset: 135
+        initialized_from_dependency: false
+        encrypted_possible_answer: nx+SfPE5d5Y3fZMMmKNJgnYC5DVrDQmsnLO9FflpqIZU7+FlZhuKU/IrYrCd+mddVkYE31KGHScx/Pv82a7cWw==
+        selected: false
+        status: Unchecked
+      - offset: 147
+        length: 10
+        placeholder_text: class Fuji
+        initial_state:
+          length: 10
+          offset: 147
+        initialized_from_dependency: false
+        encrypted_possible_answer: 6iy6vLwiAmmVBPfXFcxWpuJv72JmZt0xaLHitp4yhSO090fEvwL55C1t4BCG7OhKg44wetXrriqStwRXP3EusQ==
+        selected: false
+        status: Unchecked
+      - offset: 159
+        length: 14
+        placeholder_text: class Braeburn
+        initial_state:
+          length: 14
+          offset: 159
+        initialized_from_dependency: false
+        encrypted_possible_answer: TeRxLe7xEG4KmMOVhyoFVk66m3ir3q+K2HJYPwNKE6q6VDt+3woVX1K8jSXJqvanJWpXoXEV1o7BuJrdBGImdbA3vART1Emqp4XD2srjGdY=
+        selected: false
+        status: Unchecked
+      - offset: 288
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 288
+        initialized_from_dependency: false
+        encrypted_possible_answer: mg/9tJPaC5m0MZ/w9ShPRA==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

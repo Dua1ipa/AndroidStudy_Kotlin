@@ -1,0 +1,77 @@
+type: theory
+files:
+  - name: src/Speakers.kt
+    visible: true
+    learner_created: false
+  - name: src/DefiningGenerics.kt
+    visible: true
+    learner_created: false
+  - name: src/CarCrate.kt
+    visible: true
+    learner_created: false
+  - name: src/Crate.kt
+    visible: true
+    learner_created: false
+  - name: src/MapCrate.kt
+    visible: true
+    learner_created: false
+  - name: src/Disposable.kt
+    visible: true
+    learner_created: false
+  - name: src/Constrained.kt
+    visible: true
+    learner_created: false
+  - name: src/NonGenericConstraint.kt
+    visible: true
+    learner_created: false
+  - name: src/SameReturnType.kt
+    visible: true
+    learner_created: false
+  - name: src/Constraints.kt
+    visible: true
+    learner_created: false
+  - name: src/Erasure.kt
+    visible: true
+    learner_created: false
+  - name: src/ReificationA.kt
+    visible: true
+    learner_created: false
+  - name: src/ReificationB.kt
+    visible: true
+    learner_created: false
+  - name: src/ReificationC.kt
+    visible: true
+    learner_created: false
+  - name: src/ReificationD.kt
+    visible: true
+    learner_created: false
+  - name: src/CheckType.kt
+    visible: true
+    learner_created: false
+  - name: src/Select.kt
+    visible: true
+    learner_created: false
+  - name: src/InAndOutBoxes.kt
+    visible: true
+    learner_created: false
+  - name: src/Pets.kt
+    visible: true
+    learner_created: false
+  - name: src/BoxAssignment.kt
+    visible: true
+    learner_created: false
+  - name: src/OutBoxAssignment.kt
+    visible: true
+    learner_created: false
+  - name: src/InBoxAssignment.kt
+    visible: true
+    learner_created: false
+  - name: src/CovariantList.kt
+    visible: true
+    learner_created: false
+  - name: src/CovariantReturnTypes.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

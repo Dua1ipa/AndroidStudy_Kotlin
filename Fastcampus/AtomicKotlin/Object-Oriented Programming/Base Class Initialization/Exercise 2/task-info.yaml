@@ -1,0 +1,21 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 464
+        length: 18
+        placeholder_text: class PlaceSetting
+        initial_state:
+          length: 18
+          offset: 464
+        initialized_from_dependency: false
+        encrypted_possible_answer: NhqqvrPiIEC8j/wLYgNJO/px7m0o6zelnwH5onargSmDwluA340yDjScwAjM1nM/re4t6OQEouYcDfFwmU8fOw4me9iSyeYnGojR3T9Ak1ore+09ZvgxnZGdycnoY5p8CKc8I4TcOZqcRMgDF6f5mLDCCoWBDSgljerx20DQeRgKNZAaA4qPiR7nKFnwAFmxM353Hf7z/h/XWsiuxS57TxM2lg5Zozwfj6DSRqYuJNk=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

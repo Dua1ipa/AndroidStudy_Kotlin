@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 93
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 93
+        initialized_from_dependency: false
+        encrypted_possible_answer: +XwxVymeylYsvn0hNp/1TL8a+0mb6ZU29l3CsD3BZ4KJf3EyVLj5WfHDd/IXybEI14qlBIunqV3+I7tgEOLJra7KY2Qiz0ejX69jcQXX9+w2SWbUGKZxRkZPhdhSTbvUWe/POCJmlyLtMwIEDjQdLdw57jugBMjVq1uILaHkNG7V3wONPtk/NkqlDL6MWugD4PMqzh46olSePJcs/cGzbr7vT4L5i2kr0M1l14u8bVw+egnPiaxEjF1JuglvBy9oWtShK/SSVnpMZOTihnHTbNbfkLDYuLPTFCL8e/yhiDS8kivMJVgpzm0NUeHQHZGrYK5ZK+cVBVuLp6WZTsuljzCJYnIczyEzbYVl0I4BF95LbFq3IxokXdGEegATfEkQk+fnqNMRlbqv2qEpKcLW4w==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+Summary+1+%2F+Exercise4
+status: Unchecked
+record: -1

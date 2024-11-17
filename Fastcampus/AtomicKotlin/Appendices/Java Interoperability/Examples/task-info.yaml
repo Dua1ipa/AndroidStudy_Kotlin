@@ -1,0 +1,98 @@
+type: theory
+files:
+  - name: src/Random.kt
+    visible: true
+    learner_created: false
+  - name: src/interoperability/Chameleon.java
+    visible: true
+    learner_created: false
+  - name: src/UseBeanClass.kt
+    visible: true
+    learner_created: false
+  - name: src/ExtensionsToJavaClass.kt
+    visible: true
+    learner_created: false
+  - name: src/KotlinClass.kt
+    visible: true
+    learner_created: false
+  - name: src/interoperability/UsingKotlinClass.java
+    visible: true
+    learner_created: false
+  - name: src/KotlinDataClass.kt
+    visible: true
+    learner_created: false
+  - name: src/interoperability/UseDataClass.java
+    visible: true
+    learner_created: false
+  - name: src/TopLevelFunction.kt
+    visible: true
+    learner_created: false
+  - name: src/interoperability/CallTopLevelFunction.java
+    visible: true
+    learner_created: false
+  - name: src/interoperability/CallTopLevelFunction2.java
+    visible: true
+    learner_created: false
+  - name: src/ChangeName.kt
+    visible: true
+    learner_created: false
+  - name: src/interoperability/MakeSalad.java
+    visible: true
+    learner_created: false
+  - name: src/BigInt.kt
+    visible: true
+    learner_created: false
+  - name: src/BigFibonacci.kt
+    visible: true
+    learner_created: false
+  - name: src/interoperability/JavaChecked.java
+    visible: true
+    learner_created: false
+  - name: src/KotlinChecked.kt
+    visible: true
+    learner_created: false
+  - name: src/AnnotateThrows.kt
+    visible: true
+    learner_created: false
+  - name: src/interoperability/CatchChecked.java
+    visible: true
+    learner_created: false
+  - name: src/interoperability/JTool.java
+    visible: true
+    learner_created: false
+  - name: src/PlatformTypes.kt
+    visible: true
+    learner_created: false
+  - name: src/NPEOnPlatformType.kt
+    visible: true
+    learner_created: false
+  - name: src/interoperability/AnnotatedJTool.java
+    visible: true
+    learner_created: false
+  - name: src/AnnotatedJava.kt
+    visible: true
+    learner_created: false
+  - name: src/HiddenArrayList.kt
+    visible: true
+    learner_created: false
+  - name: src/ReadOnlyByDefault.kt
+    visible: true
+    learner_created: false
+  - name: src/CollectionStructure.kt
+    visible: true
+    learner_created: false
+  - name: src/JavaList.kt
+    visible: true
+    learner_created: false
+  - name: src/ReadOnlyCollections.kt
+    visible: true
+    learner_created: false
+  - name: src/interoperability/JavaWrapper.java
+    visible: true
+    learner_created: false
+  - name: src/KotlinWrapper.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

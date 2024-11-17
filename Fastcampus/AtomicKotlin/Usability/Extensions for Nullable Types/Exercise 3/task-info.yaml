@@ -1,0 +1,40 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 139
+        length: 56
+        placeholder_text: // TODO Implement 'empty' and 'full' extension functions
+        initial_state:
+          length: 56
+          offset: 139
+        initialized_from_dependency: false
+        encrypted_possible_answer: TKuG2B3fO6vEhgdrIBeQ6JzFBYGnz/mdqxnPOJ14ycVnRCknR9f/1EtGGEIkdunk0AXjEBxeJSQKsOqsgXeM3cf0YMwasrDzLx2wg5T0P08yNPYPL9izVPpfuKfI9Dlq
+        selected: false
+        status: Unchecked
+      - offset: 210
+        length: 199
+        placeholder_text: |-
+          /*
+            val container = Container(42)
+            container.empty() eq false
+            container.full() eq true
+          
+            val emptyContainer = Container(null)
+            emptyContainer.empty() eq true
+            emptyContainer.full() eq false
+          */
+        initial_state:
+          length: 199
+          offset: 210
+        initialized_from_dependency: false
+        encrypted_possible_answer: dsD7A7kSIRyRvTBcdazWpH4mZ8nEg4/Z6Wr6qFXI1FmQH5Ob8UzxuUWJZT9Lo9GaeoGTOIzHwdoyCJ2WFbnYCL4rQsOvV6DPPBlY/VzwaGyT7k0nJc9IHNmw/1G9voAaVQCVdWnBsnxkHtF/rxJvFr1h0YbiKLYSicVDeyuty9n2LW/5FpuWTXF3sLA3q+7TlcJjE9u8Iv0aguzw5bLd2QScQKxqr4nckcvxlnyWqCuC+rqzbgzFQE2P/XXKQXystgdRWm9xQ8kTVd/OlipT0w==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,91 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 119
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 119
+        initialized_from_dependency: false
+        encrypted_possible_answer: pxY59tA+YKJEWbpN941YN0O6ZIH9etS+z2Ac4Q+1sFY=
+        selected: false
+        status: Unchecked
+      - offset: 139
+        length: 13
+        placeholder_text: = B() // TODO
+        initial_state:
+          length: 13
+          offset: 139
+        initialized_from_dependency: false
+        encrypted_possible_answer: gIgUDbHBC5Y4JiAg0KdZbKR7yobEsrZOR/bFyC7E/H0G+C3Dyk84Itx9tjIHga74MXOvuRPImibaj2lyVebKtw==
+        selected: false
+        status: Unchecked
+      - offset: 161
+        length: 11
+        placeholder_text: = 1 // TODO
+        initial_state:
+          length: 11
+          offset: 161
+        initialized_from_dependency: false
+        encrypted_possible_answer: gIgUDbHBC5Y4JiAg0KdZbKR7yobEsrZOR/bFyC7E/H28WefejIFHS5A6tanIPj2kf4YM5eCmAQ4V9Ql1hZVTyA==
+        selected: false
+        status: Unchecked
+      - offset: 185
+        length: 9
+        placeholder_text: 0 // TODO
+        initial_state:
+          length: 9
+          offset: 185
+        initialized_from_dependency: false
+        encrypted_possible_answer: 53HV3bMe/zqFTwNI52OSmg==
+        selected: false
+        status: Unchecked
+      - offset: 221
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 221
+        initialized_from_dependency: false
+        encrypted_possible_answer: hZfeWDvmGY4n7BezBc/o4ss8wVKAW+4+oxQm3EznszU=
+        selected: false
+        status: Unchecked
+      - offset: 241
+        length: 11
+        placeholder_text: = 2 // TODO
+        initial_state:
+          length: 11
+          offset: 241
+        initialized_from_dependency: false
+        encrypted_possible_answer: gIgUDbHBC5Y4JiAg0KdZbKR7yobEsrZOR/bFyC7E/H0O9BLWc+H1kP251cnK1+kbms+4OvU/WLgFwnm3jkPrig==
+        selected: false
+        status: Unchecked
+      - offset: 265
+        length: 9
+        placeholder_text: 0 // TODO
+        initial_state:
+          length: 9
+          offset: 265
+        initialized_from_dependency: false
+        encrypted_possible_answer: 6YRE6pDeOGtIKcPkglg5aw==
+        selected: false
+        status: Unchecked
+      - offset: 299
+        length: 13
+        placeholder_text: = A() // TODO
+        initial_state:
+          length: 13
+          offset: 299
+        initialized_from_dependency: false
+        encrypted_possible_answer: gIgUDbHBC5Y4JiAg0KdZbKR7yobEsrZOR/bFyC7E/H27NM050cqHrOmYaOa80XTh2re4nDGzGsHbyTVu4eUAhQ==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

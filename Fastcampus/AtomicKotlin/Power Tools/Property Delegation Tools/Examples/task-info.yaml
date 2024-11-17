@@ -1,0 +1,20 @@
+type: theory
+files:
+  - name: src/CarService.kt
+    visible: true
+    learner_created: false
+  - name: src/MapAccessors.kt
+    visible: true
+    learner_created: false
+  - name: src/Team.kt
+    visible: true
+    learner_created: false
+  - name: src/TeamWithTraditions.kt
+    visible: true
+    learner_created: false
+  - name: src/NeverNull.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

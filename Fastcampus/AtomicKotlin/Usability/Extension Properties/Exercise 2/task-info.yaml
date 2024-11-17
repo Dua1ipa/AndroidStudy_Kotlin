@@ -1,0 +1,35 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 91
+        length: 29
+        placeholder_text: "// TODO: implement 'reversed'"
+        initial_state:
+          length: 29
+          offset: 91
+        initialized_from_dependency: false
+        encrypted_possible_answer: pn9yjRtpLYyMlxFk9+iUOuotrR9E/D8eq37SwR+JHY4WUJ1fiL62mLkjtnVw2cmRiSKeni1kMcrT2bR72nSMAA==
+        selected: false
+        status: Unchecked
+      - offset: 135
+        length: 69
+        placeholder_text: |-
+          /*
+            val list = listOf(1, 2, 3)
+            list.reversed eq listOf(3, 2, 1)
+          */
+        initial_state:
+          length: 69
+          offset: 135
+        initialized_from_dependency: false
+        encrypted_possible_answer: 7aaMhGj8olL2y6okIAcfY7ZjxwxnrcQ9JrxdmoXoCHkz6UrvR+7MqCHNTMFhbDEWkGmM1ESbwKNEceLz1i+WRA==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

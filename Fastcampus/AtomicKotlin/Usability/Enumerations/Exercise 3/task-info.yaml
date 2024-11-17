@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 325
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 325
+        initialized_from_dependency: false
+        encrypted_possible_answer: 2IutxpMATRymHlCcVOluLngaiPHHCrc4iOlB4wFA7lDrTAbxNdPz1VBaO6DVQ+uw1R2UMuLG4mbkdH9HNf0zr3iJfOsO+57Cx99DyH98frQV+MJ1K5dcODu+YTyqmB434hmTpvA7nIRTUSky4Cm68dNldQ30j9OtFKZaLHkjQvBwFNkdGGGoM74BKrG2Q1oy7OHXvfkGsDYcQEI/1xtv1J3w/8D80DcbRY94ZC1CPRZSJgLNMsRLUN1f2SKeaHvmVM4LHTJOBm5KL6APKNkmPPq7xzbIH5J9/tpdC0h4XRJLaTxtgHF1ZgU0gs3sBtfa
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+Enumerations+%2F+Exercise3
+status: Unchecked
+record: -1

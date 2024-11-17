@@ -1,0 +1,31 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 70
+        length: 20
+        placeholder_text: // add Boring2 class
+        initial_state:
+          length: 20
+          offset: 70
+        initialized_from_dependency: false
+        encrypted_possible_answer: 1FVE5SwAcez7GZJ5IdFJYSY0Gi1uZEKt1OaXQfcfD7JGw5YNOwCL8MBskEQn/Kuh3vBlbOYbO8MZAVx1vPRSljPzBzjhBV37dhVhN8kb2rgpveAICRTJCtnWD2lSncMjkrnODEYZ6fhCrZVUv0FnMQ==
+        selected: false
+        status: Unchecked
+      - offset: 107
+        length: 22
+        placeholder_text: TODO() // test Boring2
+        initial_state:
+          length: 22
+          offset: 107
+        initialized_from_dependency: false
+        encrypted_possible_answer: QiwrIwHxmgI2sN06DroTApQq9EFqyZ3Ju8eyHjfBtwy5P/68OiJBULnk+5a+qbkrGrWHwey1OUijrVEK/DLmtEnI129SPkIwp+gcSsAbDMFZ3x5qA60lPgjFpnRzIxWTYpz1xBzs4BAQNc9SD2z74w==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

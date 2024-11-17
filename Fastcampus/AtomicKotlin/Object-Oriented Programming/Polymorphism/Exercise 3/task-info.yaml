@@ -1,0 +1,43 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 80
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 80
+        initialized_from_dependency: false
+        encrypted_possible_answer: OBgutJkYN20dBnyioyD+QsaQA1Jby/f/x+qdZHsiVrDWvb8x4Kv3WU1KrhHgLMmdEPfqU0ttsl/T1SQ9OAYkwkHBUXbUvQfMODuSVVXrRFFQ7dtXnGYkmviEZc3+g6bPsRHWp+rPRpQpFqu/XNY02P7KW8wVpzxlqkcoBbByRegwg06wexpyYkvzQ13jyfTKKEhjQcUyWVM/tEG/i9rt4ozxaSL5wBfBvkl8h0lyUmZWzRY7iMrm3dVnNHbh17JZQYY8Xk+xXt1wDyZUfSQorhMunB/xj1gxByJCPsSmG21z9ypnPRXmNOAjVmyPycxH+nuibynKXO1eZODQfyn2uvXruNwxsbJ/C4XJ9YHGcnCcTemg1Em1JBtaFolkmgvl1FLAFsENyAPPwbT8fuKzXWbeB1W9/No52GOEbz9Pe76AmMzbh91VuTGPMd/fq30yCG5ypF38677twNox9wpo29Bk2Ygmsj9yEdgKk9u9ZmwzNDTl6v0ct3J9s+Z8iVCa4oPVoNZe9D89nL5VYbMuNXkT9aQy7ys9q1gyRyqQKAMwWKxDt7QW/Xz15nYNZGklNYLeMpJWE5SGFY93WQlEEX8Eu8VACaic3RkJLDqPEJYHYL6LBtzWTdlhDyefZSQb
+        selected: false
+        status: Unchecked
+      - offset: 102
+        length: 210
+        placeholder_text: |-
+          /*
+            listOf(
+              Message("We", Text()),
+              Message("Are", Phone()),
+              Message("Fine", Email())
+            ).forEach { it.transmit() }
+            trace eq """
+              'We' via Text
+              'Are' via Phone
+              'Fine' via Email
+            """
+          */
+        initial_state:
+          length: 210
+          offset: 102
+        initialized_from_dependency: false
+        encrypted_possible_answer: kEfATwhCedohoi1sKVFeliqIOaww2Gf94RllFtChqFDP8gOUhCHKkN2SUxR13qQVXYOzOJf6l/BqRp8hAbwSO6xs2tcC2mDwS3ihsUB9PZCWqsAKqUk8kLyXKmrfGRYoSy1tLtAdzsA5u4+BjdBfnl/fsfKl8sSwN6/1swrd/t9W+c6UWk+nHLqfg2srfE1as98/U72XMDQnXGCuTpLG9rGShsEVSjN/d2jJ+1OsR6f3CY1VFoy6Zg76Ks4eGXQScthRzxJleME/9nvlUpmAFA==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

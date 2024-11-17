@@ -1,0 +1,41 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 178
+        length: 16
+        placeholder_text: "fun observe() {}"
+        initial_state:
+          length: 16
+          offset: 178
+        initialized_from_dependency: false
+        encrypted_possible_answer: gRvJ4sAQ7SG3J4u+jYdRIE/Or8PqwHgOnzxuyRaNTU8d1rG3l43NUMpucXjXu0s/dDD+qX6L66v0mFuhVdXl/QZgKQSpvms7BnZGq1r183F2RC72TCDdrhqvO2soldXzI9+qN/0GZ8nf3wZd1EIPag==
+        selected: false
+        status: Unchecked
+      - offset: 257
+        length: 36
+        placeholder_text: "= \"\" // by observable(nm, ::observe)"
+        initial_state:
+          length: 36
+          offset: 257
+        initialized_from_dependency: false
+        encrypted_possible_answer: NCVs761WU8JxabLskwtCrPT6efWEMCWlh6MpYDBi7jc=
+        selected: false
+        status: Unchecked
+      - offset: 306
+        length: 35
+        placeholder_text: "= 0 // by observable(id, ::observe)"
+        initial_state:
+          length: 35
+          offset: 306
+        initialized_from_dependency: false
+        encrypted_possible_answer: Aerph9ktTkdx9+W2Zfs2TqIvaPcyE8I7Kl2cQK4etUY=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

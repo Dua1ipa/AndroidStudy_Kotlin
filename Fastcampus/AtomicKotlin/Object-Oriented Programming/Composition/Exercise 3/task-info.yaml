@@ -1,0 +1,41 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 93
+        length: 25
+        placeholder_text: // private val arrayDeque
+        initial_state:
+          length: 25
+          offset: 93
+        initialized_from_dependency: false
+        encrypted_possible_answer: o8Oc+LWy8+5NA6H9dWR4qXJYrByv6vECF2EcCgMiEjB7Vl0Egs9nvwKB58oYuxmt
+        selected: false
+        status: Unchecked
+      - offset: 137
+        length: 6
+        placeholder_text: '"TODO"'
+        initial_state:
+          length: 6
+          offset: 137
+        initialized_from_dependency: false
+        encrypted_possible_answer: J1teQyqp6f1Cwpg7T3c+yHLBZvHs7qFCLq29SfWcClA=
+        selected: false
+        status: Unchecked
+      - offset: 162
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 162
+        initialized_from_dependency: false
+        encrypted_possible_answer: Mj7ZGbCK6csJtdu6nraIym+P+3VL18hzeSTPAcnIUug=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

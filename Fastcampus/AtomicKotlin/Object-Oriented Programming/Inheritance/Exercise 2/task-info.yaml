@@ -1,0 +1,40 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 113
+        length: 18
+        placeholder_text: class Disinfectant
+        initial_state:
+          length: 18
+          offset: 113
+        initialized_from_dependency: false
+        encrypted_possible_answer: lOYuhvuWW6KQqiOp3BqWxFvUugvnNT5zCRcE3rF2IjRjwH45l4QXiySkdeixmpOs+P31WIR0ZK1v6MJQXybhz5vs/XAALHpdf83Rxn0OKszgynJ6jXhMHLkznf1FFBdH
+        selected: false
+        status: Unchecked
+      - offset: 146
+        length: 212
+        placeholder_text: |-
+          /*
+            val disinfectant = Disinfectant()
+            disinfectant.dilute()
+            disinfectant.apply()
+            disinfectant.scrub()
+            disinfectant.sterilize()
+            disinfectant.ops eq
+              listOf("dilute", "apply", "scrub", "sterilize")
+          */
+        initial_state:
+          length: 212
+          offset: 146
+        initialized_from_dependency: false
+        encrypted_possible_answer: 0I4aDU6dzFDORp94QtI8oA0L1Hy3OcX4jfF7GAoYly6RBfjo/XQBtZtRvZODLlfOxZcemySPKwnrQGShqDA4hTxTDJfI8YG91iau9NxmjZH/JHI81cor6ootimlprVFUUvTT2tdx4GYbRKKnKzRfMBsTIouD264SM71wX1ThWzQw5jgBkHQqnB62oGLsB01sKJ5xTsQ0YkChSh5zCW1HoijLsaRC8R7ku57b3Tk2MXBCED8Z9ZMmg7zBzWVQOimhMzWdtQcw+jN0m3TnhuSW/Q==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

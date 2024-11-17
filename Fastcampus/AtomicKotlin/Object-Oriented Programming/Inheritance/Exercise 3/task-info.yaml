@@ -1,0 +1,51 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 95
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 95
+        initialized_from_dependency: false
+        encrypted_possible_answer: iTbADorOpXZM+RpktUYKEMhaECM0AH54c61XWLWJf3rsmtlmsGHG0yS1uV9+2+YCBDO+RjuqXhc3i/U7UiFHMPUfZoFyRhQ5lywxQDsJckI=
+        selected: false
+        status: Unchecked
+      - offset: 139
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 139
+        initialized_from_dependency: false
+        encrypted_possible_answer: lqqyHaVi5Dlz+bawkIoGkLwclAako/cjEmNKW5MF6PdCS5U9f/C6xQE/lcx+BreY
+        selected: false
+        status: Unchecked
+      - offset: 179
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 179
+        initialized_from_dependency: false
+        encrypted_possible_answer: lqqyHaVi5Dlz+bawkIoGkMBffo3WI0htn3JBVlGgww60uODAwubnE3wXE3c6yAqs
+        selected: false
+        status: Unchecked
+      - offset: 205
+        length: 50
+        placeholder_text: "// Chess().initOrder eq \"[Game, BoardGame, Chess]\""
+        initial_state:
+          length: 50
+          offset: 205
+        initialized_from_dependency: false
+        encrypted_possible_answer: +GChXK7DecaK0hUc0RZ2kW7CTLreZlFYurSXp2d5YD1rq9lkfy8lBygRF/E18mMa
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

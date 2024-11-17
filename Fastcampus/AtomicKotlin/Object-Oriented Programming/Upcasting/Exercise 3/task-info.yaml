@@ -1,0 +1,78 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 284
+        length: 10
+        placeholder_text: class Hero
+        initial_state:
+          length: 10
+          offset: 284
+        initialized_from_dependency: false
+        encrypted_possible_answer: z33c/VoLOO2OAVZdOXvNRXYGp9isAm0RW4X08gjkEqG2R6aejMsJerJC2Zfkj8+St7G5rhsRblAIqEXE+RKpTPbz/Q6FTzpj/X/IKafs+nMXPVCKX0INestFb6nxzqhUL2GyTkx2KVyk+hSDDfj5djRl+IXF2KXBzhcgKCB9H6W3kVwDZq2lEyBf2dsKCjhI
+        selected: false
+        status: Unchecked
+      - offset: 325
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 325
+        initialized_from_dependency: false
+        encrypted_possible_answer: NWFErNi+YCwgztnXDxNugbyCzotJ5zf32F7eRjiaCGI=
+        selected: false
+        status: Unchecked
+      - offset: 363
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 363
+        initialized_from_dependency: false
+        encrypted_possible_answer: oJ/Va1feVMPVnmRouAON4w==
+        selected: false
+        status: Unchecked
+      - offset: 398
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 398
+        initialized_from_dependency: false
+        encrypted_possible_answer: 8Z7K71weElZ2fCpjwsYAFA==
+        selected: false
+        status: Unchecked
+      - offset: 445
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 445
+        initialized_from_dependency: false
+        encrypted_possible_answer: NWFErNi+YCwgztnXDxNugbyCzotJ5zf32F7eRjiaCGI=
+        selected: false
+        status: Unchecked
+      - offset: 468
+        length: 175
+        placeholder_text: |-
+          /*
+            val h = Hero()
+            tryFight(h) // Treat it as a Fight
+            trySwim(h) // Treat it as a Swim
+            tryFly(h) // Treat it as a Fly
+            doAction(h) // Treat it as an ActionCharacter
+          */
+        initial_state:
+          length: 175
+          offset: 468
+        initialized_from_dependency: false
+        encrypted_possible_answer: 0yGeLEk5mKA6/zjo5rbsNW+010tGTyXoGgMOij9LnmjIw9gezEBOr0BO+rbJm/9LAsqHaGSVU88OCDHlMSCUDPwamkAe4anmvroyb+tmutj1+Jt0cV3uvM1pA+desbt4WzTaZ9KzI1792yThdckENaAeJYcxX2ai0KbWOniq1w27IHDHdfUPV9ckhc47cCPcwVRi1aGEv1XlvHM9kKi+8hQ5NBCd7NGltiU8vNeDdRY=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

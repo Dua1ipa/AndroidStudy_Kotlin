@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 475
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 475
+        initialized_from_dependency: false
+        encrypted_possible_answer: IYGCXT1J7d6hBHxc9Hj1n9o2iw2NhMjeMz9DiJOayps251H8x5RUHljvd4tuHyAqYaCKCUK5Egvyvvx2ie4PvBDfAlpA8Ad0z9J7u7omIrskNIEFRxQUC/Nea2txowQ8P3cqqf1dXhu+2kBjYlut+IXDaC/xw/iVfAnIlFblxA/Ivq8PVVpVXNiDNJ3vMn05zkjRJYAkknlA7xMttMtnfg==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Maps+%2F+Exercise2
+status: Unchecked
+record: -1

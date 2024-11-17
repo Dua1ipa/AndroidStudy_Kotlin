@@ -1,0 +1,23 @@
+type: ide
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 84
+        length: 2
+        placeholder_text: '  '
+        initial_state:
+          length: 2
+          offset: 84
+        initialized_from_dependency: false
+        encrypted_possible_answer: G7mlWxG5lcWB7/Np8dcjOg==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Creating+Classes+%2F+Exercise3
+status: Unchecked
+record: -1

@@ -1,0 +1,23 @@
+type: ide
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 110
+        length: 8
+        placeholder_text: /*TODO*/
+        initial_state:
+          length: 8
+          offset: 110
+        initialized_from_dependency: false
+        encrypted_possible_answer: 5E6cTw+7TqxJw9xS3JRR6+NIKC9SpBIe206Y5QCsKqhU7LuUfgPDR36SCf8/KcsfcFGoy8/YDJfuuA90EPxvArdsrS8ON3p43nNkS5Q+ttji9M5zntRwFMkh6JEhC4Rl
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Constructors+%2F+Exercise3
+status: Unchecked
+record: -1

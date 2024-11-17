@@ -1,0 +1,33 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 375
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 375
+        initialized_from_dependency: false
+        encrypted_possible_answer: luIiC9a1qAXHGCeXxqQ9yssf7oIPPYAV7tE0lzh5o6EyVlpmvZ1SVTtHC8RtAM4OohE40JNnVdK4DTEFtaMAuSv9BsBOVzIsXVGb504FSxH7xCSJvScEMrGjFjUdrZd9JGwgmB3m8k12x+8LdXcgd+YmnHVyPoJXZvsKm2YkCFf2a0DlEDczmIdY7sFN5DLvxCbUNiq0L1ARLiVR7yI8RA==
+        selected: false
+        status: Unchecked
+      - offset: 435
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 435
+        initialized_from_dependency: false
+        encrypted_possible_answer: luIiC9a1qAXHGCeXxqQ9yoLg7L9GRDyt56nbR4uC/+pkxoKMHaDyrdFmOD3A+7x0yPLKfGnNKlJ6Vwb6UJ+Y20/thm78RJMVY2kaiucGUAdi53YGS8naJ4U/tEdkIx3x5R3YbblVLUManx8SuPTrRR8b/knbyyMXqDCTXFVzldmWe6TZ6SkXYHXcHqY0O5z7G79tVysncQ/9v1jtgvTMwjf11vu5JwbOl2MEOPsAQlc=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+Enumerations+%2F+Exercise2
+status: Unchecked
+record: -1

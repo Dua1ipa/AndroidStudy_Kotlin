@@ -1,0 +1,55 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 188
+        length: 40
+        placeholder_text: // TODO getValue and setValue extensions
+        initial_state:
+          length: 40
+          offset: 188
+        initialized_from_dependency: false
+        encrypted_possible_answer: BxSsovLwnTyCNcFEbE3iTIssqXotRUt7FzPIeXV66+ZFoamuXfsJDW+L87mHPsJxpM5I4ciAFk74fn1eGyW7l1AseEKKlUTv6Rnoq6syzk+WOUEAq0qdPkThb2xbgul3elxASnOU4ZOlzE8AHOm387G1POuQ/bGZTB8nn3862gyJI4kC45vp8FeDzMitqLwQeBkry/TK9a1HzhIWSXued+XzuwKS3CZwBHJxO2gQuxCb98LkvklNUusnDBMkx9G7TE1KjM1NVVUnYGnYc51GzfA5OulvJFUUzqiUlBq7XXs=
+        selected: false
+        status: Unchecked
+      - offset: 248
+        length: 100
+        placeholder_text: |-
+          /*
+            var strings by Holder<String>()
+            var ints by Holder<Int>()
+            var bools by Holder<Boolean>()
+          */
+        initial_state:
+          length: 100
+          offset: 248
+        initialized_from_dependency: false
+        encrypted_possible_answer: RSIK9JLdVeNQYkMLQJduUjUWns6rZSdw8ZTNj8LV/BSvRLpajftAM3dDhFRUgIMyGVbnOKc5g79gS4+3f1Bkjna92i6ndLzIwkRJEkxtKMRaj1LMUFA/Whoj4Oo451vW
+        selected: false
+        status: Unchecked
+      - offset: 365
+        length: 234
+        placeholder_text: |-
+          /*
+            val x = Holders()
+            x.strings = listOf("99", "17")
+            x.strings eq "[99, 17]"
+            x.ints = listOf(12, 23, 34, 45)
+            x.ints eq "[12, 23, 34, 45]"
+            x.bools = listOf(true, true, false, true)
+            x.bools eq "[true, true, false, true]"
+          */
+        initial_state:
+          length: 234
+          offset: 365
+        initialized_from_dependency: false
+        encrypted_possible_answer: CV4Us+oR8cjS+iXNBUyrOCe8ly8/WYbDJcxwEXV2XVohQ+DlsB+f5R3ppcBjVaWZUCc0XieQs+pNlunhHn7VxZvCEFpZ8jAcJbzaDWh4QN8Xh3jNfdoP2BsjryMMtYCwtNDcrXzcgX/gx9oqwM8h2mklRVqG2bzM5RYetoxLxQhEc2u4+5S3ccZzFsSvH6IHXGt3DUC4Y48opUjlUz4ZvZFDi8iZibNsERjFqmqBCxxU8PaSqbjZ5r5paUtuREJ/ZwSREgBET+EQ1FdwbauPTbG8YnlJoYs9WgLaz3MPrwGue8bcbVsHNZucqxHPcXcC
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

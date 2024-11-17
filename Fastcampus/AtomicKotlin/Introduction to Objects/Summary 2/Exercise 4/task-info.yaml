@@ -1,0 +1,21 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 138
+        length: 29
+        placeholder_text: "// TODO: add Dictionary class"
+        initial_state:
+          length: 29
+          offset: 138
+        initialized_from_dependency: false
+        encrypted_possible_answer: WyzU0A8CDiDmU+8EzcgGVZIUaFhLdG3arAZ3GtdaBSqrGS4BNWg1VlIoGoIYpT2eBssSFMKNbCl88w6OSD5jNNBi4IgAr2NYS1uC4RxxpDoAfl3ar1YMX4GUyJWMPKSkCqOJ25cvpRNl+L/RgWZMJJ1ErMZgwCjG76OZ3nfDzlwr/W9h5lX6NDui3FozEK0VZuIti6Sfh3yU9NrEbmneyrjK7znNaBtdJ9mvHW5fuAWhpds6bRPv34VIQlxYBN4H4t1UsjXmjdm56XJwmJysMyExSjLGnzBPslgyXOYi7FarZ8+9zcg8AlOM2Qqqh5xSSKoXud/JF1EZTE2G2V7waP3+OvtSHh+FUGHWs3v2gs7Y1a5h5sQtsQday9V6xgiGf8xW6EtW9AvMR67zeh7reg5hu0XpVarZubNnY73MkrJNelvRPYQr9pA4UDZV66b6+cy0cM7V7VUbkBCgd3iMRRrJswGPlhai+kp169e6Skx5hq/+3QE0CpCH9a/oAldMSiZg5t5QMtoThv13q687lA==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

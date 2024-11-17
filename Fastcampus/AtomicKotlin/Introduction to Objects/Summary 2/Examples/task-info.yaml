@@ -1,0 +1,77 @@
+type: theory
+files:
+  - name: src/ALibrary.kt
+    visible: true
+    learner_created: false
+  - name: src/UseALibrary.kt
+    visible: true
+    learner_created: false
+  - name: src/UsingAtomicTest.kt
+    visible: true
+    learner_created: false
+  - name: src/UsingTrace.kt
+    visible: true
+    learner_created: false
+  - name: src/ListCollection.kt
+    visible: true
+    learner_created: false
+  - name: src/ClassBodies.kt
+    visible: true
+    learner_created: false
+  - name: src/Temperature.kt
+    visible: true
+    learner_created: false
+  - name: src/TicTacToe.kt
+    visible: true
+    learner_created: false
+  - name: src/WildAnimals.kt
+    visible: true
+    learner_created: false
+  - name: src/Boxes.kt
+    visible: true
+    learner_created: false
+  - name: src/JetPack.kt
+    visible: true
+    learner_created: false
+  - name: src/ToDoubleException.kt
+    visible: true
+    learner_created: false
+  - name: src/AtomicTestCapture.kt
+    visible: true
+    learner_created: false
+  - name: src/Quadratic.kt
+    visible: true
+    learner_created: false
+  - name: src/ReadonlyVsMutableList.kt
+    visible: true
+    learner_created: false
+  - name: src/MultipleListReferences.kt
+    visible: true
+    learner_created: false
+  - name: src/ListOfStrings.kt
+    visible: true
+    learner_created: false
+  - name: src/ExplicitTyping.kt
+    visible: true
+    learner_created: false
+  - name: src/VarArgs.kt
+    visible: true
+    learner_created: false
+  - name: src/ArraySpread.kt
+    visible: true
+    learner_created: false
+  - name: src/ColorSet.kt
+    visible: true
+    learner_created: false
+  - name: src/ASCIIMap.kt
+    visible: true
+    learner_created: false
+  - name: src/PropertyReadWrite.kt
+    visible: true
+    learner_created: false
+  - name: src/GetterAndSetter.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,43 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 100
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 100
+        initialized_from_dependency: false
+        encrypted_possible_answer: 1qQ9kQ9eUXSirgUkxBvydQ==
+        selected: false
+        status: Unchecked
+      - offset: 143
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 143
+        initialized_from_dependency: false
+        encrypted_possible_answer: B32H4xjFtl8yhKC200kQ5w==
+        selected: false
+        status: Unchecked
+      - offset: 215
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 215
+        initialized_from_dependency: false
+        encrypted_possible_answer: B32H4xjFtl8yhKC200kQ5w==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+Booleans+%2F+Exercise1
+status: Unchecked
+record: -1

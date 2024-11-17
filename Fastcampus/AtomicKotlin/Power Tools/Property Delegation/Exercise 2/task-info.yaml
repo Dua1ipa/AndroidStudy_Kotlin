@@ -1,0 +1,31 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 220
+        length: 43
+        placeholder_text: = mutableListOf() // replace with 'by list'
+        initial_state:
+          length: 43
+          offset: 220
+        initialized_from_dependency: false
+        encrypted_possible_answer: ZzHwx2SLPKN0Rm28sD085A==
+        selected: false
+        status: Unchecked
+      - offset: 266
+        length: 40
+        placeholder_text: // TODO getValue and setValue extensions
+        initial_state:
+          length: 40
+          offset: 266
+        initialized_from_dependency: false
+        encrypted_possible_answer: qDByASzMUzlzo1bwlji89Uj1Zg6pCvnfWPv6H3ffCAwMciSrcB7QxObJmdI7nGyUX0ZD8YzUaakGBr1n9Nhs0/AGa3I4udAfPAkb0LVrI14FpPuT/EmATihG0Vs/7MR6ZWUipn5mcG+v7LGMe3LQZvGW4Jt3v4yUVLGCovHazZjNFdBXz+vvOSSR9zZa4iQvBx4uZxT+zT3qRLS3ldCaNOoB4yxwMrFT03eQ5VRk2gqgOSWdtvaC+pp/OkuZhAAtOz6DrVaWgrhKm+/2OJnU19Zq+RECLn9RY8a9s62eo1ehK1TmFVLhBm4KhxBaP7uzH1osIyjSIYJ1nidCcSdY/w==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

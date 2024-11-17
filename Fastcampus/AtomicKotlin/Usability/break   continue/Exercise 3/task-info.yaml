@@ -1,0 +1,57 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 120
+        length: 71
+        placeholder_text: |-
+          for (i in list) {
+              if (i == 0) break
+              println("analyzing $i")
+            }
+        initial_state:
+          length: 71
+          offset: 120
+        initialized_from_dependency: false
+        encrypted_possible_answer: bRwuNIrRqE3z0QPEkGFquEmk+3Ov5u0L2PegYUg8sHs=
+        selected: false
+        status: Unchecked
+      - offset: 251
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 251
+        initialized_from_dependency: false
+        encrypted_possible_answer: Lwrt2ly1LqMZ1MVF4nkPNSCM4VKLcGDb2S3UroYynXo2juXPOTloF4FwZqB+j1vyEx34YSlIyuRmhHfe0t0sX/MrrurIfiurCCjxijcI8IA=
+        selected: false
+        status: Unchecked
+      - offset: 343
+        length: 48
+        placeholder_text: |-
+          if (i == 0) continue
+              println("analyzing $i")
+        initial_state:
+          length: 48
+          offset: 343
+        initialized_from_dependency: false
+        encrypted_possible_answer: 4FkfGuWd+1+ItcgDtMLNoOdf+KQnpPK/lPTLE798mJ0=
+        selected: false
+        status: Unchecked
+      - offset: 449
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 449
+        initialized_from_dependency: false
+        encrypted_possible_answer: fmXckmxgEIf1nQFv2l395uo4vXdWAXQ/TwHvXkFzA8Cbfz/iVQMR5cxwCofVIqEe
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

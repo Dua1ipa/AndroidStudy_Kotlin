@@ -1,0 +1,23 @@
+type: theory
+files:
+  - name: src/Computer.kt
+    visible: true
+    learner_created: false
+  - name: src/PlayerInterface.kt
+    visible: true
+    learner_created: false
+  - name: src/Hotness.kt
+    visible: true
+    learner_created: false
+  - name: src/SAM.kt
+    visible: true
+    learner_created: false
+  - name: src/SAMImplementation.kt
+    visible: true
+    learner_created: false
+  - name: src/SAMConversion.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

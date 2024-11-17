@@ -1,0 +1,66 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 122
+        length: 66
+        placeholder_text: |-
+          abstract class Instrument {
+            abstract fun play(n: Note): String
+          }
+        initial_state:
+          length: 66
+          offset: 122
+        initialized_from_dependency: false
+        encrypted_possible_answer: okgi4eCgoSVaOux8hW6bw5coPe5R9MuoDmWd5hvAqmjD7nTcH7l4DifyZUl02kqim+hwCTz5xIIj09Np7PCA73HW3dVFgrc5jMjcHCcAK+EOZIkNh2sOkFxfDHLBEZR1EAQiQi+By/DYOcGotWIM5brjOiQuuoTImisihuQyHpc=
+        selected: false
+        status: Unchecked
+      - offset: 190
+        length: 79
+        placeholder_text: |-
+          class Wind : Instrument() {
+            override fun play(n: Note) =
+              "Wind blow $n"
+          }
+        initial_state:
+          length: 79
+          offset: 190
+        initialized_from_dependency: false
+        encrypted_possible_answer: 2W2DFaerW/N5kNtI83Isvm8maLN5B0esUdkEMEr9/MwKzU8dYIH7Rk0vY3Bxwswi
+        selected: false
+        status: Unchecked
+      - offset: 271
+        length: 93
+        placeholder_text: |-
+          class Percussion : Instrument() {
+            override fun play(n: Note) =
+              "Percussion strike $n"
+          }
+        initial_state:
+          length: 93
+          offset: 271
+        initialized_from_dependency: false
+        encrypted_possible_answer: uChemEsojBO2j3ou+mMokCIFqxkvDeeUIiT5HcPNr2zTUssOIfsZPWaISTPZo38NmeLoMMDtT8UTdKZyfne6Dw==
+        selected: false
+        status: Unchecked
+      - offset: 366
+        length: 88
+        placeholder_text: |-
+          class Stringed : Instrument() {
+            override fun play(n: Note) =
+              "Stringed pluck $n"
+          }
+        initial_state:
+          length: 88
+          offset: 366
+        initialized_from_dependency: false
+        encrypted_possible_answer: gDxGCDZFUnHnMwEIfYLbgOOwxtWN/q9ORHChzLb49ezT4N8O99SKirgVJaQRCLsnW+L5/qEycc/oZYFByGsSAA==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

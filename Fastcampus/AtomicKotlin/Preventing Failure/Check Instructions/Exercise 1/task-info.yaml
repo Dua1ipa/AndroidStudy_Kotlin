@@ -1,0 +1,31 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 132
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 132
+        initialized_from_dependency: false
+        encrypted_possible_answer: kjhoyCGzv0hoRgFpyW/rps6VFPXDWii5F93i3LWH84/8EcqceYYaz+qCgPlnjMXzkmlvXpqumSQq+S/JGzPZPYpaz9Oo2WhYP2QWOatUC8wO9hVXuy9SOBLG2/+Zqf5Yh7ULasm3KN/wWokLeIe3tJMtUSGRiJ7RXScNo5kOXDa2MFbDUsbpG8cEjilTJZIds8mfC+SE/20ulMjp+HVF03+ncc6fdn3wLL5sYK20O4tO88KG2rXY2orzQHv8iK9ax7n0Y7Vffqa1uSHqw9/sS64v+CExLj/4VYWm9TSobAUJ2GXG8tWjdOCiJKPK3UDp0SVUUWtCrUKmhfRyANs8OMp1fXE9RacIjoZvnBeU7207oxPJyAIaSOB7klkfIhxzcAtQZ6fd/Q0s6E/CjNwMTg==
+        selected: false
+        status: Unchecked
+      - offset: 171
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 171
+        initialized_from_dependency: false
+        encrypted_possible_answer: ZXrKgpKkB7KC6m2vSERmPAeM7owfyZeJAv9/GYOaAn8A8SY27L4eVumEfhqOKYqm
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,23 @@
+type: theory
+files:
+  - name: src/Cup.kt
+    visible: true
+    learner_created: false
+  - name: src/Cup2.kt
+    visible: true
+    learner_created: false
+  - name: src/TopLevelProperty.kt
+    visible: true
+    learner_created: false
+  - name: src/ChangingAVal.kt
+    visible: true
+    learner_created: false
+  - name: src/AnUnchangingVar.kt
+    visible: true
+    learner_created: false
+  - name: src/References.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

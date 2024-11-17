@@ -1,0 +1,28 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 96
+        length: 121
+        placeholder_text: |-
+          class Outer {
+            val s1: String = "TODO"
+            val s2: String = "TODO"
+            inner class Inner {
+              val si: String = "TODO"
+            }
+          }
+        initial_state:
+          length: 121
+          offset: 96
+        initialized_from_dependency: false
+        encrypted_possible_answer: oWlYoIKZ4OjfChXOhyrZtmUf/Jx2VIeO7Dm4a+IAb2EQxGHZpqKdNqafxcwAOA4ES4vKED4m/3iZ6Ow99ohPHUW+2VMSEwcBaC2D0IE9REazvpJo0c0YIBY8bkK32tGm1RUXVeCNMCIm4reltYFbN4usQk9DjEDB315lE5Qn5sGB/PPe0/GzgiQrXWJUABa11XjRotLhlAM6AMNkSUQidIehU5lNouz70bJKc64jv5Re/p7xsp6bj0biJ7Be9eMQ6ZFomUqn79oFwIh+5n1w1NoPv7Bgm/6nh3y69H230vtd626KanAb2DXC+vhQTTYQISHkJtGKKkvmiPXFtb7A+xJMJFmuQ7mzT7fbD2VSYlcfg+aAbzdmsfQA/ZHgjrsrwjWHGkUg5IF+f6e4CIJFFtB6pQgvKfEt2qEeYNzKInSmJcmBQVmMbc+DCnZtHhjri6HA09QMGR6Jl6W0cHN0qHajQl13F763xcVbiiVuEOTB5fv4HPpI/EH3/3WG0Qsg
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

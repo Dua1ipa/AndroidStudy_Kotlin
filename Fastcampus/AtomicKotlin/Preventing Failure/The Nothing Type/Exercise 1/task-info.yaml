@@ -1,0 +1,51 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 88
+        length: 13
+        placeholder_text: class Failure
+        initial_state:
+          length: 13
+          offset: 88
+        initialized_from_dependency: false
+        encrypted_possible_answer: 768kjuRvDeFQYT4Lyihfxoukk8lFRCCD0Yuu6RuL1mDXpcFoYCmfxuERGGD9GOqo
+        selected: false
+        status: Unchecked
+      - offset: 138
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 138
+        initialized_from_dependency: false
+        encrypted_possible_answer: dVn3Qg2mvjsMruEsoWqVrvZKGGGjoH/+jwZ9whXkvgY=
+        selected: false
+        status: Unchecked
+      - offset: 179
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 179
+        initialized_from_dependency: false
+        encrypted_possible_answer: aORSdI6LCon0Xry1hK8SlFye0GvhkyoVaITjz/53+1V6WSLmngTbJ0s4uc3SUCW8
+        selected: false
+        status: Unchecked
+      - offset: 218
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 218
+        initialized_from_dependency: false
+        encrypted_possible_answer: aORSdI6LCon0Xry1hK8SlCr6vWiYv44MyFPQ8WeWrOBg1xVkJQ/djpW2yOKtvTd4
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

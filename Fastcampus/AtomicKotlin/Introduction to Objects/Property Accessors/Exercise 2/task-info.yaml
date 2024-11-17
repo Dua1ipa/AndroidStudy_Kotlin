@@ -1,0 +1,21 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 87
+        length: 32
+        placeholder_text: "// TODO: create class Accessible"
+        initial_state:
+          length: 32
+          offset: 87
+        initialized_from_dependency: false
+        encrypted_possible_answer: pEfe1KD46bxs9WTHT0fJX08aJGAR6aau4Ycbt5L3tnfxNsNHg1h8fJusUpW3tMtvUUlSugsLHPQ12UXv02R38hZzKyWFzvCygpxGtcblYF6G80AQ/gsmpeiRn2ROqLJycZAVKchwreqS6qaE4AzbT9R17dUv2Qr6wTQyTjHn/iAnHh0ZqwKhlc+6Hxc43DvRUuhWDgunGqXqXRbTtbpRvMz8OIr/CNugMoBOWQFdQvdaTKBEFfgVkiOlfjuWfqTJoVoHxWCvoSHsyy7jiB2V3QrMSJYO4wDrZCR8ZguslITYZjhb2UhiSgXDn5yUgUod6fgt4TZWp8qJk9a3UHRcGXkrZ8eb/cF0VoUpI1GpGwrjJHkwR/FmGFPfhdfs8NHM
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

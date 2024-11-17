@@ -1,0 +1,39 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 74
+        length: 91
+        placeholder_text: |-
+          class Stack<E> : ArrayList<E>() {
+            fun push(e: E) = add(e)
+            fun pop(): E = removeLast()
+          }
+        initial_state:
+          length: 91
+          offset: 74
+        initialized_from_dependency: false
+        encrypted_possible_answer: 0J+Gu16VtHNt6rMakPlrzyAVgR06zfP2GSaemDG9Ql5qDvtH5TlzWmBRAbfnkDFro24B9GPMYzT9qnTYFIQa3hIxsNM2a5XGo3Toh/+2xW0RLZowdRFocxs+HhlRwiQ/o9+QjDxprQzTBmxGDYetQ7rc3DQO5IvpNNlABPl6ODI=
+        selected: false
+        status: Unchecked
+      - offset: 167
+        length: 91
+        placeholder_text: |-
+          class Queue<E>: ArrayList<E>() {
+            fun put(e: E) = add(e)
+            fun poll(): E = removeFirst()
+          }
+        initial_state:
+          length: 91
+          offset: 167
+        initialized_from_dependency: false
+        encrypted_possible_answer: 1WERjZSj/UIhBP7Qj+/8sFwMN/Bez/0oJJn4b3hMvWiQD/fusG5GmvPULn8Ku/Gy7U1jLdkavwp2yYWNETeDs2mEVSBOtU+zkzEYDQbB06HkjwXHSH+d1sMYS2GZ1FiRIUWLPw7l703H55AyAeefM5KxNb/MBRjVc5PcjO10Za8=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

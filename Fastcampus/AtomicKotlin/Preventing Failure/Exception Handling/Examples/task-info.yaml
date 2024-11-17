@@ -1,0 +1,32 @@
+type: theory
+files:
+  - name: src/DefiningExceptions.kt
+    visible: true
+    learner_created: false
+  - name: src/Stacktrace.kt
+    visible: true
+    learner_created: false
+  - name: src/Handlers.kt
+    visible: true
+    learner_created: false
+  - name: src/Hierarchy.kt
+    visible: true
+    learner_created: false
+  - name: src/LibraryException.kt
+    visible: true
+    learner_created: false
+  - name: src/NewException.kt
+    visible: true
+    learner_created: false
+  - name: src/TryFinally.kt
+    visible: true
+    learner_created: false
+  - name: src/GuaranteedCleanup.kt
+    visible: true
+    learner_created: false
+  - name: src/CaptureImplementation.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

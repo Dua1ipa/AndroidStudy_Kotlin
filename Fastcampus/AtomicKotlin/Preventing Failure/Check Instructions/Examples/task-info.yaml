@@ -1,0 +1,26 @@
+type: theory
+files:
+  - name: src/JulianMonth.kt
+    visible: true
+    learner_created: false
+  - name: src/QuadraticRequire.kt
+    visible: true
+    learner_created: false
+  - name: src/DataFile.kt
+    visible: true
+    learner_created: false
+  - name: src/GetTrace.kt
+    visible: true
+    learner_created: false
+  - name: src/SingleArgRequire.kt
+    visible: true
+    learner_created: false
+  - name: src/RequireNotNull.kt
+    visible: true
+    learner_created: false
+  - name: src/Postconditions.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

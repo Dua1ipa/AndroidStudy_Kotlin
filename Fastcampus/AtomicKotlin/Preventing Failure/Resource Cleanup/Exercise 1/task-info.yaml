@@ -1,0 +1,21 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 224
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 224
+        initialized_from_dependency: false
+        encrypted_possible_answer: xHLEe7JL1Zmieom+x+0NAM9OgaJU704eiaa+bUHHOaxIuVq8bIbq5b6UZYPLxU70LEJ0qDeE/ifLIm/9sBDOw3vYIkOAlPg3R9Mg96S1cTip5VddhPqdGuGP594pklqBX+h8jvAh5knLC3j9WO7eMZUqhd1Nvcpp+BeSl3+L6wCbmsUkNgAE7Npkhg4hitInT43ZKC7ZTOyUUsx0tnBPoAqmw3ei/G/v9SBmTsPz5fOE7+2Im+Dsjz3d/LDUKXtN
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,31 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 49
+        length: 12
+        placeholder_text: "fun va1() {}"
+        initial_state:
+          length: 12
+          offset: 49
+        initialized_from_dependency: false
+        encrypted_possible_answer: kV8rliBFtIt9tiNiw03V5Ful3rsn0hT/me2zQ5LnS58MBWsGVqhEozuZAYENm7x/gBdkxjlp4H25uI1k7z2S6by1CcPXT7OIkYn0qj2rgEXB3Q0/VMfFonm3IUz7kayn
+        selected: false
+        status: Unchecked
+      - offset: 63
+        length: 12
+        placeholder_text: "fun va2() {}"
+        initial_state:
+          length: 12
+          offset: 63
+        initialized_from_dependency: false
+        encrypted_possible_answer: oZDwhrDXrU7aeS0aED68tX2OLOPNmy1HhVqsmKmIGcKyb5lkd9xfZw4lNW0gV78z0xqg/O/2bOpMTO5TSIsg0w==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

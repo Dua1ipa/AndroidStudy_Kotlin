@@ -1,0 +1,29 @@
+type: theory
+files:
+  - name: src/Insects.kt
+    visible: true
+    learner_created: false
+  - name: src/AnyName.kt
+    visible: true
+    learner_created: false
+  - name: src/TypeCheck1.kt
+    visible: true
+    learner_created: false
+  - name: src/TypeCheck2.kt
+    visible: true
+    learner_created: false
+  - name: src/BeverageContainer.kt
+    visible: true
+    learner_created: false
+  - name: src/TypeCheck3.kt
+    visible: true
+    learner_created: false
+  - name: src/BeverageContainer2.kt
+    visible: true
+    learner_created: false
+  - name: src/BeverageContainer3.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

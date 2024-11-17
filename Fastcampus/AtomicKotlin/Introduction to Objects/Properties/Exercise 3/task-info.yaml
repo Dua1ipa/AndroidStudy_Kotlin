@@ -1,0 +1,65 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 68
+        length: 21
+        placeholder_text: |-
+          var x = 0
+            var y = 0
+        initial_state:
+          length: 21
+          offset: 68
+        initialized_from_dependency: false
+        encrypted_possible_answer: wCSygYzGzdo49Go1Upb1gST+cikwYiOAf3fM7VsUqPX0m29oIKcJs9vOVbUqbgNKo2vNefq2YMXMYuA9ivx0AVKyFjJPWJeZVARe/JETOzaRmAdLjK6Bf6nmqxtmDabCS+Nsi8UTPuiv8VHMb7zLemVb4TsutKNjFu7XoM7HGPWOPlSEgUNBidvw7d1e8l0CYUuEd/j978Ey9CSfdcABSGi1PvM+jcDJ0cKw9OIeQ43orbGFg2L7Yx/hyWEVKf4pdgNzYbR6YZo/4jKnmrEgzCQgh0gCfk2mQ0rCZoik+eSne7fAhmPGtzl765uw4WLZ
+        selected: false
+        status: Unchecked
+      - offset: 121
+        length: 10
+        placeholder_text: x += steps
+        initial_state:
+          length: 10
+          offset: 121
+        initialized_from_dependency: false
+        encrypted_possible_answer: ff+t2BLNG7k+6mAYI05ncT7wXr5lS4jT266R3XaLpDi+y/RPHjoe6nqwqXQhWDEd
+        selected: false
+        status: Unchecked
+      - offset: 166
+        length: 10
+        placeholder_text: x -= steps
+        initial_state:
+          length: 10
+          offset: 166
+        initialized_from_dependency: false
+        encrypted_possible_answer: SQ3GH1JDzpazlzZD2Wt0g7gl7ypOztx9GG3cg1C0edXM18Ly70nAeIszMZzRw60B
+        selected: false
+        status: Unchecked
+      - offset: 211
+        length: 10
+        placeholder_text: y += steps
+        initial_state:
+          length: 10
+          offset: 211
+        initialized_from_dependency: false
+        encrypted_possible_answer: Be1SEyxi6G3bCIApiw6L4o4ZjuMIBXnzrgrDvHh+95YsPXqxZpbx/ouGE5H9CD0l
+        selected: false
+        status: Unchecked
+      - offset: 254
+        length: 10
+        placeholder_text: y -= steps
+        initial_state:
+          length: 10
+          offset: 254
+        initialized_from_dependency: false
+        encrypted_possible_answer: 5hoxs3wrzEoJrx4wKx1ZROfD8VWcX0NuFJUMsIgj5MJU++0+L4CmALIUomfDVwoA
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Properties+%2F+Exercise2
+status: Unchecked
+record: -1

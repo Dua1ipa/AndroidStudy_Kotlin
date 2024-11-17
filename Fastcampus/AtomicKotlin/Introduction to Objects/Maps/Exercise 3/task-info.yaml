@@ -1,0 +1,61 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 261
+        length: 20
+        placeholder_text: MutableList<Hamster>
+        initial_state:
+          length: 20
+          offset: 261
+        initialized_from_dependency: false
+        encrypted_possible_answer: IepeiL6TX3OLWENgezryIqN6RAkv8Ta00HmHKn0z2yw=
+        selected: false
+        status: Unchecked
+      - offset: 288
+        length: 24
+        placeholder_text: mutableListOf<Hamster>()
+        initial_state:
+          length: 24
+          offset: 288
+        initialized_from_dependency: false
+        encrypted_possible_answer: SIyy2yIXw7uw2nSgM+URGA==
+        selected: false
+        status: Unchecked
+      - offset: 420
+        length: 19
+        placeholder_text: hamsters += hamster
+        initial_state:
+          length: 19
+          offset: 420
+        initialized_from_dependency: false
+        encrypted_possible_answer: ni4y0kmkZ0DjMAWk1a/b+DWBKcNRXzLIRwtmxIhsVtb2wYy3Tlk4z6vnF80AXT+u
+        selected: false
+        status: Unchecked
+      - offset: 491
+        length: 168
+        placeholder_text: |-
+          {
+              for (hamster in hamsters) {
+                if (hamster.name == name) {
+                  return hamster
+                }
+              }
+              throw NoSuchElementException("No hamster called $name")
+            }
+        initial_state:
+          length: 168
+          offset: 491
+        initialized_from_dependency: false
+        encrypted_possible_answer: ft4qlVpq7W4VO+hakMOUaIusckPY1N/URkm6WW8fi8o=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Maps+%2F+Exercise3
+status: Unchecked
+record: -1

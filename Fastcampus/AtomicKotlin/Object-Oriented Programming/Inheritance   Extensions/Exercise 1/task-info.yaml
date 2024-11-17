@@ -1,0 +1,46 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 562
+        length: 45
+        placeholder_text: |-
+          class CrocoDuck(
+            val crocodile: Crocodile
+          )
+        initial_state:
+          length: 45
+          offset: 562
+        initialized_from_dependency: false
+        encrypted_possible_answer: ZKsSnfBlJlakCs8LcEv4EYRSDdyXiCuEIB19GKVzqXGovablS+BBOZGhpFbVPFF5TA+fAjoXK+UVND5Ab5Ga+GY3ocxwRyJktzhTVgwbUgOVuVApD6CglvkdkHNvss+SMSiWMeHLm0/ZhLBAsn886Qxk8GmO7lBHivbkFQRT2ZeVOPLMPfiohcbN8MVsL8Cu
+        selected: false
+        status: Unchecked
+      - offset: 662
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 662
+        initialized_from_dependency: false
+        encrypted_possible_answer: Gb0lCfC79s7a0lA7HgDfe0Z0ND2PudF+H4ky412XX0k=
+        selected: false
+        status: Unchecked
+      - offset: 731
+        length: 84
+        placeholder_text: |-
+          //  interactWithDuck(honestlyDuck)
+          //  interactWithCrocodile(honestlyDuck.crocodile)
+        initial_state:
+          length: 84
+          offset: 731
+        initialized_from_dependency: false
+        encrypted_possible_answer: 9hn7N+VT67snUaTxzLyK/VrG1V4AJTzPioNVkm9zeDqhwf9f7RG0En5LWvxK7aM2qux+k3CZ1GOFu5yoEHzxFYoByqn9T3XkGek3loDZKoTX9F/f9IWQVqtJhE3MvG1Z
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

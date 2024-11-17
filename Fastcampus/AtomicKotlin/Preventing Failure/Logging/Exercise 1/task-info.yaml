@@ -1,0 +1,47 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 588
+        length: 10
+        placeholder_text: class Pipe
+        initial_state:
+          length: 10
+          offset: 588
+        initialized_from_dependency: false
+        encrypted_possible_answer: s6l2I19ev8xuN2BJx5Tysxgl6JKyfMX04HNuYUJ3CLRcfcflSG1BJxpez8/WqQqdF5X9IvYzyBrl5Ea54tkSocW1CQUzNTfdosCLsKGOFTPN3xSZsXA4eORPNcY9/PZfeuOuMg6qyWhMsecp/egaORu0No/ppP3zHpWmkAT3aY6RCwFKgl8/Tc1SWi0LgTEDHtx7nX0iluXjF0hfLqw9ehUxkV1ocWGz/9W8jDhSyvRo1OKtNwYT182wmM+4/x+i34laVCCrRuuNFGLTZCEZBWvZQzLykQBzg9M1OcOGcQSpaKYZCkdof3a8MFOKgTOd/NSVPkjN76LEoIsKj51D2DJ/oZ69Ae1MN0FSfJKznDcmedXvseegPIOeta0e+oyBjvSSvG/ptLUItFExY1HB99Jqe6k1L8Xzlb70a9c+Fds=
+        selected: false
+        status: Unchecked
+      - offset: 613
+        length: 254
+        placeholder_text: |-
+          /*
+            val pipe = Pipe()
+            (0..10).forEach {
+              pipe.level.up()
+              pipe.checkLevel()
+            }
+            pipe.logger.logFile.readText().trimIndent() eq
+            """
+            Trace: Level 2
+            Debug: Level 4
+            Info: Level 6
+            Warn: Level 8
+            Error: Level 10
+            Error: Level 10
+            """
+          */
+        initial_state:
+          length: 254
+          offset: 613
+        initialized_from_dependency: false
+        encrypted_possible_answer: ar0tt1TrmxaSrNToto4zmkaoixHwG2bcjOyNA86n8uIRVuoQXKTHgYtDUnRGf6huHFo/TU/nJhxkRDxRfz373fKmAtgJ1dyLTNOPFtfgOp9ghJT2g78x1uAV4wJLQOHemlqhsF43SyG3u3ugdQysURNJR+PCpvgRySi0+shVJUwA/4kMDnW2FGNOULIV7HHtcJb9hiRDRuTuTW3iQHgzh9+JA63HmM3IDznV9msI+/4CgCmyfRkfmW9+woJCn+OylNkhXDE1bjmtxtak+wQTpVCFzHuMVUTV+nGdWTV2ea19LI0Nqi7OujbmLKy3DiDH
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

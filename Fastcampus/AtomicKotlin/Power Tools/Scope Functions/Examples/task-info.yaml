@@ -1,0 +1,29 @@
+type: theory
+files:
+  - name: src/Differences.kt
+    visible: true
+    learner_created: false
+  - name: src/AndNullability.kt
+    visible: true
+    learner_created: false
+  - name: src/Gnome.kt
+    visible: true
+    learner_created: false
+  - name: src/NullGnome.kt
+    visible: true
+    learner_created: false
+  - name: src/MapLookup.kt
+    visible: true
+    learner_created: false
+  - name: src/NameTag.kt
+    visible: true
+    learner_created: false
+  - name: src/Nesting.kt
+    visible: true
+    learner_created: false
+  - name: src/Blob.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

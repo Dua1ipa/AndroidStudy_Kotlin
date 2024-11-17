@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="AtomicKotlinCourse:test" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet external-system-id="GRADLE" type="kotlin-language" name="Kotlin">
+      <configuration version="5" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <additionalVisibleModuleNames>AtomicKotlinCourse:main</additionalVisibleModuleNames>
+        <compilerSettings>
+          <option name="additionalArguments" value="-opt-in kotlin.RequiresOptIn" />
+        </compilerSettings>
+        <compilerArguments>
+          <flagArguments>
+            <flagArg name="allowNoSourceFiles" arg="true" />
+            <flagArg name="noStdlib" arg="true" />
+          </flagArguments>
+          <stringArguments>
+            <stringArg name="destination" arg="$MODULE_DIR$/../../build/classes/kotlin/test" />
+            <stringArg name="jvmTarget" arg="1.8" />
+            <stringArg name="moduleName" arg="AtomicKotlinCourse" />
+            <stringArg name="apiVersion" arg="1.6" />
+            <stringArg name="languageVersion" arg="1.6" />
+          </stringArguments>
+          <arrayArguments>
+            <arrayArg name="friendPaths">
+              <args>
+                <arg>$MODULE_DIR$/../../build/classes/java/main</arg>
+                <arg>$MODULE_DIR$/../../build/classes/kotlin/main</arg>
+                <arg>$MODULE_DIR$/../../build/libs/AtomicKotlinCourse.jar</arg>
+              </args>
+            </arrayArg>
+            <arrayArg name="pluginClasspaths">
+              <args>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.6.20/3d6e1b15fb9db1455136c932ade7d9df298c9274/kotlin-scripting-jvm-1.6.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.6.20/c715651864e5e186405f60e034af3b65d0eebef/kotlin-scripting-common-1.6.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.20/6cedc143badbb4f1c6b7f5a340b04edff1743208/kotlin-stdlib-1.6.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.20/27b4562b6713d70f458c6d7ea39aadacb8e6a92b/kotlin-stdlib-common-1.6.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.6.20/a115c367e0fd9c8909293b208689afca0c88a6f1/kotlin-script-runtime-1.6.20.jar</arg>
+              </args>
+            </arrayArg>
+            <arrayArg name="pluginOptions" />
+          </arrayArguments>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../out/test/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../Appendices/AtomicTest/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Appendices/Java Interoperability/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Building Maps/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Building Maps/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Building Maps/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Building Maps/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Building Maps/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Building Maps/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Building Maps/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Folding Lists/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Folding Lists/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Folding Lists/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Folding Lists/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Folding Lists/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Folding Lists/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Folding Lists/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Folding Lists/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Folding Lists/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Higher-Order Functions/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Higher-Order Functions/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Higher-Order Functions/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Higher-Order Functions/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Higher-Order Functions/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Higher-Order Functions/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Higher-Order Functions/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Higher-Order Functions/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Higher-Order Functions/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Lambdas/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Lambdas/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Lambdas/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Lambdas/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Lambdas/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Lambdas/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Lambdas/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Local Functions/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Local Functions/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Local Functions/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Local Functions/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Local Functions/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Local Functions/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Local Functions/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Exercise 6/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Exercise 6/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Exercise 7/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Manipulating Lists/Exercise 7/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Member References/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Member References/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Member References/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Member References/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Member References/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Member References/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Member References/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Operations on Collections/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Operations on Collections/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Operations on Collections/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Operations on Collections/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Operations on Collections/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Operations on Collections/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Operations on Collections/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Operations on Collections/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Operations on Collections/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Recursion/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Recursion/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Recursion/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Recursion/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Recursion/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Recursion/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Recursion/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Recursion/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Recursion/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 6/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 6/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 7/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 7/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 8/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/Sequences/Exercise 8/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/The Importance of Lambdas/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Functional Programming/The Importance of Lambdas/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/The Importance of Lambdas/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/The Importance of Lambdas/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/The Importance of Lambdas/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Functional Programming/The Importance of Lambdas/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functional Programming/The Importance of Lambdas/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Constraining Visibility/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Constraining Visibility/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Constraining Visibility/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Constraining Visibility/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Constraining Visibility/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Constraining Visibility/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Constraining Visibility/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Constraining Visibility/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Constraining Visibility/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Constraining Visibility/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Constraining Visibility/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Constructors/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Constructors/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Constructors/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Constructors/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Constructors/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Constructors/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Constructors/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Constructors/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Constructors/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Creating Classes/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Creating Classes/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Creating Classes/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Creating Classes/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Creating Classes/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Creating Classes/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Creating Classes/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Creating Classes/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Creating Classes/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Creating Classes/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Creating Classes/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Exceptions/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Exceptions/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Exceptions/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Exceptions/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Exceptions/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Exceptions/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Exceptions/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Exceptions/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Exceptions/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Lists/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Lists/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Lists/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Lists/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Lists/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Lists/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Lists/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Lists/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Lists/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Maps/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Maps/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Maps/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Maps/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Maps/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Maps/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Maps/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Maps/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Maps/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Objects Everywhere/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Objects Everywhere/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Objects Everywhere/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Objects Everywhere/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Objects Everywhere/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Objects Everywhere/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Objects Everywhere/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Objects Everywhere/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Objects Everywhere/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Objects Everywhere/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Objects Everywhere/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Packages/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Packages/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Packages/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Packages/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Packages/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Packages/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Packages/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Packages/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Packages/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Properties/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Properties/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Properties/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Properties/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Properties/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Properties/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Properties/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Properties/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Properties/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Property Accessors/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Property Accessors/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Property Accessors/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Property Accessors/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Property Accessors/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Property Accessors/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Property Accessors/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Property Accessors/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Property Accessors/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Property Accessors/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Property Accessors/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Sets/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Sets/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Sets/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Sets/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Sets/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Sets/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Sets/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Sets/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Sets/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 6/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 6/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 7/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 7/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 8/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Summary 2/Exercise 8/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Testing/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Testing/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Testing/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Testing/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Testing/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Testing/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Testing/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Testing/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Testing/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Variable Argument Lists/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Variable Argument Lists/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Variable Argument Lists/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Variable Argument Lists/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Variable Argument Lists/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Variable Argument Lists/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Variable Argument Lists/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Variable Argument Lists/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Variable Argument Lists/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Introduction to Objects/Variable Argument Lists/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Introduction to Objects/Variable Argument Lists/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Abstract Classes/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Abstract Classes/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Abstract Classes/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Abstract Classes/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Abstract Classes/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Abstract Classes/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Abstract Classes/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Base Class Initialization/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Base Class Initialization/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Base Class Initialization/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Base Class Initialization/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Base Class Initialization/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Base Class Initialization/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Base Class Initialization/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Class Delegation/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Class Delegation/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Class Delegation/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Class Delegation/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Class Delegation/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Class Delegation/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Class Delegation/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Companion Objects/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Companion Objects/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Companion Objects/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Companion Objects/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Companion Objects/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Companion Objects/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Companion Objects/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Complex Constructors/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Complex Constructors/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Complex Constructors/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Complex Constructors/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Complex Constructors/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Complex Constructors/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Complex Constructors/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Composition/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Composition/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Composition/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Composition/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Composition/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Composition/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Composition/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Downcasting/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Downcasting/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Downcasting/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Downcasting/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Downcasting/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Downcasting/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Downcasting/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inheritance   Extensions/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inheritance   Extensions/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inheritance   Extensions/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inheritance   Extensions/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inheritance   Extensions/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inheritance/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inheritance/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inheritance/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inheritance/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inheritance/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inheritance/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inheritance/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inner Classes/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inner Classes/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inner Classes/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inner Classes/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inner Classes/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inner Classes/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Inner Classes/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Interfaces/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Interfaces/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Interfaces/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Interfaces/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Interfaces/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Interfaces/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Interfaces/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Nested Classes/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Nested Classes/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Nested Classes/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Nested Classes/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Nested Classes/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Nested Classes/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Nested Classes/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Nested Classes/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Nested Classes/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Objects/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Objects/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Objects/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Objects/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Objects/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Objects/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Objects/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Polymorphism/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Polymorphism/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Polymorphism/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Polymorphism/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Polymorphism/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Polymorphism/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Polymorphism/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Sealed Classes/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Sealed Classes/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Sealed Classes/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Sealed Classes/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Sealed Classes/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Sealed Classes/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Sealed Classes/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Secondary Constructors/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Secondary Constructors/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Secondary Constructors/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Secondary Constructors/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Secondary Constructors/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Secondary Constructors/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Secondary Constructors/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Type Checking/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Type Checking/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Type Checking/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Type Checking/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Type Checking/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Type Checking/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Type Checking/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Upcasting/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Upcasting/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Upcasting/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Upcasting/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Upcasting/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Object-Oriented Programming/Upcasting/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Object-Oriented Programming/Upcasting/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Creating Generics/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Power Tools/Creating Generics/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Creating Generics/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Creating Generics/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Creating Generics/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Creating Generics/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Creating Generics/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Extension Lambdas/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Power Tools/Extension Lambdas/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Extension Lambdas/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Extension Lambdas/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Extension Lambdas/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Extension Lambdas/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Extension Lambdas/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Late Initialization/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Power Tools/Late Initialization/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Late Initialization/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Late Initialization/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Late Initialization/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Late Initialization/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Late Initialization/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Lazy Initialization/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Power Tools/Lazy Initialization/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Lazy Initialization/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Lazy Initialization/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Lazy Initialization/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Lazy Initialization/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Lazy Initialization/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Operator Overloading/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Power Tools/Operator Overloading/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Operator Overloading/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Operator Overloading/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Operator Overloading/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Operator Overloading/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Operator Overloading/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Property Delegation Tools/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Power Tools/Property Delegation Tools/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Property Delegation Tools/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Property Delegation Tools/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Property Delegation Tools/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Property Delegation Tools/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Property Delegation Tools/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Property Delegation Tools/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Property Delegation Tools/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Property Delegation/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Power Tools/Property Delegation/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Property Delegation/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Property Delegation/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Property Delegation/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Property Delegation/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Property Delegation/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Scope Functions/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Power Tools/Scope Functions/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Scope Functions/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Scope Functions/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Scope Functions/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Scope Functions/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Scope Functions/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Using Operators/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Power Tools/Using Operators/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Using Operators/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Using Operators/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Using Operators/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Power Tools/Using Operators/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Power Tools/Using Operators/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Check Instructions/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Check Instructions/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Check Instructions/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Check Instructions/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Check Instructions/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Check Instructions/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Check Instructions/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Check Instructions/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Check Instructions/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Exception Handling/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Exception Handling/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Exception Handling/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Exception Handling/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Exception Handling/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Exception Handling/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Exception Handling/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Logging/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Logging/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Logging/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Logging/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Logging/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Logging/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Logging/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Resource Cleanup/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Resource Cleanup/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Resource Cleanup/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Resource Cleanup/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Resource Cleanup/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Resource Cleanup/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Resource Cleanup/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/The Nothing Type/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/The Nothing Type/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/The Nothing Type/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/The Nothing Type/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/The Nothing Type/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/The Nothing Type/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/The Nothing Type/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Preventing Failure/Unit Testing">
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Unit Testing/Examples/src" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Unit Testing/Exercise 1/src" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Unit Testing/Exercise 1/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Unit Testing/Exercise 2/src" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Unit Testing/Exercise 2/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Unit Testing/Exercise 3/src" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Preventing Failure/Unit Testing/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Booleans/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Booleans/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Booleans/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Booleans/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Booleans/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Booleans/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Booleans/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Booleans/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Booleans/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Data Types/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Data Types/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Data Types/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Data Types/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Data Types/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Data Types/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Data Types/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Data Types/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Data Types/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Data Types/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Data Types/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Expressions   Statements/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Expressions   Statements/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Expressions   Statements/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Expressions   Statements/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Expressions   Statements/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Expressions   Statements/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Expressions   Statements/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Expressions   Statements/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Expressions   Statements/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Functions/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Functions/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Functions/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Functions/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Functions/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Functions/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Functions/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Functions/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Functions/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Hello, World/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Hello, World/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Hello, World/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Hello, World/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Hello, World/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Hello, World/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Hello, World/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Hello, World/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Hello, World/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Hello, World/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Hello, World/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Looping   Ranges/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Looping   Ranges/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Looping   Ranges/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Looping   Ranges/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Looping   Ranges/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Looping   Ranges/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Looping   Ranges/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Looping   Ranges/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Looping   Ranges/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Looping   Ranges/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Looping   Ranges/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Number Types/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Number Types/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Number Types/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Number Types/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Number Types/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Number Types/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Number Types/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Number Types/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Number Types/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Number Types/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Number Types/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Repetition with while/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Repetition with while/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Repetition with while/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Repetition with while/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Repetition with while/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Repetition with while/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Repetition with while/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Repetition with while/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Repetition with while/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Repetition with while/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Repetition with while/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/String Templates/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Programming Basics/String Templates/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/String Templates/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/String Templates/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/String Templates/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/String Templates/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/String Templates/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/String Templates/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/String Templates/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/String Templates/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/String Templates/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 10/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 10/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 6/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 6/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 7/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 7/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 8/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 8/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 9/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/Summary 1/Exercise 9/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/The in Keyword/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Programming Basics/The in Keyword/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/The in Keyword/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/The in Keyword/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/The in Keyword/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/The in Keyword/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/The in Keyword/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/The in Keyword/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/The in Keyword/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/The in Keyword/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/The in Keyword/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/if Expressions/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Programming Basics/if Expressions/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/if Expressions/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/if Expressions/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/if Expressions/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/if Expressions/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/if Expressions/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/if Expressions/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/if Expressions/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/var   val/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Programming Basics/var   val/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/var   val/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/var   val/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/var   val/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/var   val/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/var   val/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/var   val/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/var   val/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Programming Basics/var   val/Exercise 5/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Programming Basics/var   val/Exercise 5/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Data Classes/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Usability/Data Classes/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Data Classes/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Data Classes/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Data Classes/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Data Classes/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Data Classes/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Destructuring Declarations/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Usability/Destructuring Declarations/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Destructuring Declarations/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Destructuring Declarations/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Destructuring Declarations/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Destructuring Declarations/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Destructuring Declarations/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Enumerations/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Usability/Enumerations/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Enumerations/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Enumerations/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Enumerations/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Enumerations/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Enumerations/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Extension Functions/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Usability/Extension Functions/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Extension Functions/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Extension Functions/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Extension Functions/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Extension Functions/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Extension Functions/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Extension Functions/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Extension Functions/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Extension Properties/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Usability/Extension Properties/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Extension Properties/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Extension Properties/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Extension Properties/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Extension Properties/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Extension Properties/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Extensions for Nullable Types/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Usability/Extensions for Nullable Types/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Extensions for Nullable Types/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Extensions for Nullable Types/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Extensions for Nullable Types/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Extensions for Nullable Types/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Extensions for Nullable Types/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Introduction to Generics/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Usability/Introduction to Generics/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Introduction to Generics/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Introduction to Generics/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Introduction to Generics/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Introduction to Generics/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Introduction to Generics/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Named   Default Arguments/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Usability/Named   Default Arguments/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Named   Default Arguments/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Named   Default Arguments/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Named   Default Arguments/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Named   Default Arguments/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Named   Default Arguments/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Named   Default Arguments/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Named   Default Arguments/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Non-Null Assertions/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Usability/Non-Null Assertions/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Non-Null Assertions/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Non-Null Assertions/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Non-Null Assertions/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Non-Null Assertions/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Non-Null Assertions/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Nullable Types/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Usability/Nullable Types/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Nullable Types/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Nullable Types/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Nullable Types/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Nullable Types/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Nullable Types/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Overloading/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Usability/Overloading/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Overloading/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Overloading/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Overloading/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Overloading/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Overloading/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Overloading/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Overloading/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Safe Calls   the Elvis Operator/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Usability/Safe Calls   the Elvis Operator/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Safe Calls   the Elvis Operator/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Safe Calls   the Elvis Operator/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Safe Calls   the Elvis Operator/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/Safe Calls   the Elvis Operator/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/Safe Calls   the Elvis Operator/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/break   continue/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Usability/break   continue/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/break   continue/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/break   continue/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/break   continue/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/break   continue/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/break   continue/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/when Expressions/Examples/test" />
+    <content url="file://$MODULE_DIR$/../../Usability/when Expressions/Exercise 1/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/when Expressions/Exercise 1/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/when Expressions/Exercise 2/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/when Expressions/Exercise 2/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/when Expressions/Exercise 3/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/when Expressions/Exercise 3/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Usability/when Expressions/Exercise 4/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Usability/when Expressions/Exercise 4/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../src/test" />
+    <content url="file://$MODULE_DIR$/../../util/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../util/test" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="AtomicKotlinCourse.main" />
+    <orderEntry type="module" module-name="AtomicKotlinCourse.util.main" />
+    <orderEntry type="module" module-name="AtomicKotlinCourse.util.test" production-on-test="" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.6.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-test:1.6.20" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.13.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-simple:1.7.32" level="project" />
+    <orderEntry type="library" name="Gradle: io.github.microutils:kotlin-logging-jvm:2.0.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.32" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="AtomicKotlinCourse.main" />
+</module>

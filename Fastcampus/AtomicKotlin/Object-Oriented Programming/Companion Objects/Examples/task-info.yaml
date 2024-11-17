@@ -1,0 +1,35 @@
+type: theory
+files:
+  - name: src/CompanionObject.kt
+    visible: true
+    learner_created: false
+  - name: src/NamingCompanionObjects.kt
+    visible: true
+    learner_created: false
+  - name: src/ObjectProperty.kt
+    visible: true
+    learner_created: false
+  - name: src/ObjectFunctions.kt
+    visible: true
+    learner_created: false
+  - name: src/ObjectCounter.kt
+    visible: true
+    learner_created: false
+  - name: src/CompanionInstance.kt
+    visible: true
+    learner_created: false
+  - name: src/CompanionDelegation.kt
+    visible: true
+    learner_created: false
+  - name: src/DelegateAndExtend.kt
+    visible: true
+    learner_created: false
+  - name: src/CompanionFactory.kt
+    visible: true
+    learner_created: false
+  - name: src/Initialization.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

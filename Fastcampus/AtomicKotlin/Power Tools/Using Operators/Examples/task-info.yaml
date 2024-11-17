@@ -1,0 +1,32 @@
+type: theory
+files:
+  - name: src/NewAngle.kt
+    visible: true
+    learner_created: false
+  - name: src/OperatorPlus.kt
+    visible: true
+    learner_created: false
+  - name: src/Unexpected.kt
+    visible: true
+    learner_created: false
+  - name: src/ReadOnlyAndPlus.kt
+    visible: true
+    learner_created: false
+  - name: src/CompareTo.kt
+    visible: true
+    learner_created: false
+  - name: src/ComparableRange.kt
+    visible: true
+    learner_created: false
+  - name: src/DestructuringDuo.kt
+    visible: true
+    learner_created: false
+  - name: src/DestructuringMap.kt
+    visible: true
+    learner_created: false
+  - name: src/DestructuringData.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 250
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 250
+        initialized_from_dependency: false
+        encrypted_possible_answer: haIOyiWmjT4o059TZVeRJ/BnHBRQ8xkqE4ULGDc9k2qK+qzbe7acSTs4D8NLDXpFgAR5HP2dn3ZEity2oeEbdKwkRTj/ob+7jSqh9CiwWL4UnJVQwVMZvh9pDZqwiUejlHoQS0FkJMjSCjF8a9yBv9p4ezkH+gI5xEvtAM+w5MUD6PQ1ikXr4sPfynnHzPqNVsc7RjzkJZkzU9tbrobxxY2S68fvREy7CXqNZ0uIjHGGTr+QwGVLLfKKpt2JqLjwiMgaTPItijusHH+bJWq3n8FCkbXFgyfJfzFzcKZ1ONXVlZzyTwwoLTakvrwlbe9+osIn9dNc88LykUgItkHVkTqTAaFVpHn0OUzQzkb+xyQ=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+Data+Classes+%2F+Exercise2
+status: Unchecked
+record: -1

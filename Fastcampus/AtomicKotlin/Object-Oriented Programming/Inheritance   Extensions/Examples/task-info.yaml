@@ -1,0 +1,41 @@
+type: theory
+files:
+  - name: src/Heater.kt
+    visible: true
+    learner_created: false
+  - name: src/InheritAdd.kt
+    visible: true
+    learner_created: false
+  - name: src/ExtensionFuncs.kt
+    visible: true
+    learner_created: false
+  - name: src/TemperatureDelta.kt
+    visible: true
+    learner_created: false
+  - name: src/Convention.kt
+    visible: true
+    learner_created: false
+  - name: src/UsefulLibrary.kt
+    visible: true
+    learner_created: false
+  - name: src/Adapter.kt
+    visible: true
+    learner_created: false
+  - name: src/ComposeAdapter.kt
+    visible: true
+    learner_created: false
+  - name: src/PrivateAccess.kt
+    visible: true
+    learner_created: false
+  - name: src/NoExtOverride.kt
+    visible: true
+    learner_created: false
+  - name: src/DeviceMembers.kt
+    visible: true
+    learner_created: false
+  - name: src/DeviceExtensions.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

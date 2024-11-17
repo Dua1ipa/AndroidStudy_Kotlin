@@ -1,0 +1,26 @@
+type: theory
+files:
+  - name: src/MembershipInRange.kt
+    visible: true
+    learner_created: false
+  - name: src/MembershipUsingBounds.kt
+    visible: true
+    learner_created: false
+  - name: src/IterationVsMembership.kt
+    visible: true
+    learner_created: false
+  - name: src/InString.kt
+    visible: true
+    learner_created: false
+  - name: src/CharRange.kt
+    visible: true
+    learner_created: false
+  - name: src/FloatingPointRange.kt
+    visible: true
+    learner_created: false
+  - name: src/StringRange.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

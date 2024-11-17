@@ -1,0 +1,31 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 99
+        length: 23
+        placeholder_text: "fun abort(s: String) {}"
+        initial_state:
+          length: 23
+          offset: 99
+        initialized_from_dependency: false
+        encrypted_possible_answer: Sq8AexvTo/79Je8gAm/II2x0tWEHbvhqDB3qd3GWvob8AF5DcF8tJXWDKwiLDFlr
+        selected: false
+        status: Unchecked
+      - offset: 139
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 139
+        initialized_from_dependency: false
+        encrypted_possible_answer: twAEFC1PV++K5Yysg2e1zf1O4n95oD2c4Cr9ARQlciMS3rnd09N5zKpbd9OOhZ9Wyh0hg44RRCBRcay7nbefCQ==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

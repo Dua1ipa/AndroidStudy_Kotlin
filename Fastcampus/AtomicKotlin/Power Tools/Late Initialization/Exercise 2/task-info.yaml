@@ -1,0 +1,45 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 97
+        length: 7
+        placeholder_text: class A
+        initial_state:
+          length: 7
+          offset: 97
+        initialized_from_dependency: false
+        encrypted_possible_answer: qOqvTqZ6VW/WGFcPfOdMPrya9bVuVwQqHL5RwZeCvExHxlYO9s2dw+gQm5bCxT+0jNfFkpgY2Ik/VU/lFRo6K5K30NEmJVgXzR328tiwvwP+b4uStMnT0OSM7maZTUuGgGux5TJRCqysFJ7Uao3wQw==
+        selected: false
+        status: Unchecked
+      - offset: 106
+        length: 7
+        placeholder_text: class B
+        initial_state:
+          length: 7
+          offset: 106
+        initialized_from_dependency: false
+        encrypted_possible_answer: HjEb1B9wpXF5FTluTNmHx32sMsmtoNFMDmDgRQBYn2MPXblXZJ5YevUdMvYLgGKgqGYIGcXnVSNyjRFjDMi2cw==
+        selected: false
+        status: Unchecked
+      - offset: 128
+        length: 44
+        placeholder_text: |-
+          /*
+            val b = B()
+            b.a.s eq "Initialized"
+          */
+        initial_state:
+          length: 44
+          offset: 128
+        initialized_from_dependency: false
+        encrypted_possible_answer: RiNVNIHF9UYT26LTBfHLf9pt3i29Rx2lDM5p8XXtu5rUAqChOTmm0gSAu7yJy/st
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

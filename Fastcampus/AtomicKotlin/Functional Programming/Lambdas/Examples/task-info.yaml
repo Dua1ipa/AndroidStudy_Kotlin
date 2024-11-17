@@ -1,0 +1,38 @@
+type: theory
+files:
+  - name: src/BasicLambda.kt
+    visible: true
+    learner_created: false
+  - name: src/LambdaTypeInference.kt
+    visible: true
+    learner_created: false
+  - name: src/LambdaIt.kt
+    visible: true
+    learner_created: false
+  - name: src/Mapping.kt
+    visible: true
+    learner_created: false
+  - name: src/OmittingParentheses.kt
+    visible: true
+    learner_created: false
+  - name: src/JoinToString.kt
+    visible: true
+    learner_created: false
+  - name: src/LambdaAndNamedArgs.kt
+    visible: true
+    learner_created: false
+  - name: src/TwoArgLambda.kt
+    visible: true
+    learner_created: false
+  - name: src/Underscore.kt
+    visible: true
+    learner_created: false
+  - name: src/ListIndicesMap.kt
+    visible: true
+    learner_created: false
+  - name: src/ZeroArguments.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

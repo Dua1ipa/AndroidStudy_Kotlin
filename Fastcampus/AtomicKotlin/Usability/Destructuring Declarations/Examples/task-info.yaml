@@ -1,0 +1,23 @@
+type: theory
+files:
+  - name: src/Pairs.kt
+    visible: true
+    learner_created: false
+  - name: src/PairDestructuring.kt
+    visible: true
+    learner_created: false
+  - name: src/Computation.kt
+    visible: true
+    learner_created: false
+  - name: src/Tuple.kt
+    visible: true
+    learner_created: false
+  - name: src/ForLoop.kt
+    visible: true
+    learner_created: false
+  - name: src/LoopWithIndex.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

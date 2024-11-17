@@ -1,0 +1,56 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 76
+        length: 22
+        placeholder_text: abstract class Movable
+        initial_state:
+          length: 22
+          offset: 76
+        initialized_from_dependency: false
+        encrypted_possible_answer: T9ZYWna5HmPltdYfNsK6zC1syjf4erVEteomUZ5ZRso=
+        selected: false
+        status: Unchecked
+      - offset: 126
+        length: 24
+        placeholder_text: abstract class Sleepable
+        initial_state:
+          length: 24
+          offset: 126
+        initialized_from_dependency: false
+        encrypted_possible_answer: cMi9haO4MGJr1UXQ4VKKreK41lTLPFlV5j5GoBj4yMY=
+        selected: false
+        status: Unchecked
+      - offset: 182
+        length: 37
+        placeholder_text: "// class Sofa: Movable(), Sleepable()"
+        initial_state:
+          length: 37
+          offset: 182
+        initialized_from_dependency: false
+        encrypted_possible_answer: woBPM3Bx/aTzhGj94HUp+odo+UA28Ediflln4O+x3aA=
+        selected: false
+        status: Unchecked
+      - offset: 234
+        length: 77
+        placeholder_text: |-
+          /*
+            val sofa = Sofa()
+            sofa.move() eq "move"
+            sofa.sleepOn() eq "sleep"
+          */
+        initial_state:
+          length: 77
+          offset: 234
+        initialized_from_dependency: false
+        encrypted_possible_answer: dFdn32mzu3RlajiQD0F64wMXXcGz7CrNOGxYFuS0s8iGJCozca1LjYPpvC6KqAWTiUJsKLPZQ7lrtBYLf3nepBVEmsmC7v7lkjIkdTxb3Fc=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

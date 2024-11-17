@@ -1,0 +1,39 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 99
+        length: 34
+        placeholder_text: // TODO add property and functions
+        initial_state:
+          length: 34
+          offset: 99
+        initialized_from_dependency: false
+        encrypted_possible_answer: ggYbXQ7jWRycLIWxAMzTgdPTwxxOeIeuiSZqPkXi8X8bj9rSYGegeisHIe/Jex2PD9H+DP6oYQLZgA9wdAAr0W3tYGU7+rnmgUto7u1KqgRuZweXyYdeWrZKMxyBmczl0WrT5u0DdOxOd0x8RNlCoBUoW8znQNsJF3hfJoKadK2nO9ntSTOMgzFTUJHDKvizUtxJF7oKf9lV8hePcZbTNA==
+        selected: false
+        status: Unchecked
+      - offset: 185
+        length: 154
+        placeholder_text: |-
+          /*
+            val detergent = Detergent()
+            detergent.dilute()
+            detergent.apply()
+            detergent.scrub()
+            detergent.ops eq
+              listOf("dilute", "apply", "scrub")
+          */
+        initial_state:
+          length: 154
+          offset: 185
+        initialized_from_dependency: false
+        encrypted_possible_answer: CwbRRJICV8WZBj8K6QzbIZYR9HDk0NjHq18j1u+Ag2uXtfIHWNwcUWnsnQV5VrwWE0/NsKuB3zdxDlGIQdbeUIo8atUVhClShtlrq1tUBWwGOs6V7Hfi6juFs4XVZ7cK5C4yLt2O9vbC9xQI75ecPYri+AD0NMr5tFFlfPSA+hkuX55SgH82aDY9eEMWIYBqMzkoTcuc42etd3q8fJ518A==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

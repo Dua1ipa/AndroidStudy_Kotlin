@@ -1,0 +1,17 @@
+type: theory
+files:
+  - name: src/Shapes.kt
+    visible: true
+    learner_created: false
+  - name: src/Drawing.kt
+    visible: true
+    learner_created: false
+  - name: src/TrimmedMembers.kt
+    visible: true
+    learner_created: false
+  - name: src/Assignment.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

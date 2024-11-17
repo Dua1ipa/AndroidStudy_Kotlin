@@ -1,0 +1,29 @@
+type: theory
+files:
+  - name: src/EagerEvaluation.kt
+    visible: true
+    learner_created: false
+  - name: src/EagerVsLazyEvaluation.kt
+    visible: true
+    learner_created: false
+  - name: src/NoComputationYet.kt
+    visible: true
+    learner_created: false
+  - name: src/TerminalOperations.kt
+    visible: true
+    learner_created: false
+  - name: src/GenerateSequence1.kt
+    visible: true
+    learner_created: false
+  - name: src/GenerateSequence2.kt
+    visible: true
+    learner_created: false
+  - name: src/DefineTakeIf.kt
+    visible: true
+    learner_created: false
+  - name: src/NumberSequence2.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

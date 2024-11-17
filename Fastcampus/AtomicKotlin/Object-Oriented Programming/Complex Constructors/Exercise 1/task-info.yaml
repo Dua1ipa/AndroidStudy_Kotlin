@@ -1,0 +1,35 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 95
+        length: 19
+        placeholder_text: // TODO class Alien
+        initial_state:
+          length: 19
+          offset: 95
+        initialized_from_dependency: false
+        encrypted_possible_answer: oY59ZACVmKvVGXlt6GMu5U6I71FpFTQBXluh+BoEx6xQ9YdhDtvVVEu9YDhNQ2RGbOvazmQbcwllIKjym1echrxoqvHRRuybF6XZrMzRJghFyfMADyg1kGM/Bl+PAfMi
+        selected: false
+        status: Unchecked
+      - offset: 129
+        length: 74
+        placeholder_text: |-
+          /*
+            val alien = Alien("Pencilvester")
+            alien.myName eq "Pencilvester"
+          */
+        initial_state:
+          length: 74
+          offset: 129
+        initialized_from_dependency: false
+        encrypted_possible_answer: FBSCeyGzcs5YeJT2XixzubedDyqKUhuKfoy/1xjwM2k/yHWRBfTtABN1EEP8VHVf0pGwrESAwtTb60Ph9tpmo+7HAkl7VHsLLt5tDnyEuSU=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

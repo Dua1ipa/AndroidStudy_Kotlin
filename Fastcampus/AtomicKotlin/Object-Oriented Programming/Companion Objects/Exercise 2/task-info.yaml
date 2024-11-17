@@ -1,0 +1,46 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 285
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 285
+        initialized_from_dependency: false
+        encrypted_possible_answer: /Suh9hSFpKNmc54asC8BHza6LZja3nXJBRlakxDS64qL/KOtJC7+a5oLVyc0QSrsqCg52B5qS/ujbfrT1VXktBcQORKMqB9+2zhX3B8H04cgLvwV5D3/JogbkfQ6o05r8B9xjbCI6pdFwr736krGha/N/O40Ko08WhH28vbFiV91yZcL7wxrxXZj5QKAagzzq0vGeCwH+zA0yhZGm8GAQ5dmj4aBUCWbDLCbs+LSy6exa9zLrF2s1K8Beo7kwHlOe+7pBst5+Rkk1pbBN5tUDVnVO9/ssce4VBBOD+lYIgUGgnSPbjIE/cw8i+aoVO1QeiG7LjKzGp/u/ng0G+ay4ooOs/NFc59vsvZTZx2gwfvROJEFIfVUGt6HOJ+ymbOFU15ty1wvvmfXlPkcwsaGicFAqOUZNLodAUfoDcxcFWn0RUnQY1LvOzdfnGXyiQ4u/SESwgydpqOL5GqE9dEW6z9vMFhJADE/9SbUJdwUtybTO/CwKB+ESn05rDssd1/UFyBmca0a/K6EyyZDbMCi8ocVdSCB8xZwy34XkOYdUhPOa82ABmdSu3rLj7JW+QuqYwtiZcdUuzDoHxlVVYhETXFrRkQq7IpjljOMC7TaBklHhewTjCqfX1UafmUalbxD7o/9+nqJKhWwxq2/veq6j5kZefrlA+0ckhBASjdUeC/xDp4qQjytUIQn2YyeISQVnjkihvoJu41n2irR2VWHc5s32NLeIxh+fPaJZkK345TwOm6TpImnbtS79gYh8lKVXY3cLWoSw/HlOPZFANfcd3Yo16aU4iEQebNxOwTqgNIQSWSYu7KSAvL/UOMR/6fzgr1F5IWSC+aLIYeMnVC1IiQrtijl3QuEIiQnwvjkTDaOR+z17BBkgIrOZUQOZ7vb
+        selected: false
+        status: Unchecked
+      - offset: 399
+        length: 247
+        placeholder_text: |-
+          /*
+            playGame(Checkers.Factory)
+            playGame(Chess.Factory)
+            trace eq """
+            BoardGame.createBoard()
+            Checkers move 0
+            Checkers move 1
+            Checkers move 2
+            BoardGame.createBoard()
+            Chess move 0
+            Chess move 1
+            Chess move 2
+            Chess move 3
+            """
+          */
+        initial_state:
+          length: 247
+          offset: 399
+        initialized_from_dependency: false
+        encrypted_possible_answer: JvU5T8oidx4IEHtMVVUmbHnO6BB3F/Pt34ayt7JW3ujELYW3MKzeSDXG4rIfqwhWqniSEs9kAY+/rK6nYyAcZugptMANP2xHhMv4BslRsxqXtXjWVtAGpRrKzt2emHObhJ67OHMkTT/OIsy04/OxF3KHRlwWt2q3THMuwxT0lz2lpvMm0OSnF7JzSpdKhJr/aIGw2AYCHHSu+pCr7BFJupZs1aQhfdY2mcQXaQeSUWTzayYBYFy1dhwakGjQGkQFjO4L9V/5rcGuvqshb3wHc29lM1b5TgrC+37B0idi4f6xGCpVDaTmzs/8NlizgNF2I12gj12ckJVLTU61uERHzK15ruzdjd9cJkRiJYJrijU=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

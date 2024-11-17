@@ -1,0 +1,23 @@
+type: output
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 67
+        length: 38
+        placeholder_text: |-
+          println("Hello,")
+            println("Kotlin!")
+        initial_state:
+          length: 38
+          offset: 67
+        initialized_from_dependency: false
+        encrypted_possible_answer: qDXRIskLetSSUoj/gkBc5Idd8HpqEY3Y7lMI99wP1JwIkC1GfHssxCBRTfV9VyKN
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/output.txt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
