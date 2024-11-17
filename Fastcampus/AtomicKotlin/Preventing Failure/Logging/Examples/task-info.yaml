@@ -1,0 +1,17 @@
+type: theory
+files:
+  - name: src/BasicLogging.kt
+    visible: true
+    learner_created: false
+  - name: src/SimpleLoggingStrategy.kt
+    visible: true
+    learner_created: false
+  - name: src/AtomicLog.kt
+    visible: true
+    learner_created: false
+  - name: src/UseAtomicLog.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

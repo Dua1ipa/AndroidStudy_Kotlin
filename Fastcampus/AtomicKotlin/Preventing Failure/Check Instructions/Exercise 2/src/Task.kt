@@ -1,0 +1,46 @@
+// CheckInstructions/CheckInstructionsSoln2.kt
+package checkInstructionsExercise2
+import atomictest.*
+
+fun fn(s: String?): String {
+  TODO()
+}
+
+fun gn(d: Double?): Double {
+  TODO()
+}
+
+fun main() {
+  capture { fn(null) } eq
+    "IllegalArgumentException: " +
+    "Required value was null."
+  capture { fn("") } eq
+    "IllegalArgumentException: " +
+    "s must not be empty, is []"
+  capture { fn("   ") } eq
+    "IllegalArgumentException: " +
+    "s must not be blank, is [   ]"
+  capture { fn("abcdef") } eq
+    "IllegalArgumentException: " +
+    "s must contain 3 parts " +
+    "separated by '-', is [abcdef]"
+  capture { fn("-abcdef-") } eq
+    "IllegalArgumentException: " +
+    "s must contain 3 parts " +
+    "separated by '-', is [-abcdef-]"
+  capture { fn("-abc-def-") } eq
+    "IllegalArgumentException: " +
+    "s must contain 3 parts " +
+    "separated by '-', is [-abc-def-]"
+  fn("ab-cd-ef") eq "ab-cd-ef"
+  capture { gn(null) } eq
+    "IllegalArgumentException: " +
+    "Required value was null."
+  capture { gn(-0.1) } eq
+    "IllegalArgumentException: " +
+    "Failed requirement."
+  capture { gn(11.0) } eq
+    "IllegalArgumentException: " +
+    "Failed requirement."
+  gn(5.5) eq 5.5
+}

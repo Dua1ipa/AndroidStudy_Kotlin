@@ -1,0 +1,26 @@
+type: theory
+files:
+  - name: src/Airport.kt
+    visible: true
+    learner_created: false
+  - name: src/NestedHouse.kt
+    visible: true
+    learner_created: false
+  - name: src/LocalClasses.kt
+    visible: true
+    learner_created: false
+  - name: src/ReturnLocal.kt
+    visible: true
+    learner_created: false
+  - name: src/WithinInterface.kt
+    visible: true
+    learner_created: false
+  - name: src/Ticket.kt
+    visible: true
+    learner_created: false
+  - name: src/FillIt.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

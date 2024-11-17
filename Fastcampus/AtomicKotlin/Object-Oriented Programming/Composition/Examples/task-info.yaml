@@ -1,0 +1,20 @@
+type: theory
+files:
+  - name: src/House1.kt
+    visible: true
+    learner_created: false
+  - name: src/House2.kt
+    visible: true
+    learner_created: false
+  - name: src/House3.kt
+    visible: true
+    learner_created: false
+  - name: src/Embedding.kt
+    visible: true
+    learner_created: false
+  - name: src/Car.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

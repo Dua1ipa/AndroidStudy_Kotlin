@@ -1,0 +1,33 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 53
+        length: 19
+        placeholder_text: // isValidCharacter
+        initial_state:
+          length: 19
+          offset: 53
+        initialized_from_dependency: false
+        encrypted_possible_answer: bn8ZGZ3pQVmKv9p+91IalJSTd5R6uY1n/xCJAHv1v/vPvj4Ud5Y8GHrxjruQPQiM3RTpnQfsVMPAdkQvvZFaRGV6qlqV7PxiUhMys9IICDSuNKZE4I1hEnWFtgQcxV0JBpSYrNP1Lvfwn3ooDrHi7Q==
+        selected: false
+        status: Unchecked
+      - offset: 120
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 120
+        initialized_from_dependency: false
+        encrypted_possible_answer: vCsSe91GrTUFsXBnyiTHN18BBrFMNdzUy+EYHtiBkhA8Z5STOwXS4KLKr80fBt08CbqO+jX1FgGaSxfAsyUwYFmtVVIDnd42oxQUgfdKLcOJmkD6QHO09sMhylIYyv0SmCrZPyiWsBA3xG5LT8O+ILm/AedE9DKzRZJIQqkFXlPzuJ4Ohs3yRncgaoW2G3rZ
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+The+in+Keyword+%2F+Exercise4
+status: Unchecked
+record: -1

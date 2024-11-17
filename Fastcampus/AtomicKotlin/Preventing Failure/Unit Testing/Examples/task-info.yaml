@@ -1,0 +1,26 @@
+type: theory
+files:
+  - name: src/NoFramework.kt
+    visible: true
+    learner_created: false
+  - name: src/UsingExpect.kt
+    visible: true
+    learner_created: false
+  - name: src/SampleTest.kt
+    visible: true
+    learner_created: false
+  - name: src/StateMachine.kt
+    visible: true
+    learner_created: false
+  - name: src/StateMachineTest.kt
+    visible: true
+    learner_created: false
+  - name: src/Learner.kt
+    visible: true
+    learner_created: false
+  - name: src/LearnerTest.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

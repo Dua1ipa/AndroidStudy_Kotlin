@@ -1,0 +1,38 @@
+type: theory
+files:
+  - name: src/Vanbo.kt
+    visible: true
+    learner_created: false
+  - name: src/Parameters.kt
+    visible: true
+    learner_created: false
+  - name: src/FunctionParameters.kt
+    visible: true
+    learner_created: false
+  - name: src/LambdaUnitReturn.kt
+    visible: true
+    learner_created: false
+  - name: src/Transform.kt
+    visible: true
+    learner_created: false
+  - name: src/FuncReferences.kt
+    visible: true
+    learner_created: false
+  - name: src/ExtensionPolymorphism.kt
+    visible: true
+    learner_created: false
+  - name: src/AnonymousFunction.kt
+    visible: true
+    learner_created: false
+  - name: src/StringCreation.kt
+    visible: true
+    learner_created: false
+  - name: src/ListsAndMaps.kt
+    visible: true
+    learner_created: false
+  - name: src/Sandwich.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

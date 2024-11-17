@@ -1,0 +1,40 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 88
+        length: 17
+        placeholder_text: class CountingSet
+        initial_state:
+          length: 17
+          offset: 88
+        initialized_from_dependency: false
+        encrypted_possible_answer: sajxz5Zrr/bgeS02XwewtfkTxy1elYT9796BP5T5k56wOJr9bive4OrE/j2uw7n/LMrtLF1itzygSAi2Kygr/WXoStpTpNE85BmUCUUTXHKJ+hY7zph18IPVI/HX/lfht4kcORavU4Eku+SnsOGRyCLxUC2yg734fX8yUx7FyaLSiCMDl2fOvQUgxWonxVS8Y61OpxQVC+hMLk4212gyjeKBmiqfEWAz9wif2LVL0PGgyTpVIezoN5wWuTmVKg5uNVClGY1lObl9gv61sqhjojmI5xCO2jmj2dco0z+NoKDDIKtEqnXUDYXhzzMAf46V
+        selected: false
+        status: Unchecked
+      - offset: 120
+        length: 155
+        placeholder_text: |-
+          /*
+            val cs = CountingSet<String>()
+            cs.add("abc")
+            cs.add("abc")
+            cs.add("def")
+            cs.count("abc") eq 2
+            cs.count("def") eq 1
+            cs.count("xyz") eq 0
+          */
+        initial_state:
+          length: 155
+          offset: 120
+        initialized_from_dependency: false
+        encrypted_possible_answer: 6W49skpZbErSU1UDb3fx0Bw+YKN56cpqPxDeYxF+YnBKx6JfdAymQYVINX+XvjErPfWuDm/bAEYHke/BZyK2DrvoH42qZiqEzp+OSbht6Dp/PHxFvMCSyluWZu03UqcXeGB1uBOv+RIVu0p0zLwAXsAPYyeIi7jH2wxEnQfdmozpL6oxRUCIJhU5JLVfmv7UfwwKvPF5APb7hCBCeDIV1g==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,38 @@
+type: theory
+files:
+  - name: src/InferInt.kt
+    visible: true
+    learner_created: false
+  - name: src/Modulus.kt
+    visible: true
+    learner_created: false
+  - name: src/IntDivisionTruncates.kt
+    visible: true
+    learner_created: false
+  - name: src/OpOrder.kt
+    visible: true
+    learner_created: false
+  - name: src/OpOrderParens.kt
+    visible: true
+    learner_created: false
+  - name: src/BMIMetric.kt
+    visible: true
+    learner_created: false
+  - name: src/BMIEnglish.kt
+    visible: true
+    learner_created: false
+  - name: src/IntegerOverflow.kt
+    visible: true
+    learner_created: false
+  - name: src/LongConstants.kt
+    visible: true
+    learner_created: false
+  - name: src/UsingLongs.kt
+    visible: true
+    learner_created: false
+  - name: src/BiggestLong.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

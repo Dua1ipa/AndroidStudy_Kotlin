@@ -1,0 +1,21 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 68
+        length: 16
+        placeholder_text: // bark function
+        initial_state:
+          length: 16
+          offset: 68
+        initialized_from_dependency: false
+        encrypted_possible_answer: b5nKVehwmBTHE6QZ0KxjxzkurQHTzqB0k6hRqNg6+SLuUUh+5pKnGQex0utG3EeFAxXE9opsNW9WtokENzjjWaRqGaOwh03De4+N2wB/AK0vR8m01WJBQy24/hi0rHjG
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

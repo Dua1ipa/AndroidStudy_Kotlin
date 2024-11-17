@@ -1,0 +1,23 @@
+type: theory
+files:
+  - name: src/InfiniteLoop.kt
+    visible: true
+    learner_created: false
+  - name: src/Todo.kt
+    visible: true
+    learner_created: false
+  - name: src/Fail.kt
+    visible: true
+    learner_created: false
+  - name: src/CheckObject.kt
+    visible: true
+    learner_created: false
+  - name: src/CheckObject2.kt
+    visible: true
+    learner_created: false
+  - name: src/ListOfNothing.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

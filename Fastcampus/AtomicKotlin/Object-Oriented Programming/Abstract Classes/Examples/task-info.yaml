@@ -1,0 +1,32 @@
+type: theory
+files:
+  - name: src/AbstractKeyword.kt
+    visible: true
+    learner_created: false
+  - name: src/Redundant.kt
+    visible: true
+    learner_created: false
+  - name: src/StateOfAClass.kt
+    visible: true
+    learner_created: false
+  - name: src/NoStateInInterfaces.kt
+    visible: true
+    learner_created: false
+  - name: src/Implementations.kt
+    visible: true
+    learner_created: false
+  - name: src/PropertyAccessor.kt
+    visible: true
+    learner_created: false
+  - name: src/NoMultipleInheritance.kt
+    visible: true
+    learner_created: false
+  - name: src/MultipleInterfaceInheritance.kt
+    visible: true
+    learner_created: false
+  - name: src/InterfaceCollision.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

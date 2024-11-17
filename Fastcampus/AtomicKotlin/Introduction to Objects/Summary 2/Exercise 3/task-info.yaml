@@ -1,0 +1,21 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 69
+        length: 21
+        placeholder_text: class FixedSizeHolder
+        initial_state:
+          length: 21
+          offset: 69
+        initialized_from_dependency: false
+        encrypted_possible_answer: jV4g6VXjjR9K+Dl9ZBkhSCqb3CXlXIbVfasvIHl/xfyOmhIi8M9OSQJA6OEV+4pRl6UFv3GbkH2A41xVrNmnpPIdemtfx8Yhx5xNYDhGIPW2KETXkJSzSGZ5FCN2IVexhyIaLhk9yLnlflacg2YZujlmrwt/dc13lJ5bt1iOTF/XcwUlgm4wA5i8BdsFn8foT4TzEMdZoyt6fn7LlF1bE358T/9mygMXG7zHfCzBLNbbWP5Ri3FFYNCyTzIh1Kz2M2+DcP4X0CDgqlDpuwqAmNCq2yCt5wn8TYKfOTRnnbgWz67GaylcmRXbr2FobPHvuFSSQp3/VbHfFwn1cP0M5gl8/bWk/ao31AB0Pq8ljf+czGdG8TUq1SDyrKd7La4I9ZcRlR0C33QEkIkMsK7H1A==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

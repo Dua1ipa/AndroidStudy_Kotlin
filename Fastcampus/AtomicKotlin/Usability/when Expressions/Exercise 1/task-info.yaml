@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 155
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 155
+        initialized_from_dependency: false
+        encrypted_possible_answer: EfiNrUh8iLou1z9JDD4MP+V8Lz3mg1pLiIonAZK0x+BTQmuiF0UKTi/gbTHZ1gh8fhTfTL5Cf6cC/Nxr0ivFK9X62ENTWDYvLUd7rH70SlahkaJMu8mRxPyAf56icMSmxsm+P6yipkhyw29JWZUvdfmn3xbFBsFNMxdww0Yxe1NWTfhu/GoSi9Gctv7LN85jvYH6xkYmMstM7r7KWpHrM+nqF4Mel5HaQ/AUotYUB78e8O/C2RInLrJl0LY9J4+7Hy/+Ya7seaZFJkQTK1REPb6grlUzV8+qj3oIKb5L0pqfBzWbhM7QrNIi/7qPvdEaZjATSGPul2bXfGrpqF/hvJZGno1Z0Dd6VmgDpjdytJo=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+when+Expressions+%2F+Exercise1
+status: Unchecked
+record: -1

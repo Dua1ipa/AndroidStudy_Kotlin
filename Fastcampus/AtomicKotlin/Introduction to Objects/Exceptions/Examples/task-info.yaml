@@ -1,0 +1,23 @@
+type: theory
+files:
+  - name: src/ToIntException.kt
+    visible: true
+    learner_created: false
+  - name: src/IntroducingCapture.kt
+    visible: true
+    learner_created: false
+  - name: src/IntroducingNull.kt
+    visible: true
+    learner_created: false
+  - name: src/AverageIncome.kt
+    visible: true
+    learner_created: false
+  - name: src/AverageIncomeWithNull.kt
+    visible: true
+    learner_created: false
+  - name: src/AverageIncomeWithException.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

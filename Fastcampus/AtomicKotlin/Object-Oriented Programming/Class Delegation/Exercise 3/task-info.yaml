@@ -1,0 +1,57 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 164
+        length: 8
+        placeholder_text: class AA
+        initial_state:
+          length: 8
+          offset: 164
+        initialized_from_dependency: false
+        encrypted_possible_answer: 4NIIJggryMCZsg1e8extYk2aa7KQ5TVQdvqdYJuQJxtxoKCK7miLyDlu4knhfOp6FuZdOH0rDg7xFFWOMK3MwJfZilKOYgfqeEWLI/akcN7Ufzui2AtO/362na/r7KtUO4qHC2KoP3Z1adu5hV3LQw==
+        selected: false
+        status: Unchecked
+      - offset: 174
+        length: 8
+        placeholder_text: class BB
+        initial_state:
+          length: 8
+          offset: 174
+        initialized_from_dependency: false
+        encrypted_possible_answer: 7cxe1WgdEQ+EGjIvQjfBDyXheTag3/+Jq/RrTQ4zD6JAUc6U/EuCkQNlCbWHjj3CGOCPiyqMnJqoQT8HzLjvwCuSaZQ6vsWAS72pmeCZ0AF0GR9PvTY9UvVe8vt5KSsTNWGOBcwf7CGxSRNs1i/UGw==
+        selected: false
+        status: Unchecked
+      - offset: 184
+        length: 16
+        placeholder_text: class Delegation
+        initial_state:
+          length: 16
+          offset: 184
+        initialized_from_dependency: false
+        encrypted_possible_answer: S+HK3p53YxAOOMqen3Ug4mOeEbp/1/xu8ZTReFSSqH0zw8Vvlg5PqiFGRakeZNqJYPcHMXPrT2HKg6cpTtjWFR7EPghuc0qiAWUOXvcirY7hVtOU7kplWXyucDg7QbYo4Zyvy6uMv0aKpWa+I5sPeQ+DvZz1s5GvTeEPBGtNhNh3+VkFBdxUHrKEJJBw4SZT
+        selected: false
+        status: Unchecked
+      - offset: 215
+        length: 68
+        placeholder_text: |-
+          /*
+            val d = Delegation(AA(), BB())
+            d.foo()
+            d.bar()
+            d.baz()
+          */
+        initial_state:
+          length: 68
+          offset: 215
+        initialized_from_dependency: false
+        encrypted_possible_answer: c5pfUcazDNlQug5OJ44/vi5TpD+6763GgDmRwEvm5U/CzFEV92dIVe4WCxG/wKdfzl04+aZguVCOmxLkavcLAQ==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

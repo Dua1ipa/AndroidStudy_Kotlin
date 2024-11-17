@@ -1,0 +1,41 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 592
+        length: 12
+        placeholder_text: class Dragon
+        initial_state:
+          length: 12
+          offset: 592
+        initialized_from_dependency: false
+        encrypted_possible_answer: L7LZwyI+OodkJUijOMPIqn30x2aGBCG3/nImabk8qQVmAN5DgwaqCkwzgbLIq3oJHYnoyiqc/jBalXiVdAxTsFGjVPaDSCcGpsgI4VmXEec=
+        selected: false
+        status: Unchecked
+      - offset: 606
+        length: 12
+        placeholder_text: class Wizard
+        initial_state:
+          length: 12
+          offset: 606
+        initialized_from_dependency: false
+        encrypted_possible_answer: pYYrSfNRbmQVSanqDaPBxg2JRKl0U5VDsxWnTLGOHpUFwOHColS8ok6gITdfTpPfX16MsG+15ezqSfyCBGVHYUzBeDTN3Pf3jJHEaqU7KPbWJorXq75XHUWKNvdszHXQXmDJGZL8B7XtO6PFWqxCdg==
+        selected: false
+        status: Unchecked
+      - offset: 774
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 774
+        initialized_from_dependency: false
+        encrypted_possible_answer: +YMRS0/VJZ6KlJ01mvy5CA==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

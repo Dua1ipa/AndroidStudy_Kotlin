@@ -1,0 +1,35 @@
+type: theory
+files:
+  - name: src/People.kt
+    visible: true
+    learner_created: false
+  - name: src/GroupBy.kt
+    visible: true
+    learner_created: false
+  - name: src/GroupByVsFilter.kt
+    visible: true
+    learner_created: false
+  - name: src/AssociateWith.kt
+    visible: true
+    learner_created: false
+  - name: src/AssociateBy.kt
+    visible: true
+    learner_created: false
+  - name: src/AssociateByUnique.kt
+    visible: true
+    learner_created: false
+  - name: src/GetOrPut.kt
+    visible: true
+    learner_created: false
+  - name: src/FilterMap.kt
+    visible: true
+    learner_created: false
+  - name: src/TransformingMap.kt
+    visible: true
+    learner_created: false
+  - name: src/SimilarOperation.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

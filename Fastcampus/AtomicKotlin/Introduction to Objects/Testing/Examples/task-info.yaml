@@ -1,0 +1,20 @@
+type: theory
+files:
+  - name: src/TestingExample.kt
+    visible: true
+    learner_created: false
+  - name: src/Trace1.kt
+    visible: true
+    learner_created: false
+  - name: src/TDDFail.kt
+    visible: true
+    learner_created: false
+  - name: src/TDDStillFails.kt
+    visible: true
+    learner_created: false
+  - name: src/TDDWorks.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

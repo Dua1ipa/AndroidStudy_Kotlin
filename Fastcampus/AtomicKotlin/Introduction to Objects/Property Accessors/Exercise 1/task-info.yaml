@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 396
+        length: 31
+        placeholder_text: /* add 'empty' property here */
+        initial_state:
+          length: 31
+          offset: 396
+        initialized_from_dependency: false
+        encrypted_possible_answer: xZh0MuPGJyHenMSQf9fIDIUa8wJ4Oogbnm8ei5uXLw3PQt1qFpbuBBkw2Gfv8yBvOZgt3hFNBSEODpOkEG67mA==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Property+Accessors+%2F+Exercise1
+status: Unchecked
+record: -1

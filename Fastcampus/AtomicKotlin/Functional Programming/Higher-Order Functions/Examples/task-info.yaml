@@ -1,0 +1,26 @@
+type: theory
+files:
+  - name: src/IsPlus.kt
+    visible: true
+    learner_created: false
+  - name: src/CallingReference.kt
+    visible: true
+    learner_created: false
+  - name: src/Any.kt
+    visible: true
+    learner_created: false
+  - name: src/RepeatByInt.kt
+    visible: true
+    learner_created: false
+  - name: src/Repeat.kt
+    visible: true
+    learner_created: false
+  - name: src/NullableReturn.kt
+    visible: true
+    learner_created: false
+  - name: src/NullableFunction.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,21 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 60
+        length: 18
+        placeholder_text: "fun printArgs() {}"
+        initial_state:
+          length: 18
+          offset: 60
+        initialized_from_dependency: false
+        encrypted_possible_answer: olyhDC46T64ELVenBUiixIFP5QwO2igCkMRjnR0dr3/P/Ml0f5ojRV+miPVEmaVnxNljU6Xi889iOGC1tjw+TzJ8bQBCV0R6jUF23jDrsr4=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

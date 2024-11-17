@@ -1,0 +1,76 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 119
+        length: 38
+        placeholder_text: |-
+          fun sandwich2(): Sandwich {
+            TODO()
+          }
+        initial_state:
+          length: 38
+          offset: 119
+        initialized_from_dependency: false
+        encrypted_possible_answer: ssscFEYJPIEpsYMxdieJGPiRB8MOqbJraBTFsvQEX2wpFsQXzYOFoBd8+LQREb8gtmwtz+E/jGywemyxrCRX3j3WQSXhe/LGxCG4tvjhv5SJzLLe2hrxMV9XKriOXVD1/r0fuTxNRgGvEIW4IbTjdwkSVNKUD+1w0O3l7DS4IyrvM7vpMl6FsIPljhvQnXXjRp2carX8YAcJ2lLmhjzkailBbB6W+994/ZaZCCVwg4k7APDY95CLVb9/bh6+KLpBqrr0tWOb7DioFXPV/crIJw==
+        selected: false
+        status: Unchecked
+      - offset: 159
+        length: 38
+        placeholder_text: |-
+          fun sandwich3(): Sandwich {
+            TODO()
+          }
+        initial_state:
+          length: 38
+          offset: 159
+        initialized_from_dependency: false
+        encrypted_possible_answer: IcC4gc3oCkq3Yu2ALPF5fHRHpTHZ2yh6g0aIs3vrSLsW8ZJYQuyvEz5/H8728fRJOOs35yewhj9NmKl/MF/45D0qtLrPHGECto6hHy81qclsvq87f762OS0n4/TQROWip0TdmMJEpRBj/XgVp2s5nA==
+        selected: false
+        status: Unchecked
+      - offset: 199
+        length: 539
+        placeholder_text: |-
+          /*
+          val PBJ1 = sandwich2 {
+            add(PeanutButter())
+            add(GrapeJelly())
+          }
+          
+          val PBJ2 = sandwich2({ toast() }) {
+            add(PeanutButter())
+            add(GrapeJelly())
+          }
+          
+          val PBJ3 = Sandwich().toast().sandwich3 {
+            add(PeanutButter())
+            add(GrapeJelly())
+          }
+          
+          val PBJ4 = Sandwich().toast().sandwich3 {
+            add(PeanutButter())
+            add(GrapeJelly())
+          }.grill()
+          
+          fun main() {
+            PBJ1 eq "[PeanutButter, GrapeJelly]"
+            PBJ2 eq "[Toast, PeanutButter, GrapeJelly]"
+            PBJ3 eq "[Toast, PeanutButter, GrapeJelly]"
+            PBJ4 eq
+              "[Toast, PeanutButter, GrapeJelly, Grill]"
+          }
+          */
+        initial_state:
+          length: 539
+          offset: 199
+        initialized_from_dependency: false
+        encrypted_possible_answer: iR196Mwa7hpfTrW8Jl+kRSPKr/UqUMPVu++D7+/jSfmGobeiSnv9za52AoKtsk25mx9f8zElRSZy2CUTgOyhD3MotM4H9N17xP2pRQhI+6UH1EYmNHQD86zc/c/4+RiyCmh0qmg6W36TQmc9qc0QlCLFLzAg49nAmmsUOaju1a3TxRjaw7f7/hJ58S5Ivv8HtiNvBsNPTruzkNd/WKBzyJyfDsPl42wenNjlg2wrBvNUhoykNtGToyqVeog3FBCE4Su35qq6uyOxteXqbG1NfO1WC0csafnT7re2WRsIJ+2Bkchr1XxCARgMriH9042maA+27Lgdz7YKN/ffH1ghNjhTmQFwd409gWnYT6NqlFjV7OUzJ1QXLSmOKe59ZdqQNyAnwV4LSGw1FsTEZOrZZ9Z6fOJ6lLsNNTUDdR0Yc2IexOyLxO8tS9wVXDDbgGsVqlW9c5aoxuJY1XG5IoPr1Q4dfeequdH02p0rg9ng9N/bQk4V/GGXvDxDSNvYyEx/q1qFfVXgeBoG2ZQYsTMzkrS5W+vN+IQRzzlLxlZB9AqG5n4vQ7bW1qd0PWHioTUMvSB2Me7gAqjXKJHXvKUih1Jpev3AIEtYR46J7+OYJw8YTMZpR2xs+fKmyxQKb16qBk0PkUddspL09knSyoZ8caXMelOfOoHq9UOT+CUMoaWJvk2SCKAewCkjiFIw1tzVhtXpo4VBASyqpjZwnGrS8Q==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

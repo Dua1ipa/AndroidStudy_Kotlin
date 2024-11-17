@@ -1,0 +1,39 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 92
+        length: 49
+        placeholder_text: "/* TODO: Implement Animal, Cat and Dog classes */"
+        initial_state:
+          length: 49
+          offset: 92
+        initialized_from_dependency: false
+        encrypted_possible_answer: uAAxTuqXrgkAI7v6kd6XEktT7fVJvztVGuRIE3V6VIoFaanpnvsziRZ5mOE6No6ZnLgl0LiwVjHlMTV9utHk13VXKN/5rBKVrj7N688GqLeHCC7ZgB25HSp8FFRDlMtdR9nunBIYovOGFdAWyTuaks6aJHu9gkfqZgSHGxg5JzzpFNTsKyX9B8zNUqV4M97zZ0ErUeGYv2tqwr3VcP2n9g==
+        selected: false
+        status: Unchecked
+      - offset: 156
+        length: 125
+        placeholder_text: |-
+          /*
+            val animal = Animal()
+            trace(animal.sound)
+            val cat = Cat()
+            trace(cat.sound)
+            val dog = Dog()
+            trace(dog.sound)
+          */
+        initial_state:
+          length: 125
+          offset: 156
+        initialized_from_dependency: false
+        encrypted_possible_answer: /qvJ5CyciGElHihRUllvQOGlTk1Yj9x4njdnN+FEE/i3P+PYa03ql8mgSq2EUbHKbh3cyV4IUz6d562BAfD13aRgQnw005qFHBE0JR0a/2cSxQif/M2ev372yfGLM/wXcb6MQ76yfPExzMl9oaNPappdTZYqrEMJLA5Ttanf4nQ=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

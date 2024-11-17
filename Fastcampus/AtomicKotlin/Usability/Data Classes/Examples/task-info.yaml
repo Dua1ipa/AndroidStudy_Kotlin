@@ -1,0 +1,17 @@
+type: theory
+files:
+  - name: src/Simple.kt
+    visible: true
+    learner_created: false
+  - name: src/DataClasses.kt
+    visible: true
+    learner_created: false
+  - name: src/CopyDataClass.kt
+    visible: true
+    learner_created: false
+  - name: src/HashCode.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

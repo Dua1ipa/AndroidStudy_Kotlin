@@ -1,0 +1,21 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 87
+        length: 36
+        placeholder_text: "// TODO: create class MessageStorage"
+        initial_state:
+          length: 36
+          offset: 87
+        initialized_from_dependency: false
+        encrypted_possible_answer: M4pr5jIpNOVz4tT3Rdvp/IL8vNv91/sO/mstnHRkEkyoc9rLCoMnMPMNqQVF7D3UR84Z/uutWJ8gftmcZs+9tvJJAL73sgtzYCYCKJYwt0MxfSKppIHgxew18JI4+KoNWceFLNSc9Xu2JM06W18dsHDOO+yuKZZYSAwxYXpVQ1vdztukp+bUGIGuH8Vn2r0Tluv0T5EJBhJy2HR4UYP0c6MKIzY2MKWNpeDBFb3URtrZrOYlbfxUvIw08zq1ghnlt0qG+FYTms/Y1jj9P7+3Bw==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

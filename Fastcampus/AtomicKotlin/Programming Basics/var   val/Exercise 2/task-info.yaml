@@ -1,0 +1,21 @@
+type: output
+files:
+  - name: test/output.txt
+    visible: false
+    learner_created: false
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 65
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 65
+        initialized_from_dependency: false
+        encrypted_possible_answer: ZvXBa7bk21BzV1E4dqfPcx43Y9ZAW4T4jIbLUCrp2rIi3od2Gwe/XwosIi15IdrqWgVjDClSS2BjF/QhJ3fS4w==
+        selected: false
+        status: Unchecked
+    learner_created: false
+status: Unchecked
+record: -1

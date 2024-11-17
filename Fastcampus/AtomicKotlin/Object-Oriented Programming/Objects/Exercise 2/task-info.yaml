@@ -1,0 +1,45 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 137
+        length: 8
+        placeholder_text: /*TODO*/
+        initial_state:
+          length: 8
+          offset: 137
+        initialized_from_dependency: false
+        encrypted_possible_answer: eQvyZQPKebsOdU7VDjpRo4aSHR5x6A9PHMyPT8ZnXtua6N6YvGpbYylTNZheDurFQCrE9seGPfvqtVdAwdy4nA==
+        selected: false
+        status: Unchecked
+      - offset: 226
+        length: 8
+        placeholder_text: /*TODO*/
+        initial_state:
+          length: 8
+          offset: 226
+        initialized_from_dependency: false
+        encrypted_possible_answer: eQvyZQPKebsOdU7VDjpRox9bMehPWVbBwOFfKHPy6XVNyJF8MVdPkrdwAYKDWaMgTJWSrIGks+fzLOWwIzGI6g==
+        selected: false
+        status: Unchecked
+      - offset: 347
+        length: 121
+        placeholder_text: |-
+          /* Outer.Nested.Nested.a eq
+              "Outer.Nested.Nested.a"
+            HasObject.Nested.Nested.a eq
+              "HasObject.Nested.Nested.a" */
+        initial_state:
+          length: 121
+          offset: 347
+        initialized_from_dependency: false
+        encrypted_possible_answer: ONpba2VZckMkIBzH3bF/pGKeuHqC+8c81zCS5RHVUlCT9sU22GTLc4/KEj80R1OkV3wkNnCFwkQqCuDzKy6DsV/7EcGE9G0HDYDNmhCy/HYHQcoGaT72i+AX5z23KxIAZUNTt3H6d8xGlQBIzPVhrCJu12aetyyePFkb7jGtp+k=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

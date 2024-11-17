@@ -1,0 +1,41 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 173
+        length: 3
+        placeholder_text: val
+        initial_state:
+          length: 3
+          offset: 173
+        initialized_from_dependency: false
+        encrypted_possible_answer: RBr/nY8ITrCshLFVC7mP5g==
+        selected: false
+        status: Unchecked
+      - offset: 297
+        length: 28
+        placeholder_text: // operator fun Sum.setValue
+        initial_state:
+          length: 28
+          offset: 297
+        initialized_from_dependency: false
+        encrypted_possible_answer: tLISAoO/trraPUywmEAH11vLyiWak+yYLQlJLu/NSyE5SBwNtyWIU6l9ZBoGAlFM3GgKpR+2rE7ocgVc87ltu/6l8eu2F9Mmbmv2nv44NkUn57HyXrmZ2JxlK7oEFaF87NXJl8xFVH2aaa0JwBVNFQ==
+        selected: false
+        status: Unchecked
+      - offset: 392
+        length: 21
+        placeholder_text: //  addition.sum = 10
+        initial_state:
+          length: 21
+          offset: 392
+        initialized_from_dependency: false
+        encrypted_possible_answer: y3ghe6Sw0j9aEeC7WD142u74u9pgrpz1UG2Lx7sER7o=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

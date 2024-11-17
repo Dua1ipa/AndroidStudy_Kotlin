@@ -1,0 +1,20 @@
+type: theory
+files:
+  - name: src/Bag.kt
+    visible: true
+    learner_created: false
+  - name: src/Suitcase.kt
+    visible: true
+    learner_created: false
+  - name: src/BetterSuitcase.kt
+    visible: true
+    learner_created: false
+  - name: src/FaultySuitcase.kt
+    visible: true
+    learner_created: false
+  - name: src/IsInitialized.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

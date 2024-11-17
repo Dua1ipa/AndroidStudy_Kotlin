@@ -1,0 +1,42 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 131
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 131
+        initialized_from_dependency: false
+        encrypted_possible_answer: 1ArQGkUrKwg1tj3jtEEYe3LpP+xcEUXfgCaFIFbwfjEqTe0nC3OylC0Gzis17du2MFX1LIVdcBhJ22i/Ie93yCkGcAR0ytOfj/mKfkfBg/YcMfjmhvuqu1hMkq5Bx7OhY5033ATOqMPyNlK7UoUTc7yLVAN2w8Low7G0BJ7bKQ0p8fbaybcN6wynKKS0tOmFb7pCrAi1QmlGMvWzwOCemLZboaR+deO1G1DH5fHb+aD5thnV/jHRmmh5gs8oxhiOuMpQ0sd1LHqNWRoGFoVbdpgVzN8oanwEfTiD/9HMNlZk68htGrt77sN8Z0czhkFP
+        selected: false
+        status: Unchecked
+      - offset: 153
+        length: 320
+        placeholder_text: |-
+          /*
+            val intCrates = CrateList<Int>()
+            (0..7).forEach { intCrates.add(it) }
+            intCrates eq
+              "[[0], [1], [2], [3], [4], [5], [6], [7]]"
+            val stringCrates = CrateList<String>()
+            ('a'..'h').map { it.toString() }
+              .forEach { stringCrates.add(it) }
+            stringCrates eq
+              "[[a], [b], [c], [d], [e], [f], [g], [h]]"
+          */
+        initial_state:
+          length: 320
+          offset: 153
+        initialized_from_dependency: false
+        encrypted_possible_answer: hAV19BfgEBXC+mfj80BleZbV4zdBqBzCLTo6aFLxlbJjXO8OgHppUfFHs6Jz2b/ZqD0Hxh6UjRI7w4oAgh1/mjOmyb1KIOQDBJ79pblMjNypHQj20K94IoPSk35aetSoJD/Y7ZHK0LbUGDwtUiDEbHMLBJ9Qn2kSynlHCQ1+9t/NkHpC6VtyOcFxKyt6LUrgi0szlT5lh2xOanrTUcxNNaHPSgYu9q0iP9BEpcjchW9Nj1Lojpf+/OZWUuw20ePR2cZc9uXFU6zSQ8QjTrdx9XWLoNhOmjsv2IQEm7fWDKtwecYFhgdQ4htMdnwn1/EOkiVDklUUdjtnyJ/U2ebEwGUqNkJL8FvA5IfirR3uDGQjN9AWy1yGzC8ZvKI9CxSvhwUN4zlRzHtJO9yxUT3D8FWR3gfuX7fNso0VZZ6PwgA=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

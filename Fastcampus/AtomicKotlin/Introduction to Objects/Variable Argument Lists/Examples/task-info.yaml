@@ -1,0 +1,29 @@
+type: theory
+files:
+  - name: src/ListOf.kt
+    visible: true
+    learner_created: false
+  - name: src/VariableArgList.kt
+    visible: true
+    learner_created: false
+  - name: src/VarargSum.kt
+    visible: true
+    learner_created: false
+  - name: src/VarargLikeList.kt
+    visible: true
+    learner_created: false
+  - name: src/SpreadOperator.kt
+    visible: true
+    learner_created: false
+  - name: src/TwoFunctionsWithVarargs.kt
+    visible: true
+    learner_created: false
+  - name: src/MainArgs.kt
+    visible: true
+    learner_created: false
+  - name: src/MainArgConversion.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

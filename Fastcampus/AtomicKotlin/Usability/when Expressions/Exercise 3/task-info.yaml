@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 124
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 124
+        initialized_from_dependency: false
+        encrypted_possible_answer: uQc5SpW3urcaJ4vORgjGf+ejhHZ4jUNS7lflkgr+uUb5lCB5kS14U3sOzcBzNKWefTOxcn+BbeUDDuZtwYPkd2ZYFXt9rE7006vvnMSsx9tJxyw5IDITts0952zbJO6kYMkmvwutJd27BgWQAfTMzXyvL1fCEbvPS912HcEJkBxvPrXNi2yNM/n+nUI8HyA/ZIBkvMsnabvAH0ZzDM96vo6laBP//0VJQyHSEdDYVZXwqX3CR6mBXyvg6BE6t/sbe0Y4Ohux9jwh1sjHj31sQoRS89eDGT4xhB92U2BCvmI7ZcTnj6hPikCyaYAIjGe6S8hr+e1bRrthg6PoTJNIw+g0AFNMuvmcgfcZcYKCrmKwwr5nhd71SBNM9vTuCzuebd6HK/6vK9z+sjmnR3Ae9QolSSElXrFQ4vXHaYMJkkg1SpO2Ve59bxrClgYhQPYP9DtXUXPsD63uLMddpnfzMQ==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+when+Expressions+%2F+Exercise3
+status: Unchecked
+record: -1

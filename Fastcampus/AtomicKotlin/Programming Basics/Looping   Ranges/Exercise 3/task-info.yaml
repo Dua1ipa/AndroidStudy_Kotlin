@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 95
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 95
+        initialized_from_dependency: false
+        encrypted_possible_answer: SY+dKk2r6nGEAmg0uZRfcxgtm1aD3axp9jjfpkwPmQMOvLs61iwVzd5kq2YYuqsIhSyK0tAh4cEtKGa6f1HRMmn94O0cZko6QkGA5d0sA9mQTqazIJDPweYggTSzW3O0q5yBcunqmmiMqb7Q4Rm2Iw==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+Looping+%26+Ranges+%2F+Exercise3
+status: Unchecked
+record: -1

@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 313
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 313
+        initialized_from_dependency: false
+        encrypted_possible_answer: vUmjedfrH+0+5OOIg08z8ZqMtJBcclGJ7C6iKpVEQbe0SvgiQt88kXnR4dObzQvv
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+Extension+Functions+%2F+Exercise3
+status: Unchecked
+record: -1

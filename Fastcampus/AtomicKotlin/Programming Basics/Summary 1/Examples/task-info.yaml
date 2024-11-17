@@ -1,0 +1,53 @@
+type: theory
+files:
+  - name: src/Hello.kt
+    visible: true
+    learner_created: false
+  - name: src/BasicFunctions.kt
+    visible: true
+    learner_created: false
+  - name: src/Booleans.kt
+    visible: true
+    learner_created: false
+  - name: src/IfResult.kt
+    visible: true
+    learner_created: false
+  - name: src/IfExpression.kt
+    visible: true
+    learner_created: false
+  - name: src/StrTemplates.kt
+    visible: true
+    learner_created: false
+  - name: src/ThreeQuotes.kt
+    visible: true
+    learner_created: false
+  - name: src/NumberTypes.kt
+    visible: true
+    learner_created: false
+  - name: src/Overflow.kt
+    visible: true
+    learner_created: false
+  - name: src/Truncation.kt
+    visible: true
+    learner_created: false
+  - name: src/While.kt
+    visible: true
+    learner_created: false
+  - name: src/DoWhile.kt
+    visible: true
+    learner_created: false
+  - name: src/StringIteration.kt
+    visible: true
+    learner_created: false
+  - name: src/RangeOfInt.kt
+    visible: true
+    learner_created: false
+  - name: src/Membership.kt
+    visible: true
+    learner_created: false
+  - name: src/UnitReturn.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

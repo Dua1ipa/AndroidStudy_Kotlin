@@ -1,0 +1,20 @@
+type: theory
+files:
+  - name: src/SumViaFold.kt
+    visible: true
+    learner_created: false
+  - name: src/FoldVsForLoop.kt
+    visible: true
+    learner_created: false
+  - name: src/FoldRight.kt
+    visible: true
+    learner_created: false
+  - name: src/ReduceAndReduceRight.kt
+    visible: true
+    learner_created: false
+  - name: src/RunningFold.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

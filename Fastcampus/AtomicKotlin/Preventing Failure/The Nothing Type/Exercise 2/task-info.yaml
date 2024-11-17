@@ -1,0 +1,81 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 103
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 103
+        initialized_from_dependency: false
+        encrypted_possible_answer: v3Ls/55yjHF2MO8wX7nC0rndit+Oq8+HsHNJjzOODqTkhH0cX56EEnXOO9/Efoybcbos/08ZJB/Z0rIBVv4I1g==
+        selected: false
+        status: Unchecked
+      - offset: 136
+        length: 6
+        placeholder_text: '"TODO"'
+        initial_state:
+          length: 6
+          offset: 136
+        initialized_from_dependency: false
+        encrypted_possible_answer: S91URtOzX3tsp1u0B3bS+N0xAljhQNfxf6Z+2rBog2w=
+        selected: false
+        status: Unchecked
+      - offset: 174
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 174
+        initialized_from_dependency: false
+        encrypted_possible_answer: 67UfJMAkPIDuOmQMCvOTJhBQxlr4ZYfnYDQTwD3TGmY=
+        selected: false
+        status: Unchecked
+      - offset: 184
+        length: 13
+        placeholder_text: class Failure
+        initial_state:
+          length: 13
+          offset: 184
+        initialized_from_dependency: false
+        encrypted_possible_answer: 768kjuRvDeFQYT4Lyihfxoukk8lFRCCD0Yuu6RuL1mDXpcFoYCmfxuERGGD9GOqo
+        selected: false
+        status: Unchecked
+      - offset: 234
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 234
+        initialized_from_dependency: false
+        encrypted_possible_answer: 3V2PU45spW9rtNBLfze0faUTna8IL7hO3nH3kXo8CFj6I92VcpjbSvU1H4pIbxSd
+        selected: false
+        status: Unchecked
+      - offset: 275
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 275
+        initialized_from_dependency: false
+        encrypted_possible_answer: aORSdI6LCon0Xry1hK8SlDCy8MzIypGXj3nqJM53DpOrSoBA2zIs5Za2COWjgGCQ
+        selected: false
+        status: Unchecked
+      - offset: 314
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 314
+        initialized_from_dependency: false
+        encrypted_possible_answer: aORSdI6LCon0Xry1hK8SlHb5lloRYVqaGUrGtSoRiz8=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

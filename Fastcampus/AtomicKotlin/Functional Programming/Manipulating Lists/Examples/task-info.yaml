@@ -1,0 +1,26 @@
+type: theory
+files:
+  - name: src/Zipper.kt
+    visible: true
+    learner_created: false
+  - name: src/ZipAndTransform.kt
+    visible: true
+    learner_created: false
+  - name: src/ZippingWithNext.kt
+    visible: true
+    learner_created: false
+  - name: src/Flatten.kt
+    visible: true
+    learner_created: false
+  - name: src/FlattenAndFlatMap.kt
+    visible: true
+    learner_created: false
+  - name: src/WhyFlatMap.kt
+    visible: true
+    learner_created: false
+  - name: src/PlayingCards.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

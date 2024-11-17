@@ -1,0 +1,29 @@
+type: theory
+files:
+  - name: src/Factorial.kt
+    visible: true
+    learner_created: false
+  - name: src/CallStack.kt
+    visible: true
+    learner_created: false
+  - name: src/InfiniteRecursion.kt
+    visible: true
+    learner_created: false
+  - name: src/RecursionLimits.kt
+    visible: true
+    learner_created: false
+  - name: src/Iteration.kt
+    visible: true
+    learner_created: false
+  - name: src/TailRecursiveSum.kt
+    visible: true
+    learner_created: false
+  - name: src/VerySlowFibonacci.kt
+    visible: true
+    learner_created: false
+  - name: src/Fibonacci.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,36 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 54
+        length: 32
+        placeholder_text: // Implement AirlineTicket class
+        initial_state:
+          length: 32
+          offset: 54
+        initialized_from_dependency: false
+        encrypted_possible_answer: jt8iyhfC96CS1Q3NuJLFjWGfDd9bLMSUjU43RLxT02M6LNdWa/Rus+X8VwEJ24fQ3x+J67qk3S6aSm6aJM45de1OX0AvYjwNLZwP923D2FF5LAkZRMiFnvuBP2E3JBy8dIYAvwGPC5qdZM+b4DrTPlYcaZ+/9+VJrL3xTMPh+S2dLv4dVemowaNDMEO8SJVh
+        selected: false
+        status: Unchecked
+      - offset: 101
+        length: 96
+        placeholder_text: |-
+          /*
+            val ticket = AirlineTicket("Bruce", "Eckel",
+              123456, "DEN", "HND")
+            println(ticket)
+          */
+        initial_state:
+          length: 96
+          offset: 101
+        initialized_from_dependency: false
+        encrypted_possible_answer: r0G/gzKw9Bs2p3IZzXMN6peTmAR4OwnaW2E6sr2MJWu27wU1xbiZIE6Yl252DJk9MAedaJMCadw2KADjVbP8n7pRBF5Tc4jmaGW9PQ/Wy2Py2Wmk0nX+G0NO+Q98iAqz
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

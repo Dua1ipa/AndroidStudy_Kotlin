@@ -1,0 +1,29 @@
+type: theory
+files:
+  - name: src/If1.kt
+    visible: true
+    learner_created: false
+  - name: src/If2.kt
+    visible: true
+    learner_created: false
+  - name: src/If3.kt
+    visible: true
+    learner_created: false
+  - name: src/If4.kt
+    visible: true
+    learner_created: false
+  - name: src/If5.kt
+    visible: true
+    learner_created: false
+  - name: src/If6.kt
+    visible: true
+    learner_created: false
+  - name: src/TrueOrFalse.kt
+    visible: true
+    learner_created: false
+  - name: src/OneOrTheOther.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,71 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 347
+        length: 0
+        placeholder_text: ""
+        initial_state:
+          length: 0
+          offset: 347
+        initialized_from_dependency: false
+        encrypted_possible_answer: MBHVCxR23HYSaNnVtZLU1KqTiVO4JW5/Yp/umzOWgTYeDaLU20VFUazzmgfKLQADNiJzDmSjY9JaGYk8PPXpIyMii+BLtn+zcC+QgolaG/+0QNK8hGWj0ZcoP49f1ekaut76XqgxNI6scC9zIPjjn55X9JArwlVeoZ6r0uevoeWxBjPNaNKdic/hAxKukedCzP8Ratqqp3HfJMIwZV4Q86YfF+0Z7eift+VMmAxG+9M=
+        selected: false
+        status: Unchecked
+      - offset: 379
+        length: 33
+        placeholder_text: |-
+          x += steps
+            x = crossBoundary(x)
+        initial_state:
+          length: 33
+          offset: 379
+        initialized_from_dependency: false
+        encrypted_possible_answer: AhB7HPl2axKNMWkWLM18gas4iB0fObnyjX9uP7Hbxrr804UbLHYvpOerzczOppaxwQNueJhA9TzzQEDP5cRweiPqhd/9PZG0M60ikV2cdHY=
+        selected: false
+        status: Unchecked
+      - offset: 447
+        length: 33
+        placeholder_text: |-
+          x -= steps
+            x = crossBoundary(x)
+        initial_state:
+          length: 33
+          offset: 447
+        initialized_from_dependency: false
+        encrypted_possible_answer: AhB7HPl2axKNMWkWLM18gas4iB0fObnyjX9uP7Hbxrq4+6FOEUOICvtcDOoMcYzgMu2L6gaGyKevMnPDloKdYYxZ5aHUVEV0nHLIXGDuEYs=
+        selected: false
+        status: Unchecked
+      - offset: 515
+        length: 33
+        placeholder_text: |-
+          y += steps
+            y = crossBoundary(y)
+        initial_state:
+          length: 33
+          offset: 515
+        initialized_from_dependency: false
+        encrypted_possible_answer: AhB7HPl2axKNMWkWLM18gas4iB0fObnyjX9uP7Hbxrqqgx7EfqeBrwZw8n0YYUJ6hZKnGdfVEzJAz/ms8zktRCHrb/lV6R5YwLAzAAs7R6s=
+        selected: false
+        status: Unchecked
+      - offset: 581
+        length: 33
+        placeholder_text: |-
+          y -= steps
+            y = crossBoundary(y)
+        initial_state:
+          length: 33
+          offset: 581
+        initialized_from_dependency: false
+        encrypted_possible_answer: AhB7HPl2axKNMWkWLM18gas4iB0fObnyjX9uP7Hbxro6hGZke/hmZgsXWjup0eSHoJAbf38Tkaw2fS8W/Vg1gh/zU81Saz41SPOGMHrHBO0=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Constraining+Visibility+%2F+Exercise2
+status: Unchecked
+record: -1

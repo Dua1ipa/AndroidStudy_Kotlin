@@ -1,0 +1,17 @@
+type: theory
+files:
+  - name: src/WhileLoop.kt
+    visible: true
+    learner_created: false
+  - name: src/DoWhileLoop.kt
+    visible: true
+    learner_created: false
+  - name: src/AssignmentOperators.kt
+    visible: true
+    learner_created: false
+  - name: src/IncrementOperator.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

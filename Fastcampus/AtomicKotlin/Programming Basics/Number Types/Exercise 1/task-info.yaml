@@ -1,0 +1,53 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 72
+        length: 1
+        placeholder_text: 0
+        initial_state:
+          length: 1
+          offset: 72
+        initialized_from_dependency: false
+        encrypted_possible_answer: qQkBIfYQhtpNT7QVomJkqA==
+        selected: false
+        status: Unchecked
+      - offset: 93
+        length: 1
+        placeholder_text: 0
+        initial_state:
+          length: 1
+          offset: 93
+        initialized_from_dependency: false
+        encrypted_possible_answer: 1jv4oI924ZkXwBNnWzUX/A==
+        selected: false
+        status: Unchecked
+      - offset: 117
+        length: 1
+        placeholder_text: 0
+        initial_state:
+          length: 1
+          offset: 117
+        initialized_from_dependency: false
+        encrypted_possible_answer: tqjauNca2iCy5lZnbvc/eQ==
+        selected: false
+        status: Unchecked
+      - offset: 139
+        length: 3
+        placeholder_text: 0.0
+        initial_state:
+          length: 3
+          offset: 139
+        initialized_from_dependency: false
+        encrypted_possible_answer: 89F+OzDKz3k58EdpcrjCdQ==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+Number+Types+%2F+Exercise1
+status: Unchecked
+record: -1

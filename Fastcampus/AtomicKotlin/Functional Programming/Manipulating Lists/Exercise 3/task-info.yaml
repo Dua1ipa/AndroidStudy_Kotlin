@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 254
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 254
+        initialized_from_dependency: false
+        encrypted_possible_answer: zTd4V3go9UWO67nNOkie1HHD+y3Uayw/rFGZYtaxnJTQL0V1zSl/1PH/GPEmGEUPcGFQC5SNCz8OhXabAU0vSSkHrwQjq+xvcMntfjiyI1foiUW0GZ25bfnKhlVH2F/qwSrGz9aM8SNY8VYFNHqdQGzNypFFasISQeqUSZ5x1Qy2/GHNhnZyB3DFNWo4/qIt
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Functional+Programming+%2F+Manipulating+Lists+%2F+Exercise3
+status: Unchecked
+record: -1

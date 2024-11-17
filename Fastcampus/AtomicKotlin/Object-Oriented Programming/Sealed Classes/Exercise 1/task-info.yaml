@@ -1,0 +1,91 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 109
+        length: 15
+        placeholder_text: // val capacity
+        initial_state:
+          length: 15
+          offset: 109
+        initialized_from_dependency: false
+        encrypted_possible_answer: 7iHHB6GvBXoXB+I99yEGErQ+y9Tlmtjw6cQENIJfnvo=
+        selected: false
+        status: Unchecked
+      - offset: 168
+        length: 17
+        placeholder_text: "val capacity: Int"
+        initial_state:
+          length: 17
+          offset: 168
+        initialized_from_dependency: false
+        encrypted_possible_answer: xPtQlNgl/FWKtD4mSN5dlNOTMzJgvyd/u1qhTaKGB9Q=
+        selected: false
+        status: Unchecked
+      - offset: 243
+        length: 17
+        placeholder_text: "val capacity: Int"
+        initial_state:
+          length: 17
+          offset: 243
+        initialized_from_dependency: false
+        encrypted_possible_answer: xPtQlNgl/FWKtD4mSN5dlNOTMzJgvyd/u1qhTaKGB9Q=
+        selected: false
+        status: Unchecked
+      - offset: 278
+        length: 13
+        placeholder_text: // class Tram
+        initial_state:
+          length: 13
+          offset: 278
+        initialized_from_dependency: false
+        encrypted_possible_answer: vBa1bPdelRG+1WJK3IpSkEC9vSjz4BUC+fqQEkt6Xsa9gTqdFtyF51W/Y+COyGOiXEdEI6SzOR9yjn3GWCSezgr0diXSIJOWzWMZFn2WFnxwKcBfq5bb5nmQzcwPKWjt
+        selected: false
+        status: Unchecked
+      - offset: 293
+        length: 14
+        placeholder_text: // class Plane
+        initial_state:
+          length: 14
+          offset: 293
+        initialized_from_dependency: false
+        encrypted_possible_answer: 1DHWxsepAsQLKHUFBt01hhHCRB1G1M+Ma0TUsCSG7risjKT/waa/8gJuWfKgUAlLPmsIp0yeUwxDuPFKVhh7AQV4Mz4HiJ8UQczpuAFM4FbyK19WGoIL+Z5ZQOsJHlfT
+        selected: false
+        status: Unchecked
+      - offset: 477
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 477
+        initialized_from_dependency: false
+        encrypted_possible_answer: 66J2eV9Z4fBX7nW3wba6PoRNwpbvXO8tCLF/kbfzfV2msXzmfruMSQrpHHKhPs7Q8kzt/1oYLpZf7KJEonJ2p0Sqq9gECUN0FRs+qevMmMdfWxmqL+KWH7gOr0mzxG4bZVNSCx7tWzK+NyOD4h0rLZUG16fth6gZZ9gGwUpoEsM=
+        selected: false
+        status: Unchecked
+      - offset: 491
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 491
+        initialized_from_dependency: false
+        encrypted_possible_answer: VYLmINBye12TfLdnCn9miIDzRarg4w+ToIE9PKt8zyA5v84FDrUVLVv0bp/QsCr1
+        selected: false
+        status: Unchecked
+      - offset: 570
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 570
+        initialized_from_dependency: false
+        encrypted_possible_answer: cbZABYT8u/ZMGlwZIwnojafuq24XYI7EiClpqDDwd0/7EXDC2PwJDpyIgk7ui5UC
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

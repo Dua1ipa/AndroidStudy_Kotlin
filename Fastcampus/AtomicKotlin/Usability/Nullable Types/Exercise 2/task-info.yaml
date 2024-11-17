@@ -1,0 +1,35 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 58
+        length: 30
+        placeholder_text: |-
+          // fun zilch()
+          // fun zilch2()
+        initial_state:
+          length: 30
+          offset: 58
+        initialized_from_dependency: false
+        encrypted_possible_answer: jjLq7GajVYj0a1RIqvhpYTTDdoqo+Pzug7lQOQwKyov05BfUtW27sjmVVy6lKE8ORvlyTtGkKIkJIlSu+MDyvQ==
+        selected: false
+        status: Unchecked
+      - offset: 105
+        length: 19
+        placeholder_text: |-
+          // var x
+            // var y
+        initial_state:
+          length: 19
+          offset: 105
+        initialized_from_dependency: false
+        encrypted_possible_answer: C3VlCVm6GvOa85rxhMQZWgXp3b5RXUqegxWmMyZEA8D/Nyl/Vld9OtjWnrfjNEeHGYzasg7gTQdaUxquXgd7IA==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,65 @@
+type: edu
+files:
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+  - name: src/TaskA.kt
+    visible: true
+    placeholders:
+      - offset: 610
+        length: 27
+        placeholder_text: // class DecomposableBottle
+        initial_state:
+          length: 27
+          offset: 610
+        initialized_from_dependency: false
+        encrypted_possible_answer: loL0yf4OLyL5SXoY4HoOaV4t/yPv4BEAuDpKhYy6pHwTiuDOzfosaZtch5t6fFY8
+        selected: false
+        status: Unchecked
+      - offset: 997
+        length: 58
+        placeholder_text: // TODO return "Decomposition tank" for DecomposableBottle
+        initial_state:
+          length: 58
+          offset: 997
+        initialized_from_dependency: false
+        encrypted_possible_answer: o0wc5mORdWPBI27OpWQ3cZSu2/a7KwQEPgIxXp+V4hdk9Z6qhZpAb0h73fhYJHUL
+        selected: false
+        status: Unchecked
+      - offset: 1202
+        length: 23
+        placeholder_text: // DecomposableBottle()
+        initial_state:
+          length: 23
+          offset: 1202
+        initialized_from_dependency: false
+        encrypted_possible_answer: FBfNgawDKc6/2Hjj7rfKCmztRKRLO7utgzy7mggH6lU=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: src/TaskB.kt
+    visible: true
+    placeholders:
+      - offset: 813
+        length: 27
+        placeholder_text: // class DecomposableBottle
+        initial_state:
+          length: 27
+          offset: 813
+        initialized_from_dependency: false
+        encrypted_possible_answer: loL0yf4OLyL5SXoY4HoOaV4t/yPv4BEAuDpKhYy6pHwpZKEdvgnGQazz9YL+2NBYYtfE+8CsFvuYs9tXF3PxmCWm4FA0CpDP8o+oTDBJbJmtfG1URdLFcIZUFWmtxDpC
+        selected: false
+        status: Unchecked
+      - offset: 969
+        length: 23
+        placeholder_text: // DecomposableBottle()
+        initial_state:
+          length: 23
+          offset: 969
+        initialized_from_dependency: false
+        encrypted_possible_answer: FBfNgawDKc6/2Hjj7rfKCmztRKRLO7utgzy7mggH6lU=
+        selected: false
+        status: Unchecked
+    learner_created: false
+status: Unchecked
+record: -1

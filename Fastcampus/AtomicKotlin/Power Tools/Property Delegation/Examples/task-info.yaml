@@ -1,0 +1,32 @@
+type: theory
+files:
+  - name: src/BasicRead.kt
+    visible: true
+    learner_created: false
+  - name: src/BasicReadWrite.kt
+    visible: true
+    learner_created: false
+  - name: src/BasicRead2.kt
+    visible: true
+    learner_created: false
+  - name: src/BasicReadWrite2.kt
+    visible: true
+    learner_created: false
+  - name: src/Accessibility.kt
+    visible: true
+    learner_created: false
+  - name: src/Add.kt
+    visible: true
+    learner_created: false
+  - name: src/FibonacciProperty.kt
+    visible: true
+    learner_created: false
+  - name: src/FileDelegate.kt
+    visible: true
+    learner_created: false
+  - name: src/Configuration.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

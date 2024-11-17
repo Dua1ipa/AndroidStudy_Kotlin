@@ -1,0 +1,35 @@
+type: theory
+files:
+  - name: src/LocalFunctions.kt
+    visible: true
+    learner_created: false
+  - name: src/LocalExtensions.kt
+    visible: true
+    learner_created: false
+  - name: src/Session.kt
+    visible: true
+    learner_created: false
+  - name: src/LocalFunctionReference.kt
+    visible: true
+    learner_created: false
+  - name: src/InterestingSessions.kt
+    visible: true
+    learner_created: false
+  - name: src/ReturnFromFun.kt
+    visible: true
+    learner_created: false
+  - name: src/LabeledReturn.kt
+    visible: true
+    learner_created: false
+  - name: src/CustomLabel.kt
+    visible: true
+    learner_created: false
+  - name: src/ReturnInsideLambda.kt
+    visible: true
+    learner_created: false
+  - name: src/ReturningFunc.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

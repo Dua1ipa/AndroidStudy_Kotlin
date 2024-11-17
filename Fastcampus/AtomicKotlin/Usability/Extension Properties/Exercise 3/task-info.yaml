@@ -1,0 +1,38 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 91
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 91
+        initialized_from_dependency: false
+        encrypted_possible_answer: ndiPy1cp89gBsLjZuCkRr7CQJ1s2Ckot6vYePx9OZ8J9ErTdTJTzhTaPx7HhxPFupjEKIOy7BPFJXO7TQz10yFPAjv0YQXgRaNhGkqmZF1MHXQ7sGvVnmcUOuwpdxwv2JPM5zQ0QnbraklUCnHeLKQ==
+        selected: false
+        status: Unchecked
+      - offset: 113
+        length: 127
+        placeholder_text: |-
+          /*
+            val rectangle = Rectangle(1, 2)
+            rectangle.isSquare eq false
+          
+            val square = Rectangle(3, 3)
+            square.isSquare eq true
+          */
+        initial_state:
+          length: 127
+          offset: 113
+        initialized_from_dependency: false
+        encrypted_possible_answer: AifiLqcBkwmEhJkcujrOuNkJGt5QbdY0N9oclsT/jZZPaX7M/q4Vcao7xBaLYfJDCPsIF+utV34tJ43xE8dACNYRlh35UB3ksBpYR07eL6dARqbTdqVVoowqrPwMj8+bxJAQMMdoCKrEW/2JjtomoxlHF1m3NfFbFab1PKXmSb0=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

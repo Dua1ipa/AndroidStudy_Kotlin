@@ -1,0 +1,23 @@
+type: theory
+files:
+  - name: src/Data.kt
+    visible: true
+    learner_created: false
+  - name: src/Default.kt
+    visible: true
+    learner_created: false
+  - name: src/LogChanges.kt
+    visible: true
+    learner_created: false
+  - name: src/Counter.kt
+    visible: true
+    learner_created: false
+  - name: src/Hamsters.kt
+    visible: true
+    learner_created: false
+  - name: src/Hamsters2.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

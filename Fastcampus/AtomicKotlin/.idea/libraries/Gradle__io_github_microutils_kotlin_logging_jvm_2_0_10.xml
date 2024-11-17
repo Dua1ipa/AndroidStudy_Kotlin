@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.microutils:kotlin-logging-jvm:2.0.10" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.github.microutils" artifactId="kotlin-logging-jvm" version="2.0.10" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.microutils/kotlin-logging-jvm/2.0.10/90f1eca4a5a13ffe0fccac501ffadf01b7e65b70/kotlin-logging-jvm-2.0.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.microutils/kotlin-logging-jvm/2.0.10/472b1cad0b86e560211618c4740e5de7298034ff/kotlin-logging-jvm-2.0.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

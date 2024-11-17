@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 167
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 167
+        initialized_from_dependency: false
+        encrypted_possible_answer: GrJexnZPDYEXHLv4yBJ2yVISANmcKyFsW7OAB1qQRRvAZtPw22gyH7RUjx5/Zf7FU55Ra7k8bZS8MPMYTdN6BYSxhPTfwMOvCDKbY3514V0=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+Summary+1+%2F+Exercise1
+status: Unchecked
+record: -1

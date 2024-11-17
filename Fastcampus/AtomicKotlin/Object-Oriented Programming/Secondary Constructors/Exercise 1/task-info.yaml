@@ -1,0 +1,43 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 136
+        length: 23
+        placeholder_text: // TODO add constructor
+        initial_state:
+          length: 23
+          offset: 136
+        initialized_from_dependency: false
+        encrypted_possible_answer: eIK4cFiWp59okqaz7yIFQhhuZHpBzxOsHOY2/HgVfps=
+        selected: false
+        status: Unchecked
+      - offset: 182
+        length: 16
+        placeholder_text: "val type: String"
+        initial_state:
+          length: 16
+          offset: 182
+        initialized_from_dependency: false
+        encrypted_possible_answer: RqiZJroJnSLKsUUGy19/aXbQbHsdmjCp15YFp6KxMIA=
+        selected: false
+        status: Unchecked
+      - offset: 214
+        length: 63
+        placeholder_text: |-
+          //    Flower1().type eq "Daisy"
+          //    Flower2().type eq "Daisy"
+        initial_state:
+          length: 63
+          offset: 214
+        initialized_from_dependency: false
+        encrypted_possible_answer: cme1eFovVjcKHFUYsGDOXvyr3Wact5CVsDcXDJKnlckRGwsWdvJ5Qd8itcgon4cUA5p0JXeO7aUdo3PZ7UOajA==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

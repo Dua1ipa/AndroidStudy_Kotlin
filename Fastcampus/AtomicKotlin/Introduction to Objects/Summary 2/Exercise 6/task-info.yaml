@@ -1,0 +1,54 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 147
+        length: 359
+        placeholder_text: |-
+          fun setFahrenheit(now: Double) {
+              current = now
+              scale = "f"
+            }
+            fun setCelsius(now: Double) {
+              current = now
+              scale = "c"
+            }
+            fun getFahrenheit(): Double =
+              if (scale == "f")
+                current
+              else
+                current * 9.0 / 5.0 + 32.0
+            fun getCelsius(): Double =
+              if (scale == "c")
+                current
+              else
+                (current - 32.0) * 5.0 / 9.0
+        initial_state:
+          length: 359
+          offset: 147
+        initialized_from_dependency: false
+        encrypted_possible_answer: uKTwTgF5nO4N8L7UN5FYQ+wxyoLp8Bmb4f0d9qZGPPzXarCq2qDrXheg4XjMj849hEDs4AWAqiiwG265H92rc3OtHM0VaGJKnK9klUUpLpScd9E/DI8Dch5Rig9xmFoNA+VTF77NQOBXqyt9HEQn5OneuyFeqJTWBxYsatoihy216uFWiEUYjQ2M/aXbSxTRZWbnIXDaUZ8cLtXXZbOjOSlWtGywxJZ2IJQOD/ClH0gSWo5rk6UQet1ofa2q5t6NY6TLhn9ahPggLeF3zvj163Gx0L1cc0JGM0nmH/2Sfob+vTj760deiFDKzAjdRf9R6uDC59vu/gUfl2BEvu6RSThHnMoFz32WXudSiggiPHLgYefcXfale7KEqGf85epjpOrEMgEga6eDLBz6vC/eq4K8NFSTbXbREgCEAdaL60N6RwjCWH0K8BKA33+oJqYPQTFXOy8k6QkXhQXxRVV4Lvw7nCX+gAK192DG6YxMKzrsW79Zgf7jQjTjZiBjVxk9
+        selected: false
+        status: Unchecked
+      - offset: 552
+        length: 140
+        placeholder_text: |-
+          temp.setFahrenheit(98.6)
+            temp.getFahrenheit() eq 98.6
+            temp.getCelsius() eq 37.0
+            temp.setCelsius(100.0)
+            temp.getFahrenheit() eq 212.0
+        initial_state:
+          length: 140
+          offset: 552
+        initialized_from_dependency: false
+        encrypted_possible_answer: pBkxjlbH4HZzRkEtOK1ca0mE87C5mEB8Xdgh73Uh70+6r2it1/VrfTgy+giWWexc/XaP6UW1YJUf8Wvyz4jMqIy3gC6UTeT3t1F254NM0h79Z8vCoquTAd4xfeJm1wWxo35DVqru3/oXzENs2XrR/IjfUtjz7+tgk21PryXdPlI=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

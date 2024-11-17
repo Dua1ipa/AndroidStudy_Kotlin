@@ -1,0 +1,20 @@
+type: theory
+files:
+  - name: src/Hotel.kt
+    visible: true
+    learner_created: false
+  - name: src/QualifiedThis.kt
+    visible: true
+    learner_created: false
+  - name: src/InnerClassInheritance.kt
+    visible: true
+    learner_created: false
+  - name: src/LocalInnerClasses.kt
+    visible: true
+    learner_created: false
+  - name: src/CounterFactory.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

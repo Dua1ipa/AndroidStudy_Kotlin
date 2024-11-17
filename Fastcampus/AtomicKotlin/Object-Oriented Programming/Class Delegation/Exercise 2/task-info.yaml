@@ -1,0 +1,41 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 566
+        length: 13
+        placeholder_text: /* private */
+        initial_state:
+          length: 13
+          offset: 566
+        initialized_from_dependency: false
+        encrypted_possible_answer: +iBVIwl2rySML4zTDKVBOg==
+        selected: false
+        status: Unchecked
+      - offset: 613
+        length: 10
+        placeholder_text: /* TODO */
+        initial_state:
+          length: 10
+          offset: 613
+        initialized_from_dependency: false
+        encrypted_possible_answer: I1tdVikgLF9j1J/BDJGwGDDwVtBr0oewBGn3oZ5yqwc=
+        selected: false
+        status: Unchecked
+      - offset: 903
+        length: 22
+        placeholder_text: honestlyDuck.crocodile
+        initial_state:
+          length: 22
+          offset: 903
+        initialized_from_dependency: false
+        encrypted_possible_answer: y/QgsePJSyFFcZR1ylYEdQ==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

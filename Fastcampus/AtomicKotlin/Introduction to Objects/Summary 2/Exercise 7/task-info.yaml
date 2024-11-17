@@ -1,0 +1,33 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 115
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 115
+        initialized_from_dependency: false
+        encrypted_possible_answer: 2C17QYE8qLlYLpXbVgZdsVPnoCDrR7GjzVfqaxcTg/AAo3oI9sugGz6L4ZJgFDHM2r33ZzP1HO2HE2bHhmhG/QzMcHKOHYwC8Jabk2C7jhwRJn09nsUFP/lfKeGpMKxT47If0Huy7Wo9N+XbtjsjkXzISDfFvZhzfj7zrwULCDMAyUj3SZLKAH8fjmHWwGv5ng5sbhhyhT1ewFnBe4yzPMMIvu42P1aNI4L5mJLdlll3yMyJ8jXIAV5UdH9U4Kt2
+        selected: false
+        status: Unchecked
+      - offset: 167
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 167
+        initialized_from_dependency: false
+        encrypted_possible_answer: gCOz2etnUvUw1UiTrz7TWxEQ5u/Mbwg5uqH+wSdH/Y4dLJJRehqdZi79W5d6M5Dc8F0KFUNdWo1fL5J0pssDjq6gGRxCnPoGwTV3oOUf0vLZN4zxOzFS9wox2NpSiixInk/7FkJ08QJA23u4zKqbfQgSraF8HpRePwVGLygVTTDblLSHbkQAWHyeUqd9s01wW9e/HaddYgWFnVIIbCyRtixNXZEgpyfdfAvMAHfVR67Q3kbeFFRhkJzhpN4eKUeP29wKwQKdkBpHw3+XDb4nRw==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Summary+2+%2F+Exercise1
+status: Unchecked
+record: -1

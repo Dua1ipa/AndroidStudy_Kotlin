@@ -1,0 +1,23 @@
+type: theory
+files:
+  - name: src/Wombat.kt
+    visible: true
+    learner_created: false
+  - name: src/Arg.kt
+    visible: true
+    learner_created: false
+  - name: src/VisibleArgs.kt
+    visible: true
+    learner_created: false
+  - name: src/MultipleArgs.kt
+    visible: true
+    learner_created: false
+  - name: src/DisplayAlienSpecies.kt
+    visible: true
+    learner_created: false
+  - name: src/Scientist.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,20 @@
+type: theory
+files:
+  - name: src/RigidHolder.kt
+    visible: true
+    learner_created: false
+  - name: src/GenericHolder.kt
+    visible: true
+    learner_created: false
+  - name: src/AnyInstead.kt
+    visible: true
+    learner_created: false
+  - name: src/GenericFunction.kt
+    visible: true
+    learner_created: false
+  - name: src/GenericListExtensions.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

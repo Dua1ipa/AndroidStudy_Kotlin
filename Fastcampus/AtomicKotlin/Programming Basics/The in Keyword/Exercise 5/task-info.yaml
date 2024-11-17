@@ -1,0 +1,12 @@
+type: ide
+files:
+  - name: src/Task.kt
+    visible: true
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+feedback_link: |
+  https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+The+in+Keyword+%2F+Exercise5
+status: Unchecked
+record: -1

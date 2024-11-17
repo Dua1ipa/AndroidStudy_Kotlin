@@ -1,0 +1,32 @@
+type: theory
+files:
+  - name: src/CreatingLists.kt
+    visible: true
+    learner_created: false
+  - name: src/ListInit.kt
+    visible: true
+    learner_created: false
+  - name: src/Predicates.kt
+    visible: true
+    learner_created: false
+  - name: src/Partition.kt
+    visible: true
+    learner_created: false
+  - name: src/PairOfLists.kt
+    visible: true
+    learner_created: false
+  - name: src/FilterNotNull.kt
+    visible: true
+    learner_created: false
+  - name: src/ByOperations.kt
+    visible: true
+    learner_created: false
+  - name: src/TakeOrDrop.kt
+    visible: true
+    learner_created: false
+  - name: src/SetOperations.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

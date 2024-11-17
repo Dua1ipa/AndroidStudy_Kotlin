@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jetbrains.kotlin:kotlin-test:1.6.20" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.jetbrains.kotlin" artifactId="kotlin-test" version="1.6.20" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.6.20/bb54acc81e266b7e763248f67773a49a82afd6f6/kotlin-test-1.6.20.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.6.20/62bed326a5c862f757501efbb7c34d2b7dd26006/kotlin-test-1.6.20-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

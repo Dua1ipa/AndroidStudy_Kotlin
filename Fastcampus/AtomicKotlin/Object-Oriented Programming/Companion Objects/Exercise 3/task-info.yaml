@@ -1,0 +1,101 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 216
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 216
+        initialized_from_dependency: false
+        encrypted_possible_answer: GNS43bu6Iv7Ne2trVV0qBlAPjeCrILQa02x7kTR3ZVMu7zcXy0bDDSQjSqP8oDL/Xg5wzVMzLENVIIPGBEgtWal5j6HNHrtt2oiDwaCPz6KFDhbX+EdogwdKlB24/DJaqZdLAhl5bZQpGoflDlPPwBRlaZXvZ15zqUBiqupDiew=
+        selected: false
+        status: Unchecked
+      - offset: 262
+        length: 6
+        placeholder_text: '"TODO"'
+        initial_state:
+          length: 6
+          offset: 262
+        initialized_from_dependency: false
+        encrypted_possible_answer: nVO91Pvj9loUpjSfiopOMtlD15rQItiepTJnqVU9t1rfOF1C1r0yYj/6b9bQPDQCcjxTdPUpp5CKByvCR9/pXg==
+        selected: false
+        status: Unchecked
+      - offset: 647
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 647
+        initialized_from_dependency: false
+        encrypted_possible_answer: XpzXK7G2+BpdhEuJ6wusrA==
+        selected: false
+        status: Unchecked
+      - offset: 697
+        length: 7
+        placeholder_text: // TODO
+        initial_state:
+          length: 7
+          offset: 697
+        initialized_from_dependency: false
+        encrypted_possible_answer: emBUqhmeJTIg6c6xe7wsYQ/9QxQCJquUxHg2v1+/eKI=
+        selected: false
+        status: Unchecked
+      - offset: 751
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 751
+        initialized_from_dependency: false
+        encrypted_possible_answer: Frydi8Wd1Z5bCY04uDDRrw==
+        selected: false
+        status: Unchecked
+      - offset: 789
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 789
+        initialized_from_dependency: false
+        encrypted_possible_answer: rOg+6LQDZQvxCXSpk1zCtTJnWuyk7mI8Pa28qBCmkw0=
+        selected: false
+        status: Unchecked
+      - offset: 892
+        length: 6
+        placeholder_text: '"TODO"'
+        initial_state:
+          length: 6
+          offset: 892
+        initialized_from_dependency: false
+        encrypted_possible_answer: J+efkogXjgNKkc4KrXVVtP9jRGZaMpek+hfbBWzdxDk=
+        selected: false
+        status: Unchecked
+      - offset: 921
+        length: 6
+        placeholder_text: '"TODO"'
+        initial_state:
+          length: 6
+          offset: 921
+        initialized_from_dependency: false
+        encrypted_possible_answer: zFScoKS/1PZiUMvIB3BcJ/z47k5mDZtsGkTXPk9+mNtzglzY1MRPOIvavlq/DeWyiox4TqTuewPCmvhiNte2nA==
+        selected: false
+        status: Unchecked
+      - offset: 972
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 972
+        initialized_from_dependency: false
+        encrypted_possible_answer: YmP+ayYAam/F+/8eCS2HqTp/I9hkPEqEu+l/JmIPhxIjIKJVfdz5s93lz44EFJkgaRKZLgl0Lv596W7S6/ah+XNF2gDUGH7QCQHyxxxdpRptcPjQbSHX25xhIpw0Ghsls6AbLTDVano5Xr1W5d5Mp1bb95M+W5adOJkePl2bPRLKE0RktncLrt5aJEh4udax
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

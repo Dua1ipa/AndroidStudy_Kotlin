@@ -1,0 +1,51 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 77
+        length: 11
+        placeholder_text: fun f() = 0
+        initial_state:
+          length: 11
+          offset: 77
+        initialized_from_dependency: false
+        encrypted_possible_answer: zlWkxMHwv2h5508VdHJyXPlYlNoFxqkVSsJUq1OFOuU=
+        selected: false
+        status: Unchecked
+      - offset: 90
+        length: 12
+        placeholder_text: fun g() = ""
+        initial_state:
+          length: 12
+          offset: 90
+        initialized_from_dependency: false
+        encrypted_possible_answer: LcgZOFQjCsqY8HCtLCsLR8rvZDnanpSwBnM056l8vXjjzi8IQzi7B0HTSQhZEnHR
+        selected: false
+        status: Unchecked
+      - offset: 104
+        length: 13
+        placeholder_text: fun h() = '?'
+        initial_state:
+          length: 13
+          offset: 104
+        initialized_from_dependency: false
+        encrypted_possible_answer: bALBSH06A2cQDoH5TL8401AA5U2VOS7t+52uFtP3OXk=
+        selected: false
+        status: Unchecked
+      - offset: 134
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 134
+        initialized_from_dependency: false
+        encrypted_possible_answer: Z9XhoTtQWjdIWWfn6Ms4VjfMP+weFHU4x7h4B49S3v7bE+vy/zLUd3fIlg67iTkFJnj+r1sg9MFuQD2h/ojjLBN4npsr3vqDyldQhssWztQta7BBIDSYLmBtlh9kbfTDFtUhig17fzO7GERh4Isx0HQjmi4Z25LKp12CNyo5jfDxglJcIzZ17khgDxB6/Rwj
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

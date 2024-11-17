@@ -1,0 +1,56 @@
+type: theory
+files:
+  - name: src/Num.kt
+    visible: true
+    learner_created: false
+  - name: src/MemberOperator.kt
+    visible: true
+    learner_created: false
+  - name: src/Molecule.kt
+    visible: true
+    learner_created: false
+  - name: src/DefaultEquality.kt
+    visible: true
+    learner_created: false
+  - name: src/DefiningEquality.kt
+    visible: true
+    learner_created: false
+  - name: src/EqualsForNullable.kt
+    visible: true
+    learner_created: false
+  - name: src/ArithmeticOperators.kt
+    visible: true
+    learner_created: false
+  - name: src/DifferentTypes.kt
+    visible: true
+    learner_created: false
+  - name: src/ConfusingPrecedence.kt
+    visible: true
+    learner_created: false
+  - name: src/Comparison.kt
+    visible: true
+    learner_created: false
+  - name: src/Ranges.kt
+    visible: true
+    learner_created: false
+  - name: src/ContainerAccess.kt
+    visible: true
+    learner_created: false
+  - name: src/Invoke.kt
+    visible: true
+    learner_created: false
+  - name: src/StringInvoke.kt
+    visible: true
+    learner_created: false
+  - name: src/InvokeFunctionType.kt
+    visible: true
+    learner_created: false
+  - name: src/Backticks.kt
+    visible: true
+    learner_created: false
+  - name: src/Swearing.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,21 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 62
+        length: 13
+        placeholder_text: "fun show() {}"
+        initial_state:
+          length: 13
+          offset: 62
+        initialized_from_dependency: false
+        encrypted_possible_answer: H3o+uf/Bci0V+0S2lWpL5fA5amaPHOSOrY64pByymRlHl7wifDrUEQN0jc7ybKi/4hWgMvLaA93VRKPBf63nYeVKn2hDUud+E1LoonVVjlMaHVy+q2Vu/gg1A18muPqjLw0eZZj+Gil4Sc5rChN+gyHBRZChjRywOE2QWn4LNmxzaHo77uXQMLW70E2zpkvD
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

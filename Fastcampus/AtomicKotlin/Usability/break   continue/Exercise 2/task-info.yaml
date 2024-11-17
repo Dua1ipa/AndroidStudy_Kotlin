@@ -1,0 +1,31 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 215
+        length: 12
+        placeholder_text: // add label
+        initial_state:
+          length: 12
+          offset: 215
+        initialized_from_dependency: false
+        encrypted_possible_answer: 51S1qwF5ZI91Nx1FrnOMYQ==
+        selected: false
+        status: Unchecked
+      - offset: 417
+        length: 12
+        placeholder_text: // add label
+        initial_state:
+          length: 12
+          offset: 417
+        initialized_from_dependency: false
+        encrypted_possible_answer: w2YiwC46nv4QIl78Wi2nBw==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

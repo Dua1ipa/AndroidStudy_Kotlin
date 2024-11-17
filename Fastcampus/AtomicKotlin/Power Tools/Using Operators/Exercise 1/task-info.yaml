@@ -1,0 +1,61 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 98
+        length: 14
+        placeholder_text: class DataMany
+        initial_state:
+          length: 14
+          offset: 98
+        initialized_from_dependency: false
+        encrypted_possible_answer: aLtimPZSPfJOIG/ec5Ea8dem4ia70xdJDoKyIFBgSaxVWxUqtOyFrv9gtsXiww1UH0o95sgPLko8vRmAlcUbqmkaNmQQuyWcw9XKy0/455tiXXnzitixKtKlcOILwSWAoKTyF7iY4d06NhL/tsHxOZOTSEdXCPGH2ekwANmbGWO0+dBeiAPtpe9GY2SF2SKCO/wlRpY9DvlVzg7a37QVKYvavVRos335biB5vVx7vrRDcEx3828Pes+k0YsKRChTyTkcJp/4TL6qu+ce3i3WHA==
+        selected: false
+        status: Unchecked
+      - offset: 128
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 128
+        initialized_from_dependency: false
+        encrypted_possible_answer: 3EctF+c3VAU2+h55JYkSsZzVdQJv2DpqXQNJ9dyPtVL+KrgGWat8m4itar5nUruTIipw/iq0J9P6TJ9NpAoCFnIXfKV6hw5WhH6TC9DCB3TuS3E1QrbElum9oyvOf2+cVIU48w22zX7Frhlejp9GkuPGXo2SvACyjN50mq2/ZFip9RzfA0cZ/yhtgYBsN3xuWb6fLo/spRv0BgWzXaUU0w==
+        selected: false
+        status: Unchecked
+      - offset: 158
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 158
+        initialized_from_dependency: false
+        encrypted_possible_answer: 3EctF+c3VAU2+h55JYkSsZzVdQJv2DpqXQNJ9dyPtVJ7e3alBT6Ih10+1SkLxv5xKLAAB2pHPjpZckYqqKDsA4THL0F7Meglxoyn/oMpJqw=
+        selected: false
+        status: Unchecked
+      - offset: 189
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 189
+        initialized_from_dependency: false
+        encrypted_possible_answer: 3EctF+c3VAU2+h55JYkSsX+AoyDvNHTIH51MNOKMnQVqlUXC8JKeAP4VpDI3TcW7OdSJ87D2U0oVU/DeqYsfWeBYVsTnC6Oa4cDD0AuNZXtN7v67Ye7WjDQe04OpRmp/
+        selected: false
+        status: Unchecked
+      - offset: 222
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 222
+        initialized_from_dependency: false
+        encrypted_possible_answer: 3EctF+c3VAU2+h55JYkSsUfBYcAZs94Lljux3Qg2rtRyCbwMpo4ZIPCS1xrPttmglI3usk196Fx4UBSHhXsHIGvXvw/5nV5zsalTSL4kzrb4GFCSroK26idCZ4Qcnd5p
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

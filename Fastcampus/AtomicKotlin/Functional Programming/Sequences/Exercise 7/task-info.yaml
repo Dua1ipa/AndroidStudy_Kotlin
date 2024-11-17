@@ -1,0 +1,31 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 94
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 94
+        initialized_from_dependency: false
+        encrypted_possible_answer: jzFOg813N9hCF8jIPsHU//4cYKO9/eJrbyDG6jrf8XFD+Ff8EWYcScfCqf7DhHObwiJsoF2/QsCfJR3mdM8slOT5iQIxdqbeORTO1yWANck=
+        selected: false
+        status: Unchecked
+      - offset: 119
+        length: 6
+        placeholder_text: TODO()
+        initial_state:
+          length: 6
+          offset: 119
+        initialized_from_dependency: false
+        encrypted_possible_answer: 02NK4tNI3PICPgOHjLBP2pDp/Zol/sk6EDiC3Gle9PGBenXEP3gVFCIUixmN1agf
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

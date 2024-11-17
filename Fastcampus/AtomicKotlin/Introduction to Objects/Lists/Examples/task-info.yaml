@@ -1,0 +1,29 @@
+type: theory
+files:
+  - name: src/Lists.kt
+    visible: true
+    learner_created: false
+  - name: src/OutOfBounds.kt
+    visible: true
+    learner_created: false
+  - name: src/ListUsefulFunction.kt
+    visible: true
+    learner_created: false
+  - name: src/ParameterizedTypes.kt
+    visible: true
+    learner_created: false
+  - name: src/ParameterizedReturn.kt
+    visible: true
+    learner_created: false
+  - name: src/MutableList.kt
+    visible: true
+    learner_created: false
+  - name: src/MutListIsList.kt
+    visible: true
+    learner_created: false
+  - name: src/MultipleListRefs.kt
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true
