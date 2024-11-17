@@ -1,2 +1,0 @@
-package stringTemplatesExercise5
-

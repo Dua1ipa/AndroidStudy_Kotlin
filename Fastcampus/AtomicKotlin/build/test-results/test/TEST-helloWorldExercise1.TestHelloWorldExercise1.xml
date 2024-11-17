@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="helloWorldExercise1.TestHelloWorldExercise1" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-17T14:07:11" hostname="PC_TYK" time="0.015">
-  <properties/>
-  <testcase name="test" classname="helloWorldExercise1.TestHelloWorldExercise1" time="0.015"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
