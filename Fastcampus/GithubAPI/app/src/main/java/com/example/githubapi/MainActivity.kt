@@ -1,6 +1,9 @@
 package com.example.githubapi
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.TextWatcher
 import android.util.Log
 import android.widget.Toast
@@ -31,6 +34,9 @@ class MainActivity : AppCompatActivity() {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
+    private val handler = Handler(Looper.getMainLooper())
+    private var searchFor : String = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -49,21 +55,34 @@ class MainActivity : AppCompatActivity() {
 
         })
 
-        userAdapter = UserAdapter()
+        userAdapter = UserAdapter{
+            val intent = Intent(this@MainActivity, RepoActivity::class.java)
+            intent.putExtra("userName", it.username)
+            startActivity(intent)
+        }
 
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = userAdapter
         }
 
+        val runnable = Runnable{
+            searchUser()
+        }
+
         binding.searchEditText.addTextChangedListener {
-            searchUser(it.toString())
+            searchFor = it.toString()
+            handler.removeCallbacks(runnable)
+            handler.postDelayed(
+                runnable,
+                300
+            )
         }
         
     }
 
-    private fun searchUser(query : String){
-        githubService.searchUsers(query).enqueue(object : Callback<UserDTO> {
+    private fun searchUser(){
+        githubService.searchUsers(searchFor).enqueue(object : Callback<UserDTO> {
             override fun onResponse(p0: Call<UserDTO>, p1: Response<UserDTO>) {
                 userAdapter.submitList(p1.body()?.items)
             }

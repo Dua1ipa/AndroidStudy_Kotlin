@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/repoNameTextView"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tool:text="repoName"/>
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/repoNameTextView"
+        app:layout_constraintStart_toStartOf="@+id/repoNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/repoNameTextView"
+        tool:text="This is description" />
+
+    <ImageView
+        android:id="@+id/starCountImageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/baseline_star_outline_24"
+        app:layout_constraintStart_toStartOf="@+id/descriptionTextView"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
+
+    <TextView
+        android:id="@+id/starCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="300"
+        app:layout_constraintBottom_toBottomOf="@+id/starCountImageView"
+        app:layout_constraintStart_toEndOf="@+id/starCountImageView" />
+
+    <ImageView
+        android:id="@+id/forkCountImageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/baseline_fork_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/starCountTextView"
+        app:layout_constraintStart_toEndOf="@+id/starCountTextView"
+        app:layout_constraintTop_toTopOf="@+id/forkCountTextView" />
+
+    <TextView
+        android:id="@+id/forkCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="300"
+        app:layout_constraintBottom_toBottomOf="@+id/starCountImageView"
+        app:layout_constraintStart_toEndOf="@+id/forkCountImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
