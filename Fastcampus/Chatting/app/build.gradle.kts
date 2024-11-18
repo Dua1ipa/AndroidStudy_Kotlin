@@ -37,9 +37,15 @@ android {
     buildFeatures{
         viewBinding = true
     }
+    packagingOptions {
+        exclude ("META-INF/DEPENDENCIES")
+    }
 }
 
 dependencies {
+    implementation (libs.auth.google.auth.library.oauth2.http)
+//    implementation (libs.androidx.credentials)
+
     implementation(libs.okhttp)
 
     implementation(platform(libs.firebase.bom))

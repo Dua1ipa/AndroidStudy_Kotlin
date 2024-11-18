@@ -12,6 +12,7 @@ import com.example.chatting.Key.Companion.DB_USERS
 import com.example.chatting.R
 import com.example.chatting.databinding.ActivityChatdetailBinding
 import com.example.chatting.userlist.UserItem
+import com.google.auth.oauth2.GoogleCredentials
 import com.google.firebase.Firebase
 import com.google.firebase.auth.auth
 import com.google.firebase.database.ChildEventListener
@@ -26,6 +27,7 @@ import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
 import okhttp3.Response
 import org.json.JSONObject
+import java.io.FileInputStream
 import java.io.IOException
 
 class ChatActivity : AppCompatActivity() {
@@ -123,25 +125,56 @@ class ChatActivity : AppCompatActivity() {
 
             val client = OkHttpClient()
 
+//            val credentialPath = "service-account.json"  // 1. Google Service Account Credentials JSON 파일 경로
+//            val googleCredentials = GoogleCredentials
+//                .fromStream(FileInputStream(credentialPath))
+//                .createScoped(listOf("https://www.googleapis.com/auth/firebase.messaging"))
+//                .apply { refreshIfExpired() }
+//            val accessToken = googleCredentials.accessToken.tokenValue
+
+            // 3. FCM 메시지 생성
             val root = JSONObject()
             val notification = JSONObject()
             notification.put("title", getString(R.string.app_name))
-            notification.put("body", notification)
+            notification.put("body", message)
 
             root.put("to", otherUserFcmToken)
             root.put("priority", "high")
             root.put("notification", notification)
 
-            val requestBody =
-                root.toString().toRequestBody("application/json; charset=utf-8".toMediaType())
-            val request =
-                Request.Builder().post(requestBody).url("https://fcm.googleapis.com/fcm/send")
-                    .header("Authorization", getString(R.string.google_api_key))
-                    .build()
-            client.newCall(request).enqueue(object : Callback {
-                override fun onFailure(call: Call, e: IOException) {}
+//            val root = """
+//                {
+//                  "message": {
+//                    "token": "DEVICE_TOKEN",
+//                    "notification": {
+//                      "title": "Hello!",
+//                      "body": "This is an HTTP v1 FCM message."
+//                    },
+//                    "data": {
+//                      "key1": "value1",
+//                      "key2": "value2"
+//                    }
+//                  }
+//                }
+//            """.trimIndent()
 
-                override fun onResponse(call: Call, response: Response) {}
+            // 4. HTTP 요청 생성
+            val requestBody = root.toString().toRequestBody("application/json; charset=utf-8".toMediaType())
+//            val requestBody = root.toRequestBody("application/json; charset=utf-8".toMediaType())
+            val request = Request.Builder()
+                .post(requestBody)
+                .url("https://fcm.googleapis.com/v1/projects/myproject-b5ae1/messages:send")
+                    .header("Authorization", "key=${getString(R.string.FCM_SERVER_KEY)}")
+//                .header("Authorization", "Bearer $accessToken")  // OAuth2 Access Token
+                .build()
+            // 5. 요청 실행
+            client.newCall(request).enqueue(object : Callback {
+                override fun onFailure(call: Call, e: IOException) {
+                    println("FCM 메시지 전송 실패: ${e.printStackTrace()}")
+                }
+                override fun onResponse(call: Call, response: Response) {
+                    println("FCM 메시지 전송 성공: ${response.body?.string()}")
+                }
             })
 
             binding.messageEditText.text.clear()
