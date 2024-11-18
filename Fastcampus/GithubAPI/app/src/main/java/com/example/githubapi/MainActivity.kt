@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onFailure(p0: Call<List<Repo>?>, p1: Throwable) {
-
+                p1.printStackTrace()
             }
 
         })
