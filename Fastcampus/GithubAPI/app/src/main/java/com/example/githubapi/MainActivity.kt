@@ -19,8 +19,7 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class
-MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var userAdapter: UserAdapter
     private lateinit var githubService: GithubService
@@ -53,16 +52,13 @@ MainActivity : AppCompatActivity() {
         binding.searchEditText.addTextChangedListener {
             searchFor = it.toString()
             handler.removeCallbacks(runnable)
-            handler.postDelayed(
-                runnable,
-                1
-            )
+            handler.postDelayed(runnable, 1)
         }
         
     }
 
     private fun searchUser(){
-        githubService = APIClient.retrofit.create(GithubService::class.java)
+        githubService = APIClient(getString(R.string.github_api_key)).retrofit.create(GithubService::class.java)
         githubService.searchUsers(searchFor).enqueue(object : Callback<UserDTO> {
             override fun onResponse(p0: Call<UserDTO>, p1: Response<UserDTO>) {
                 userAdapter.submitList(p1.body()?.items)

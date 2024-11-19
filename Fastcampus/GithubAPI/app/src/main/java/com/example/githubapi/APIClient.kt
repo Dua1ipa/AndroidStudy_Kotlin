@@ -4,14 +4,16 @@ import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object APIClient {
-    private const val BASE_URL = "https://api.github.com"
+class APIClient(private val API_KEY : String) {
+    companion object {
+        val BASE_URL = "https://api.github.com"
+    }
 
     private val okHttpClient = OkHttpClient.Builder()
-        .addInterceptor{
+        .addInterceptor {
             val request = it.request()
                 .newBuilder()
-                .addHeader("Authorization", "Bearer ${R.string.GithubAPI_KEY}")
+                .addHeader("Authorization", "Bearer $API_KEY")
                 .build()
             it.proceed(request)
         }

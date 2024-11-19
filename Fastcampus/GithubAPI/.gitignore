@@ -14,4 +14,4 @@
 .cxx
 local.properties
 
-app/src/main/res/values/keyStrings.xml
+app/src/main/res/values/github_api_key.xml
