@@ -16,8 +16,11 @@ import com.example.githubapi.network.GithubService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
-class MainActivity : AppCompatActivity() {
+class
+MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var userAdapter: UserAdapter
     private lateinit var githubService: GithubService
@@ -27,9 +30,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
 
         userAdapter = UserAdapter{
             val intent = Intent(this@MainActivity, RepoActivity::class.java)
@@ -51,13 +55,14 @@ class MainActivity : AppCompatActivity() {
             handler.removeCallbacks(runnable)
             handler.postDelayed(
                 runnable,
-                300
+                1
             )
         }
         
     }
 
     private fun searchUser(){
+        githubService = APIClient.retrofit.create(GithubService::class.java)
         githubService.searchUsers(searchFor).enqueue(object : Callback<UserDTO> {
             override fun onResponse(p0: Call<UserDTO>, p1: Response<UserDTO>) {
                 userAdapter.submitList(p1.body()?.items)

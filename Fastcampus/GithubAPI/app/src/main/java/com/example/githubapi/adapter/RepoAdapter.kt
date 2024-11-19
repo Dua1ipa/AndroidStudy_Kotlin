@@ -9,7 +9,7 @@ import com.example.githubapi.adapter.UserAdapter.Companion.diffUtil
 import com.example.githubapi.databinding.ItemRepoBinding
 import com.example.githubapi.model.Repo
 
-class RepoAdapter : ListAdapter<Repo, RepoAdapter.ViewHolder>(diffUtil) {
+class RepoAdapter(private val onClick: (Repo) -> Unit) : ListAdapter<Repo, RepoAdapter.ViewHolder>(diffUtil) {
     companion object {
         val diffUtil = object : DiffUtil.ItemCallback<Repo>() {  //아이템 변경 사항을 효율적으로 감지
             override fun areItemsTheSame(oldItem: Repo, newItem: Repo): Boolean {
@@ -30,6 +30,10 @@ class RepoAdapter : ListAdapter<Repo, RepoAdapter.ViewHolder>(diffUtil) {
             viewBinding.descriptionTextView.text = item.description
             viewBinding.starCountTextView.text = "${item.starCount}"
             viewBinding.forkCountTextView.text = "${item.forkCount}"
+
+            viewBinding.root.setOnClickListener {
+                onClick(item)
+            }
         }
 
     }
