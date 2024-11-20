@@ -1,7 +1,5 @@
 package com.example.navermap
 
-import android.app.appsearch.SearchResult
-import android.content.res.Resources
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.Interceptor

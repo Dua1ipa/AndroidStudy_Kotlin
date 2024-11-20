@@ -12,7 +12,9 @@ import com.naver.maps.map.CameraUpdate
 import com.naver.maps.map.MapFragment
 import com.naver.maps.map.NaverMap
 import com.naver.maps.map.OnMapReadyCallback
+import retrofit2.Call
 import retrofit2.Callback
+import retrofit2.Response
 
 class MainActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var binding: ActivityMainBinding
@@ -33,13 +35,20 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             }
 
         mapFragment.getMapAsync(this)
-        
-        SearchRepository.getGoodRestaurant("서울").enqueue(object :Callback<SearchResult>{
+
+        SearchRepository.getGoodRestaurant("서울").enqueue(object : Callback<SearchResult>{
+            override fun onResponse(p0: Call<SearchResult?>, p1: Response<SearchResult?>) {
+                Log.e("Main", "onResponse:${p1.body().toString()}")
+            }
+
+            override fun onFailure(p0: Call<SearchResult?>, p1: Throwable) {
+                Log.e("Main", "onResponse:${p1.printStackTrace()}")
+            }
 
         })
+
     }
 
-    @UiThread
     override fun onMapReady(p0: NaverMap) {
         naverMap = p0
         isMapInit = true
