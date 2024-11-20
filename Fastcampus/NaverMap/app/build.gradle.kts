@@ -39,6 +39,14 @@ android {
 }
 
 dependencies {
+    // 네이버 지도 SDK
+    implementation(libs.map.sdk)
+
+    implementation (libs.retrofit)
+    implementation(libs.gson)
+    implementation (libs.converter.gson)
+    implementation (libs.converter.moshi)
+    implementation(libs.moshi)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
