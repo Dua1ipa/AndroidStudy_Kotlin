@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun searchUser(){
-        githubService = APIClient(getString(R.string.github_api_key)).retrofit.create(GithubService::class.java)
+        githubService = APIClient.retrofit.create(GithubService::class.java)
         githubService.searchUsers(searchFor).enqueue(object : Callback<UserDTO> {
             override fun onResponse(p0: Call<UserDTO>, p1: Response<UserDTO>) {
                 userAdapter.submitList(p1.body()?.items)

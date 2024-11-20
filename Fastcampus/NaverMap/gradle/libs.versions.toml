@@ -1,6 +1,8 @@
 [versions]
 agp = "8.7.2"
+converterMoshi = "2.9.0"
 gson = "2.11.0"
+gsonVersion = "2.11.0"
 kotlin = "1.9.24"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -12,12 +14,14 @@ material = "1.12.0"
 activity = "1.9.3"
 constraintlayout = "2.2.0"
 moshi = "1.15.1"
+moshiKotlin = "1.15.1"
 retrofit = "2.11.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson" }
 converter-moshi = { module = "com.squareup.retrofit2:converter-moshi" }
+google-gson = { module = "com.google.code.gson:gson", version.ref = "gsonVersion" }
 gson = { module = "implementation 'com.google.code.gson:gson", version.ref = "gson" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -28,7 +32,11 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
+moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshiKotlin" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit2-converter-gson = { module = "com.squareup.retrofit2:converter-gson" }
+retrofit2-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi" }
+squareup-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "converterMoshi" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

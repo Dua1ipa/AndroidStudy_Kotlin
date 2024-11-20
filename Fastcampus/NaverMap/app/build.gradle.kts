@@ -43,10 +43,12 @@ dependencies {
     implementation(libs.map.sdk)
 
     implementation (libs.retrofit)
-    implementation(libs.gson)
-    implementation (libs.converter.gson)
-    implementation (libs.converter.moshi)
-    implementation(libs.moshi)
+
+//    implementation (libs.google.gson)
+//    implementation (libs.retrofit2.converter.gson)
+
+    implementation (libs.squareup.converter.moshi)
+    implementation(libs.moshi.kotlin)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

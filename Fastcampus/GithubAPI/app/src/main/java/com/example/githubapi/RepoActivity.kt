@@ -63,7 +63,7 @@ class RepoActivity : AppCompatActivity(){
     }
 
     private fun listRepo(userName : String, page : Int){
-        val githubService = APIClient(getString(R.string.github_api_key)).retrofit.create(GithubService::class.java)
+        val githubService = APIClient.retrofit.create(GithubService::class.java)
         githubService.listRepos(userName, page).enqueue(object : Callback<List<Repo>> {
             override fun onResponse(p0: Call<List<Repo>?>, p1: Response<List<Repo>?>) {
                 Log.d("MainActivity", "onResponse: ${p1.body()}")

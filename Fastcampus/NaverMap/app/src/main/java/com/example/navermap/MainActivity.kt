@@ -1,6 +1,7 @@
 package com.example.navermap
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.UiThread
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,7 @@ import com.naver.maps.map.CameraUpdate
 import com.naver.maps.map.MapFragment
 import com.naver.maps.map.NaverMap
 import com.naver.maps.map.OnMapReadyCallback
+import retrofit2.Callback
 
 class MainActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var binding: ActivityMainBinding
@@ -31,6 +33,10 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             }
 
         mapFragment.getMapAsync(this)
+        
+        SearchRepository.getGoodRestaurant("서울").enqueue(object :Callback<SearchResult>{
+
+        })
     }
 
     @UiThread

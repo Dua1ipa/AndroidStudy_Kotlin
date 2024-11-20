@@ -1,14 +1,13 @@
 package com.example.githubapi
 
+import android.content.res.Resources
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class APIClient(private val API_KEY : String) {
-    companion object {
-        val BASE_URL = "https://api.github.com"
-    }
-
+object APIClient {
+    private val BASE_URL = "https://api.github.com"
+    private val API_KEY = Resources.getSystem().getString(R.string.GithubAPI_KEY)
     private val okHttpClient = OkHttpClient.Builder()
         .addInterceptor {
             val request = it.request()
