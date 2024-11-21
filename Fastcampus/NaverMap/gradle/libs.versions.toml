@@ -1,5 +1,6 @@
 [versions]
 agp = "8.7.2"
+androidxCoreKtx = "1.12.0"
 converterMoshi = "2.9.0"
 gson = "2.11.0"
 gsonVersion = "2.11.0"
@@ -10,15 +11,18 @@ junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 appcompat = "1.7.0"
 mapSdk = "3.19.1"
+mapSdkVersion = "3.19.1"
 material = "1.12.0"
 activity = "1.9.3"
 constraintlayout = "2.2.0"
 moshi = "1.15.1"
 moshiKotlin = "1.15.1"
+playServicesLocation = "21.3.0"
 retrofit = "2.11.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-ktx-v1120 = { module = "androidx.core:core-ktx", version.ref = "androidxCoreKtx" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson" }
 converter-moshi = { module = "com.squareup.retrofit2:converter-moshi" }
 google-gson = { module = "com.google.code.gson:gson", version.ref = "gsonVersion" }
@@ -28,11 +32,13 @@ androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "j
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 map-sdk = { module = "com.naver.maps:map-sdk", version.ref = "mapSdk" }
+maps-map-sdk = { module = "implementation 'com.naver.maps:map-sdk", version.ref = "mapSdkVersion" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
 moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshiKotlin" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit2-converter-gson = { module = "com.squareup.retrofit2:converter-gson" }
 retrofit2-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi" }

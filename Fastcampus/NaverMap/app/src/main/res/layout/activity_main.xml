@@ -9,26 +9,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<!--    <com.google.android.material.appbar.AppBarLayout-->
-<!--        android:id="@+id/appBarLayout"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"-->
-<!--        app:elevation="8dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent">-->
-<!--        <androidx.appcompat.widget.Toolbar-->
-<!--            android:id="@+id/toolbar"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="?attr/actionBarSize"-->
-<!--            android:background="?attr/colorPrimary" />-->
-<!--    </com.google.android.material.appbar.AppBarLayout>-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:elevation="8dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
 
     <com.naver.maps.map.MapView
         android:id="@+id/mapView"
         android:layout_width="match_parent"
-        android:layout_height="0dp" />
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:name="com.naver.maps.map.MapFragment"/>
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
@@ -36,8 +36,12 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:layout_margin="10dp"
-        android:layout_gravity="top" />
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom"/>
 
-    <include layout="@layout/bottom_sheet" />
+    <include
+        android:id="@+id/bottomSheetLayout"
+        layout="@layout/bottom_sheet"
+        app:layout_behavior="@string/bottom_sheet_behavior" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

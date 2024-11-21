@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.navermap"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -41,6 +41,7 @@ android {
 dependencies {
     // 네이버 지도 SDK
     implementation(libs.map.sdk)
+    implementation (libs.play.services.location)
 
     implementation (libs.retrofit)
 
