@@ -41,7 +41,6 @@
 
     <include
         android:id="@+id/bottomSheetLayout"
-        layout="@layout/bottom_sheet"
-        app:layout_behavior="@string/bottom_sheet_behavior" />
+        layout="@layout/bottom_sheet" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

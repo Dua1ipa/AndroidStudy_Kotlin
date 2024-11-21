@@ -128,7 +128,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private fun collapseBottomSheet(){
         // BottomSheetBehavior를 View에서 가져옴
-        val bottomSheetBehavior = BottomSheetBehavior.from<>(binding.bottomSheetLayout)
+        val bottomSheetBehavior = BottomSheetBehavior.from<View>(binding.bottomSheetLayout)
         // BottomSheet 상태를 COLLAPSED로 설정
         bottomSheetBehavior.state = STATE_COLLAPSED
     }
