@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
     private var isMapInit = false
 
     private var restaurantListAdapter = RestaurantListAdapter {
-        collapseBottomSheet()
+//        collapseBottomSheet()
         moveCamera(it)
     }
 
@@ -72,12 +72,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 //                                .animate(CameraAnimation.Easing)
 //                            naverMap.moveCamera(cameraUpdate)
                             val markers = searchItemList.map {
-                                Marker(
-                                    Tm128(
-                                        it.mapx.toDouble(),
-                                        it.mapy.toDouble()
-                                    ).toLatLng()
-                                ).apply {
+                                Marker(Tm128(it.mapx.toDouble(), it.mapy.toDouble()).toLatLng()).apply {
                                     captionText = it.title
                                     map = naverMap
                                     width = Marker.SIZE_AUTO
@@ -86,7 +81,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
                             }
 
                             restaurantListAdapter.setData(searchItemList)
-                            collapseBottomSheet()
+//                            collapseBottomSheet()
                             moveCamera(markers.first().position)
 //                            markers.position = LatLng(searchItemList.first().mapy.toDouble(), searchItemList.first().mapx.toDouble())
 //                            markers.map = naverMap
@@ -102,6 +97,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
                     return false
                 }else{ return true }
             }
+
 
             override fun onQueryTextChange(newText: String?): Boolean {
                 return true
@@ -126,12 +122,12 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         naverMap.moveCamera(cameraUpdate)
     }
 
-    private fun collapseBottomSheet(){
-        // BottomSheetBehavior를 View에서 가져옴
-        val bottomSheetBehavior = BottomSheetBehavior.from<View>(binding.bottomSheetLayout)
-        // BottomSheet 상태를 COLLAPSED로 설정
-        bottomSheetBehavior.state = STATE_COLLAPSED
-    }
+//    private fun collapseBottomSheet(){
+//        // BottomSheetBehavior를 View에서 가져옴
+//        val bottomSheetBehavior = BottomSheetBehavior.from(binding.bottomSheetLayout)
+//        // BottomSheet 상태를 COLLAPSED로 설정
+//        bottomSheetBehavior.state = STATE_COLLAPSED
+//    }
 
     override fun onStart() {
         super.onStart()
