@@ -52,6 +52,8 @@ dependencies {
     implementation(libs.v2.navi) // 카카오내비 API 모듈
     implementation(libs.v2.cert) // 카카오톡 인증 서비스 API 모듈
 
+    implementation(libs.play.services.maps)  // Maps SDK for Android
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
