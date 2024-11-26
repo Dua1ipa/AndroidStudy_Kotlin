@@ -30,13 +30,11 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var tempUser : User
 
     private val callback: (OAuthToken?, Throwable?) -> Unit = { token, error ->
-        if(error != null){
+        if(error != null){  //로그인 실패
             showErrorToast()
-            //로그인 실패
-            Log.e(TAG, "로그인 실패", error)
-        }else if (token != null){
-            //로그인 성공
-            Log.e(TAG, "로그인 성공 ${token.accessToken}")
+            Log.e(TAG, "callback 로그인 실패", error)
+        }else if (token != null){  //로그인 성공
+            Log.e(TAG, "callback 로그인 성공 ${token.accessToken}")
             getKakaoAccountInfo()
         }
     }
@@ -47,17 +45,20 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Kakao SDK 초기화
-        KakaoSdk.init(this, "8f784e972742973545a426dd4fa23882")
+        KakaoSdk.init(this, "8f784e972742973545a426dd4fa23882")  //Kakao SDK 초기화
 
         emailLoginResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
             if(it.resultCode == RESULT_OK){
                 val email = it.data?.getStringExtra("email")
+                Log.e(TAG, "signInFirebase")
+                Log.e(TAG, "emailLoginResult ${email.toString()}")
                 if(email == null){
                     showErrorToast()
+                    Log.e(TAG, "signInFirebase email 없음")
                     return@registerForActivityResult
                 }else{
                     signInFirebase(tempUser, email)
+                    Log.e(TAG, "signInFirebase email존재")
                 }
             }
         }
@@ -84,10 +85,6 @@ class LoginActivity : AppCompatActivity() {
                             navigateToMapActivity()
                         }
                     }
-                    else if (token != null) {
-                        Log.e(TAG, "로그인 성공 ${token.accessToken}")
-                        startActivity(Intent(this, MapActivity::class.java))
-                    }
                 }
             }else{
                 //카카오톡이 설치 되있지 않다면 (카카오계정 로그인)
@@ -106,9 +103,11 @@ class LoginActivity : AppCompatActivity() {
                 showErrorToast()
             }else if (user != null){  //카카오 계정 정보가 존재하면
                 // 사용자 정보 요청 성공
+                Log.e(TAG, "getKakaoAccountInfo 카카오 계정 정보가 존재하면")
                 checkKakaoUserData(user)
             }
         }
+        Log.e(TAG, "getKakaoAccountInfo")
     }
 
     private fun checkKakaoUserData(user : User){
@@ -117,9 +116,11 @@ class LoginActivity : AppCompatActivity() {
             tempUser = user
             // 추가로 이메일을 받는 작업
             emailLoginResult.launch(Intent(this, EmailLoginActivity::class.java))
+            Log.e(TAG, "checkKakaoUserData 카카오 이메일이 없으면")
 
             return
         }
+        Log.e(TAG, "checkKakaoUserData 카카오 이메일이 있으면")
         signInFirebase(user, kakaoEmail)
     }
 
@@ -129,23 +130,28 @@ class LoginActivity : AppCompatActivity() {
         Firebase.auth.createUserWithEmailAndPassword(kakaoEmail, UID)
             .addOnCompleteListener {
                 if(it.isSuccessful){  //파이어베이스 계정 생성 성공
+                    Log.e(TAG, "signInFirebase 파이어베이스 계정 생성 성공")
                     updateFirebaseDB(user)
                 }else{
                     showErrorToast()
                 }
             }.addOnFailureListener {  //파이어베이스 계정 생성 실패
                 if(it is FirebaseAuthUserCollisionException){  // 이미 가입된 계정
-                    Firebase.auth.signInWithEmailAndPassword(kakaoEmail, UID).addOnCompleteListener { result ->
+                    Log.e(TAG, "signInFirebase 파이어베이스 계정 생성 실패 - 이미 가입된 계정")
+                    Firebase.auth.signInWithEmailAndPassword(kakaoEmail, UID)
+                        .addOnCompleteListener { result ->
                         if(result.isSuccessful){  // 파이어베이스 로그인 성공
+                            
                             updateFirebaseDB(user)
                         }else{  // 파이어베이스 로그인 실패
                             showErrorToast()
                         }
                     }.addOnFailureListener { error ->
-                        error.printStackTrace()
+                        Log.d(TAG, "signInFirebase 로그인 실패 - ${error.printStackTrace()}")
                         showErrorToast()
                     }
                 }else{
+                    Log.d(TAG, "signInFirebase 실패")
                     showErrorToast()
                 }
             }
