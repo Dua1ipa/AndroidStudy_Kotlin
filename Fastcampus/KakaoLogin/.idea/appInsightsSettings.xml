@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.kakaologin.debug" />
+                  <option name="mobileSdkAppId" value="1:713737237141:android:c7ce5e703d6e608fe7219c" />
+                  <option name="projectId" value="kakaologin-fb7d6" />
+                  <option name="projectNumber" value="713737237141" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
