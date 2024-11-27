@@ -21,7 +21,6 @@ class EmailLoginActivity : AppCompatActivity() {
             if(binding.emailEditText.text.isNotEmpty()){
                 val data = Intent().apply {
                     putExtra("email", binding.emailEditText.text.toString())
-
                 }
                 setResult(RESULT_OK, data)
                 finish()

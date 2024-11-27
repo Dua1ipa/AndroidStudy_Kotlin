@@ -148,7 +148,6 @@ class LoginActivity : AppCompatActivity() {
                     Firebase.auth.signInWithEmailAndPassword(kakaoEmail, UID)
                         .addOnCompleteListener { result ->
                         if(result.isSuccessful){  // 파이어베이스 로그인 성공
-                            
                             updateFirebaseDB(user)
                         }else{  // 파이어베이스 로그인 실패
                             showErrorToast()
