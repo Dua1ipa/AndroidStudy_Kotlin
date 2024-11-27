@@ -39,6 +39,8 @@ import com.google.firebase.auth.auth
 import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.database
 import com.kakao.sdk.common.util.Utility
 
@@ -100,6 +102,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
         mapFragment.getMapAsync(this)
 
         requestLocationPermission()
+        setupEmojiAnimationView()
         setupFirebaseDatabase()
     }
 
@@ -113,6 +116,36 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
         super.onPause()
 
         fusedLocationClient.removeLocationUpdates(locationCallback)
+    }
+
+    private fun setupEmojiAnimationView() {
+        binding.emojiLottieAnimationView.setOnClickListener {  //추적 하는 사람의 로티를 누르면 실행
+            if(trackingPersonID.isNotEmpty()){
+                val lastEmoji = mutableMapOf<String, Any>()
+                lastEmoji["type"] = "smile"
+                lastEmoji["lastModifier"] = System.currentTimeMillis()
+
+                Firebase.database.reference.child("Emoji")
+                    .child(trackingPersonID)
+                    .updateChildren(lastEmoji)
+            }
+            binding.emojiLottieAnimationView.playAnimation()
+            binding.dummyLottieAnimationView.animate()
+                .scaleX(3f)
+                .scaleY(3f)
+                .alpha(0f)
+                .withStartAction {
+                    binding.dummyLottieAnimationView.scaleX = 1f
+                    binding.dummyLottieAnimationView.scaleY = 1f
+                    binding.dummyLottieAnimationView.alpha = 1f
+                }.withEndAction {
+                    binding.dummyLottieAnimationView.scaleX = 1f
+                    binding.dummyLottieAnimationView.scaleY = 1f
+                    binding.dummyLottieAnimationView.alpha = 1f
+                }.start()
+        }
+        binding.emojiLottieAnimationView.speed = 3f
+        binding.centerLottieAnimationView.speed = 3f
     }
 
     // 현재 위치 함수 //
@@ -182,6 +215,26 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
                 override fun onChildRemoved(snapshot: DataSnapshot) { }
 
                 override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) { }
+
+                override fun onCancelled(error: DatabaseError) { }
+
+            })
+
+        Firebase.database.reference.child("Emoji").child(Firebase.auth.currentUser?.uid ?: "")
+            .addValueEventListener(object :ValueEventListener{  //다른 사람이 나의 마커를 누르면 내 휴대폰에서 중앙 로티 실행
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    binding.centerLottieAnimationView.playAnimation()
+                    binding.centerLottieAnimationView.animate()
+                        .scaleX(7f) //x축으로 배수
+                        .scaleY(7f) //y축으로 배수
+                        .alpha(0.3f) //0에서 0.3으로 이동
+                        .setDuration(binding.centerLottieAnimationView.duration / 3)
+                        .withEndAction {
+                            binding.centerLottieAnimationView.scaleX = 0f
+                            binding.centerLottieAnimationView.scaleY = 0f
+                            binding.centerLottieAnimationView.alpha = 1f
+                        }.start()
+                }
 
                 override fun onCancelled(error: DatabaseError) { }
 

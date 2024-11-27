@@ -14,6 +14,26 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/dummyLottieAnimationView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:lottie_rawRes="@raw/emoji"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:alpha="1"
+        android:layout_gravity="center"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/centerLottieAnimationView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:lottie_rawRes="@raw/emoji"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:alpha="1"
+        android:layout_gravity="center"/>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/emojiBottomSheetLayout"
         android:layout_width="match_parent"
