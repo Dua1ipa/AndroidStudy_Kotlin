@@ -55,20 +55,25 @@ dependencies {
     implementation(libs.v2.navi) // 카카오내비 API 모듈
     implementation(libs.v2.cert) // 카카오톡 인증 서비스 API 모듈
 
-    implementation (libs.play.services.location)
+    implementation (libs.lottie)
+
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.auth.ktx)
+    implementation(libs.firebase.auth)
     implementation(platform(libs.firebase.bom))
     implementation(libs.com.google.firebase.firebase.database)
     implementation(libs.google.firebase.database)
+
+    implementation (libs.play.services.location)
+    implementation(libs.play.services.maps)
+
+    implementation (libs.glide)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.play.services.maps)
-    implementation(libs.firebase.database)
-    implementation(libs.firebase.auth.ktx)
-    implementation(libs.firebase.auth)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

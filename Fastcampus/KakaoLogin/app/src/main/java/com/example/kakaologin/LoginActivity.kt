@@ -14,6 +14,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.auth
 import com.google.firebase.database.database
+import com.kakao.sdk.auth.AuthApiClient
 import com.kakao.sdk.auth.model.OAuthToken
 import com.kakao.sdk.common.KakaoSdk
 import com.kakao.sdk.common.model.ClientError
@@ -46,6 +47,14 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         KakaoSdk.init(this, "8f784e972742973545a426dd4fa23882")  //Kakao SDK 초기화
+
+        if (AuthApiClient.instance.hasToken()) {  //파이어베이스 계정이 존재하면
+            UserApiClient.instance.accessTokenInfo { tokenInfo, error ->
+                if(error == null){  //파이어베이스 토큰이 존재하면
+                    getKakaoAccountInfo()
+                }
+            }
+        }
 
         emailLoginResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
             if(it.resultCode == RESULT_OK){
@@ -132,8 +141,6 @@ class LoginActivity : AppCompatActivity() {
                 if(it.isSuccessful){  //파이어베이스 계정 생성 성공
                     Log.e(TAG, "signInFirebase 파이어베이스 계정 생성 성공")
                     updateFirebaseDB(user)
-                }else{
-                    showErrorToast()
                 }
             }.addOnFailureListener {  //파이어베이스 계정 생성 실패
                 if(it is FirebaseAuthUserCollisionException){  // 이미 가입된 계정
