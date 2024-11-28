@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "237964824048",
+    "project_id": "writepage-eddf3",
+    "storage_bucket": "writepage-eddf3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237964824048:android:9d7986568aaa04fc516135",
+        "android_client_info": {
+          "package_name": "com.example.writepage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTDo4CSiHMzOhB9BeuRpwKFVeBM2X8LDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
