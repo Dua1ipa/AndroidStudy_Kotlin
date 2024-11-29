@@ -10,11 +10,13 @@ import com.example.orderpage.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
     private lateinit var binding: FragmentHomeBinding
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentHomeBinding.bind(view)
 
-        val homeData = context?.readData() ?: return
+        val homeData = context?.readData("home.json", Home::class.java) ?: return
+        val menuData = context?.readData("menu.json", Menu::class.java) ?: return
 
         // %s님, 오늘도 커피 한잔 어떠세요?
         binding.appBarTextView.text = getString(R.string.appbar_title_text, homeData.user.nickName)  //%s를 닉네임으로 채워줌
@@ -26,5 +28,40 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         Glide.with(binding.appBarImageView)
             .load(homeData.appBarImage)
             .into(binding.appBarImageView)
+
+        binding.recommendMenuList.titleTextView.text =
+            getString(R.string.recommend_title, homeData.user.nickName)
+
+        // 메뉴 추천 부분 //
+        menuData.coffee.forEach { menuItem ->
+            binding.recommendMenuList.menuLinearLayout.addView(
+                MenuView(context = requireContext()).apply {
+                    setTitle(menuItem.name)
+                    setImageView(menuItem.image)
+                }
+            )
+        }
+
+        // 배너 부분 //
+        binding.bannerLayout.bannerImageView.apply {
+            Glide.with(this)
+                .load(homeData.banner.image)
+                .into(this)
+            this.contentDescription = homeData.banner.contentDescription
+        }
+
+        binding.recommendMenuList.titleTextView.text =
+            getString(R.string.foodmenu_title)
+
+        // Food 부분 //
+        menuData.food.forEach { menuItem ->
+            binding.foodLayout.menuLinearLayout.addView(
+                MenuView(context = requireContext()).apply {
+                    setTitle(menuItem.name)
+                    setImageView(menuItem.image)
+                }
+            )
+        }
     }
+
 }

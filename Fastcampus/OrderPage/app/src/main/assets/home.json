@@ -4,5 +4,9 @@
     "starCount":10,
     "totalCount": 12
   },
-  "appBarImage":"https://picsum.photos/200/100"
+  "appBarImage":"https://picsum.photos/200/100",
+  "banner": {
+    "image": "https://picsum.photos/200/240",
+    "contentDescription": "현재 진행중인 이벤트"
+  }
 }

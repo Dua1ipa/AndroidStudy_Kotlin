@@ -1,0 +1,50 @@
+{
+  "coffee": [
+    {
+      "name": "아메리카노",
+      "image": "https://picsum.photos/200/100"
+    },
+    {
+      "name": "카푸치노",
+      "image": "https://picsum.photos/200/100"
+    },
+    {
+      "name": "카페라떼",
+      "image": "https://picsum.photos/200/100"
+    },
+    {
+      "name": "아메리카노",
+      "image": "https://picsum.photos/200/100"
+    },
+    {
+      "name": "카푸치노",
+      "image": "https://picsum.photos/200/100"
+    },
+    {
+      "name": "카페라떼",
+      "image": "https://picsum.photos/200/100"
+    }
+  ],
+  "food": [
+    {
+      "name": "딸기 케이크",
+      "image": "https://picsum.photos/200/100"
+    },
+    {
+      "name": "초코 케이크",
+      "image": "https://picsum.photos/200/100"
+    },
+    {
+      "name": "딸기 케이크",
+      "image": "https://picsum.photos/200/100"
+    },
+    {
+      "name": "초코 케이크",
+      "image": "https://picsum.photos/200/100"
+    },
+    {
+      "name": "딸기 케이크",
+      "image": "https://picsum.photos/200/100"
+    }
+  ]
+}

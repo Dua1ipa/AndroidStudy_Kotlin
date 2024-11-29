@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/titleTextView"
@@ -14,9 +15,9 @@
         android:layout_marginTop="20dp"
         android:textColor="@color/black"
         android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text = "%s님을 위한 추천 메뉴"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:text="@string/recommend_title" />
 
     <HorizontalScrollView
         android:id="@+id/menuListHorizontalScrollView"
@@ -31,13 +32,15 @@
             android:id="@+id/menuLinearLayout"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:paddingStart="20dp"
             android:orientation="horizontal"
+            android:paddingStart="20dp"
             android:paddingEnd="20dp"
             tools:layout_height="200dp"
             tools:layout_width="200dp">
-            <include
-                layout="@layout/item_menu" />
+            <com.example.orderpage.MenuView
+                android:id="@+id/menuView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
     </HorizontalScrollView>
 
