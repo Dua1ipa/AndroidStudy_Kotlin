@@ -3,8 +3,10 @@ package com.example.orderpage
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
+import androidx.activity.enableEdgeToEdge
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.orderpage.databinding.FragmentOrderBinding
+import kotlin.math.abs
 
 class OrderFragment : Fragment(R.layout.fragment_order) {
     private lateinit var binding: FragmentOrderBinding
@@ -24,7 +26,8 @@ class OrderFragment : Fragment(R.layout.fragment_order) {
         }
 
         binding.appBarLayout.addOnOffsetChangedListener { appBarLayout, verticalOffset ->
-            appBarLayout.totalScrollRange
+            val seekPosition = abs(verticalOffset) / appBarLayout.totalScrollRange.toFloat()
+            binding.motionLayout.progress = seekPosition
         }
     }
 
