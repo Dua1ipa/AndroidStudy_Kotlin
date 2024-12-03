@@ -10,6 +10,7 @@
     tools:context=".MainActivity">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,25 +23,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/kakao">
+
             <Toolbar
                 android:id="@+id/toolBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
                 <ImageView
-                    android:contentDescription="TODO"
-                    android:src="@drawable/youtube"
                     android:layout_width="40dp"
-                    android:layout_height="40dp" />
+                    android:layout_height="40dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/youtube" />
+
                 <TextView
-                    android:textSize="24sp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:layout_marginStart="20dp"
                     android:id="@+id/appBarTextView"
-                    android:text="@string/app_name"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
             </Toolbar>
         </com.google.android.material.appbar.AppBarLayout>
         <!---->
@@ -50,8 +54,92 @@
             android:id="@+id/videoListRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
         <!---->
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/videoPlayerContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="white"
+        app:layout_constraintDimensionRatio="H,16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+        app:layout_constraintEnd_toEndOf="@id/videoPlayerContainer"
+        app:layout_constraintStart_toStartOf="@id/videoPlayerContainer"
+        app:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
+
+    <TextView
+        android:id="@+id/videoTitleTextView"
+        app:layout_constraintEnd_toStartOf="@id/controlButton"
+        app:layout_constraintStart_toEndOf="@id/playerView"
+        android:layout_width="0dp"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        app:layout_constraintTop_toTopOf="@id/videoPlayerContainer"
+        app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/controlButton"
+        android:padding="10dp"
+        android:alpha="0"
+        tools:alpha="1"
+        app:layout_constraintEnd_toStartOf="@id/hideButton"
+        app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+        app:layout_constraintTop_toTopOf="@id/videoPlayerContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/hideButton"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        tools:alpha="1"
+        app:layout_constraintEnd_toEndOf="@id/videoPlayerContainer"
+        app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+        app:layout_constraintTop_toTopOf="@id/videoPlayerContainer"/>
+
+    <FrameLayout
+        android:id="@+id/recyclerViewContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/playerRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerViewContainer"
+        app:layout_constraintEnd_toEndOf="@id/recyclerViewContainer"
+        app:layout_constraintStart_toStartOf="recyclerViewContainer"
+        app:layout_constraintTop_toTopOf="@id/recyclerViewContainer" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

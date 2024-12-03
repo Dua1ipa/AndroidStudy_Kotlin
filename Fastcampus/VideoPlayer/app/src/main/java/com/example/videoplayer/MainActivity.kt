@@ -16,11 +16,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
-        videoAdapter = VideoAdapter()
+
+        videoAdapter = VideoAdapter(context = this)
         binding.videoListRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = videoAdapter
         }
+
+        val videoList = readData("video.json", VideoList::class.java) ?: VideoList(emptyList())
+        videoAdapter.submitList(videoList.videos)
     }
 
 }

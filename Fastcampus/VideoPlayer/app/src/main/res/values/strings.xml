@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VideoPlayer</string>
+    <string name="subTitleTextView">%1$s · 조회수 %2$s · %3$s</string>
+    <string name="navi_menu_home">home</string>
 </resources>

@@ -3,10 +3,11 @@ package com.example.videoplayer
 import com.google.gson.annotations.SerializedName
 
 data class VideoList(
-    val videos: List<Video>
+    @SerializedName("videos")
+    val videos: List<VideoItem>
 )
 
-data class Video(
+data class VideoItem(
     @SerializedName("id")
     val id: String,
     @SerializedName("title")

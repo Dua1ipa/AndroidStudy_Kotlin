@@ -2,6 +2,7 @@ package com.example.videoplayer
 
 import android.content.Context
 import com.google.gson.Gson
+import com.google.gson.JsonSyntaxException
 import java.io.IOException
 
 fun <T> Context.readData(fileName: String, classT: Class<T>): T? {
@@ -11,9 +12,13 @@ fun <T> Context.readData(fileName: String, classT: Class<T>): T? {
         inputStream.read(byteArray)
         inputStream.close()
 
-        Gson().fromJson(inputStream.toString(), classT)
+        Gson().fromJson(String(byteArray), classT)
 
     } catch (ioException: IOException) {
+        ioException.printStackTrace()
+        null
+    } catch (e: JsonSyntaxException){
+        e.printStackTrace()
         null
     }
 
