@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.videoplayer.databinding.ItemVideoBinding
 
-class VideoAdapter(private val context:Context):ListAdapter<VideoItem, VideoAdapter.ViewHolder>(diffUtil) {
+class VideoAdapter(private val context:Context, private val onClick: (VideoItem) -> Unit):ListAdapter<VideoItem, VideoAdapter.ViewHolder>(diffUtil) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             ItemVideoBinding.inflate(
@@ -42,6 +42,10 @@ class VideoAdapter(private val context:Context):ListAdapter<VideoItem, VideoAdap
                 .load(item.channelThumb)
                 .circleCrop()
                 .into(binding.channelLogoImageView)
+
+            binding.root.setOnClickListener {
+                onClick.invoke(item)
+            }
         }
     }
     companion object{

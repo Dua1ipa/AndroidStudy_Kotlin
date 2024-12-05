@@ -2,7 +2,7 @@
 
 <MotionScene
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <!-- 확장 했을 때 -->
     <ConstraintSet android:id="@+id/expand">
@@ -10,19 +10,19 @@
             android:id="@id/videoPlayerContainer"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintDimensionRatio="H,16:9"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            motion:layout_constraintDimensionRatio="H,16:9"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
 
         <Constraint
             android:id="@id/playerView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
-            app:layout_constraintEnd_toEndOf="@id/videoPlayerContainer"
-            app:layout_constraintStart_toStartOf="@id/videoPlayerContainer"
-            app:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
+            motion:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+            motion:layout_constraintEnd_toEndOf="@id/videoPlayerContainer"
+            motion:layout_constraintStart_toStartOf="@id/videoPlayerContainer"
+            motion:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
 
         <Constraint
             android:id="@id/videoTitleTextView"
@@ -30,10 +30,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:alpha="0"
-            app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
-            app:layout_constraintEnd_toStartOf="@id/controlButton"
-            app:layout_constraintStart_toEndOf="@id/playerView"
-            app:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
+            motion:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+            motion:layout_constraintEnd_toStartOf="@id/controlButton"
+            motion:layout_constraintStart_toEndOf="@id/playerView"
+            motion:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
 
         <Constraint
             android:id="@id/controlButton"
@@ -41,9 +41,9 @@
             android:layout_height="wrap_content"
             android:alpha="0"
             android:visibility="invisible"
-            app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
-            app:layout_constraintEnd_toStartOf="@id/hideButton"
-            app:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
+            motion:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+            motion:layout_constraintEnd_toStartOf="@id/hideButton"
+            motion:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
 
         <Constraint
             android:id="@id/hideButton"
@@ -51,35 +51,35 @@
             android:layout_height="wrap_content"
             android:alpha="0"
             android:visibility="invisible"
-            app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
-            app:layout_constraintEnd_toEndOf="@id/videoPlayerContainer"
-            app:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
+            motion:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+            motion:layout_constraintEnd_toEndOf="@id/videoPlayerContainer"
+            motion:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
 
         <Constraint
             android:id="@id/recyclerViewContainer"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/videoPlayerContainer" />
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/videoPlayerContainer" />
 
         <Constraint
             android:id="@id/playerRecyclerView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="@id/recyclerViewContainer"
-            app:layout_constraintEnd_toEndOf="@id/recyclerViewContainer"
-            app:layout_constraintStart_toStartOf="@id/recyclerViewContainer"
-            app:layout_constraintTop_toTopOf="@id/recyclerViewContainer" />
+            motion:layout_constraintBottom_toBottomOf="@id/recyclerViewContainer"
+            motion:layout_constraintEnd_toEndOf="@id/recyclerViewContainer"
+            motion:layout_constraintStart_toStartOf="@id/recyclerViewContainer"
+            motion:layout_constraintTop_toTopOf="@id/recyclerViewContainer" />
 
         <Constraint
             android:id="@id/bottomNavigationView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="parent" />
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent" />
     </ConstraintSet>
     <!---->
 
@@ -89,18 +89,18 @@
             android:id="@id/videoPlayerContainer"
             android:layout_width="0dp"
             android:layout_height="54dp"
-            app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            motion:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
 
         <Constraint
             android:id="@id/playerView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
-            app:layout_constraintDimensionRatio="H,1:2.5"
-            app:layout_constraintStart_toStartOf="@id/videoPlayerContainer"
-            app:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
+            motion:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+            motion:layout_constraintDimensionRatio="H,1:2.5"
+            motion:layout_constraintStart_toStartOf="@id/videoPlayerContainer"
+            motion:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
 
         <Constraint
             android:id="@id/videoTitleTextView"
@@ -108,62 +108,87 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:alpha="1"
-            app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
-            app:layout_constraintEnd_toStartOf="@id/controlButton"
-            app:layout_constraintStart_toEndOf="@id/playerView"
-            app:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
+            motion:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+            motion:layout_constraintEnd_toStartOf="@id/controlButton"
+            motion:layout_constraintStart_toEndOf="@id/playerView"
+            motion:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
 
         <Constraint
             android:id="@id/controlButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:alpha="1"
-            app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
-            app:layout_constraintEnd_toStartOf="@id/hideButton"
-            app:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
+            motion:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+            motion:layout_constraintEnd_toStartOf="@id/hideButton"
+            motion:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
 
         <Constraint
             android:id="@id/hideButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:alpha="1"
-            app:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
-            app:layout_constraintEnd_toEndOf="@id/videoPlayerContainer"
-            app:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
+            motion:layout_constraintBottom_toBottomOf="@id/videoPlayerContainer"
+            motion:layout_constraintEnd_toEndOf="@id/videoPlayerContainer"
+            motion:layout_constraintTop_toTopOf="@id/videoPlayerContainer" />
 
         <Constraint
             android:id="@id/recyclerViewContainer"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/videoPlayerContainer" />
+            motion:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/videoPlayerContainer" />
 
         <Constraint
             android:id="@id/playerRecyclerView"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:alpha="0"
-            app:layout_constraintBottom_toBottomOf="@id/recyclerViewContainer"
-            app:layout_constraintEnd_toEndOf="@id/recyclerViewContainer"
-            app:layout_constraintStart_toStartOf="@id/recyclerViewContainer"
-            app:layout_constraintTop_toTopOf="@id/recyclerViewContainer" />
+            motion:layout_constraintBottom_toBottomOf="@id/recyclerViewContainer"
+            motion:layout_constraintEnd_toEndOf="@id/recyclerViewContainer"
+            motion:layout_constraintStart_toStartOf="@id/recyclerViewContainer"
+            motion:layout_constraintTop_toTopOf="@id/recyclerViewContainer" />
 
         <Constraint
             android:id="@id/bottomNavigationView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
     </ConstraintSet>
     <!---->
 
     <Transition
-        app:constraintSetStart="@id/expand"
-        app:constraintSetEnd="@id/collapse"
-        app:duration="300"
-        app:motionInterpolator="linear"/>
+        motion:constraintSetStart="@id/expand"
+        motion:constraintSetEnd="@id/collapse"
+        motion:duration="300"
+        motion:motionInterpolator="linear">
+        <KeyFrameSet>
+            <KeyPosition
+                motion:percentWidth="1"
+                motion:percentX="1"
+                motion:curveFit="linear"
+                motion:motionTarget="@+id/playerView"
+                motion:framePosition="10" />
+            <KeyAttribute
+                motion:motionTarget="@+id/playerRecyclerView"
+                android:alpha="0"
+                motion:framePosition="25" />
+            <KeyAttribute
+                motion:motionTarget="@+id/videoTitleTextView"
+                motion:framePosition="10"
+                android:alpha="0.1" />
+            <KeyAttribute
+                motion:motionTarget="@+id/hideButton"
+                motion:framePosition="10"
+                android:alpha="0.1" />
+            <KeyAttribute
+                motion:motionTarget="@+id/controlButton"
+                motion:framePosition="10"
+                android:alpha="0.1" />
+        </KeyFrameSet>
+    </Transition>
 
 </MotionScene>

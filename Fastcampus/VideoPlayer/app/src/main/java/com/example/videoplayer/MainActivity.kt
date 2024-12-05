@@ -17,7 +17,12 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
-        videoAdapter = VideoAdapter(context = this)
+        videoAdapter = VideoAdapter(context = this) { videoItem ->
+            binding.motionLayout.setTransition(R.id.collapse, R.id.expand)
+            binding.motionLayout.transitionToEnd()  //동영상 누르면 펼쳐지게 하기
+        }
+        binding.motionLayout.jumpToState(R.id.collapse)
+
         binding.videoListRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = videoAdapter
