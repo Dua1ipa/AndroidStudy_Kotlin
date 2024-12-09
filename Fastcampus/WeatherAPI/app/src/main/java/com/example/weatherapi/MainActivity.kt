@@ -87,10 +87,26 @@ class MainActivity : AppCompatActivity() {
                 ).enqueue(object: Callback<WeatherEntity> {
                     override fun onResponse(p0: Call<WeatherEntity>, p1: Response<WeatherEntity>) {
                         val itemList = p1.body()?.response?.body?.items?.item.orEmpty()
-
+                        val forecastDateTimeMap = mutableMapOf<String, Forecast>()
+                        
                         for (item in itemList) {
                             Log.e(TAG, item.toString())
+                            if (forecastDateTimeMap["${item.forecastDate}/${item.forecastTime}"] == null) {
+                                forecastDateTimeMap["${item.forecastDate}/${item.forecastTime}"] =
+                                    Forecast(forecastDate = item.forecastDate, forecastTime = item.forecastTime)
+                            }
+                            forecastDateTimeMap["${item.forecastDate}/${item.forecastTime}"]?.apply {
+                                when (item.category) {
+                                    Category.POP -> precipitation = item.forecastValue.toInt()  //강수확률
+                                    Category.PTY -> precipitationType = transformRainType(item)
+                                    Category.SKY -> transformSky(item) //하늘상태
+                                    Category.TMP -> temperature = item.forecastValue.toDouble() //1시간 기온
+                                    else -> {}
+                                }
+                            }
                         }
+                        Log.e(TAG, forecastDateTimeMap.toString())
+
                     }
 
                     override fun onFailure(p0: Call<WeatherEntity>, p1: Throwable) {
@@ -103,5 +119,25 @@ class MainActivity : AppCompatActivity() {
 //                val converter = GeoPointConverter()
 //                val point = converter.convert(lat = it.latitude, lon = it.longitude)
             }
+    }
+
+    private fun transformRainType(item: Item): String {
+        return when (item.forecastValue.toInt()) {  //강수형태
+            0 -> "없음"
+            1 -> "비"
+            2 -> "비/눈"
+            3 -> "눈"
+            4 -> "소나기"
+            else -> ""
+        }
+    }
+
+    private fun transformSky(item: Item): String {
+        return when(item.forecastValue.toInt()) {
+            1 -> "맑음"
+            2 -> "구름많음"
+            3 -> "흐림"
+            else -> ""
+        }
     }
 }
