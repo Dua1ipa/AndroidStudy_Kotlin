@@ -115,9 +115,9 @@ class MainActivity : AppCompatActivity() {
 
                 })
 
-//                val baseDateTime = BaseDateTime.getBaseDateTime()
-//                val converter = GeoPointConverter()
-//                val point = converter.convert(lat = it.latitude, lon = it.longitude)
+                val baseDateTime = BaseDateTime.getBaseDateTime()
+                val converter = GeoPointConverter()
+                val point = converter.convert(lat = it.latitude, lon = it.longitude)
             }
     }
 
